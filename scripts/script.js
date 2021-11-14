@@ -23,6 +23,7 @@ function onSignIn(googleUser) {
 function onSuccess(googleUser) {
     document.getElementById("yourName").innerHTML = "Welcome, "
     document.getElementById("googleSigningForRemoval").innerHTML = googleUser.getBasicProfile().getName();
+    console.log(document.getElementById("googleSigningForRemoval").innerHTML = googleUser.getBasicProfile().getName());
 }
 
 function renderButton() {
