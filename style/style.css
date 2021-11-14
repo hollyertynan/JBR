@@ -12,6 +12,10 @@ HW 1, Part 2, Author: Wenjin Zhou
 
 */
 
+.btn-set-width {
+    width: 100px
+}
+
 a:link {
     color: #fff;
     text-decoration: none;
