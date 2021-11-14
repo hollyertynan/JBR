@@ -14,8 +14,7 @@ HW 1, Part 2, Author: Wenjin Zhou
 
 function onSignIn(googleUser) {
     document.getElementById("yourName").innerHTML = "Welcome, "
-    document.getElementById("googleSigningForRemoval").innerHTML = googleUser.getBasicProfile().getName();
-    console.log(document.getElementById("googleSigningForRemoval").innerHTML = googleUser.getBasicProfile().getName());
+    document.getElementById("googleSigningForRemoval").innerHTML = "<h1>" + googleUser.getBasicProfile().getName() + "</h1>";
 }
 
 // GET/SET DATE + TME
