@@ -72,26 +72,14 @@ HW 1, Part 2, Author: Wenjin Zhou
     </div>
 
     <div class="container-fluid bg-dark text-center pt-5 pb-5">
-        <button id="ticket" type="button" class="btn btn-info text-light col-3"><h4>Ticket</h4></button>
-        <button id="phone" type="button" class="btn btn-info text-light col-3"><h4>Phone</h4></button>
-        <button id="maintenance" type="button" class="btn btn-info text-light col-3"><h4>Maintenance</h4></button>
+        <button id="ticket" type="button" class="btn btn-info text-light col-3" onclick="onTicket()"><h4>Ticket</h4></button>
+        <button id="phone" type="button" class="btn btn-info text-light col-3" onclick="onPhone()"><h4>Phone</h4></button>
+        <button id="maintenance" type="button" class="btn btn-info text-light col-3" onclick="onMaintenance()"><h4>Maintenance</h4></button>
     </div>
 
-    <div class="container-fluid bg-dark text-light h-100 mt-5">
-        <div class="row min-vh-100">
-            <div class="col-md-12">
-                <h1 class="text-center p-3">
-                    Fill The Page
-                </h1>
-
-                <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
-                
-            </div>
-        </div>
+    <div id="myForm" class="text-light text-center">
     </div>
 
-    
-    
     <div class="container-fluid bg-dark">
         <footer class="footer text-center bg-dark text-light fixed-bottom font-size">
             <button type="button" class="btn btn-dark"><a href="https://www.instagram.com/aubuchonhardware/?hl=en" target="_blank"><i class="bi bi-instagram p-3" style="font-size: 25px;"></i></a></button>
