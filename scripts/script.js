@@ -25,8 +25,6 @@ function onSignIn(googleUser) {
     user = googleUser.getBasicProfile().getName();
 }
 
-
-
 // get/set date and time
 const date = new Date().toLocaleString();
 document.getElementById("time").innerHTML = date;
