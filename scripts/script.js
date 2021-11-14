@@ -11,3 +11,7 @@ Proper Documentation copied from
 HW 1, Part 2, Author: Wenjin Zhou
 
 */
+
+const date = new Date();
+
+document.getElementById("time").innerHTML = date.toLocaleString();
