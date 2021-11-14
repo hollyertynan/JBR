@@ -18,17 +18,6 @@ function onSignIn(googleUser) {
     console.log(document.getElementById("googleSigningForRemoval").innerHTML = googleUser.getBasicProfile().getName());
 }
 
-/*
-
-function renderButton() {
-    gapi.signin2.render('g-signin2', {
-      'onsuccess': onSuccess,
-    });
-}
-
-*/
-
-
 // GET/SET DATE + TME
 const date = new Date();
 document.getElementById("time").innerHTML = date.toLocaleString();
