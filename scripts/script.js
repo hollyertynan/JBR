@@ -32,7 +32,16 @@ document.getElementById("time").innerHTML = date;
 // function if ticket is clicked
 function onTicket() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>:)</h4></button>";
+
+    var store_info = "<div id=\"taskInfo\" class=\"container-fluid bg-dark text-center\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-2\"><select name=\"stores\" id=\"stores\" class=\"btn btn-secondary dropdown-toggle\" style=\"width: 100%\"><option value=\"001\"> 001 - Fitchburg, MA </option><option value=\"003\"> 003 - Meredith, NH </option><option value=\"004\"> 004 - Gardner, MA </option><option value=\"006\"> 006 - Moultonboro, NH </option><option value=\"007\"> 007 - Tewksbury, MA </option><option value=\"008\"> 008 - Clinton, MA </option><option value=\"010\"> 010 - Peru, NY </option></select></div><div class=\"col-2\"><input id=\"ticketinfo\" type=\"text\" placeholder=\"Please input ticket number, then click the check.\" maxlength=\"5\" style=\"width: 100%; text-align: center\" onchange=\"taskDepartmentVisibility()\"></div><div class=\"col-2\"><button type=\"button\" id=\"onEnterTicket\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onEnterTicket()\"><i class=\"bi bi-check2-circle\" style=\"font-size: 2.5rem;\"></i></button></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("myForm").innerHTML += store_info;
+}
+
+function onEnterTicket() {
+    document.getElementById("myForm").innerHTML += "<button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3\"><h4>Product Team</h4></button><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3\"><h4>IT</h4></button><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3\"><h4>Accounting</h4></button>";
+
+    temp = document.getElementById("onEnterTicket");
+    temp.disabled = true;
 }
 
 // function if phone is clicked
