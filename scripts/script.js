@@ -32,17 +32,17 @@ document.getElementById("time").innerHTML = date;
 // function if ticket is clicked
 function onTicket() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>Ticket</h4></button>";
+    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>:)</h4></button>";
 }
 
 // function if phone is clicked
 function onPhone() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML = ":(";
+    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>:(</h4></button>";
 }
 
 // function if maintenance is clicked
 function onMaintenance() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML = ":O";
+    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>:O</h4></button>";
 }
