@@ -33,7 +33,7 @@ document.getElementById("time").innerHTML = date;
 
 function onTicket() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML = ":)";
+    document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>Ticket</h4></button>";
 }
 
 // function if phone is clicked
