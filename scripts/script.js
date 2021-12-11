@@ -30,7 +30,6 @@ const date = new Date().toLocaleString();
 document.getElementById("time").innerHTML = date;
 
 // function if ticket is clicked
-
 function onTicket() {
     document.getElementById("myForm").innerHTML = "";
     document.getElementById("myForm").innerHTML = "<button id=\"ticket\" type=\"button\" class=\"btn btn-info text-light col-3\" onclick=\"onTicket()\"><h4>Ticket</h4></button>";
