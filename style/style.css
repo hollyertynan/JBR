@@ -32,6 +32,16 @@ a:active {
     text-decoration: none;
 }
 
+/* https://stackoverflow.com/questions/38805236/center-google-sign-in-button/38805537 */
 .abcRioButton.abcRioButtonLightBlue {
     margin: 0 auto;
+}
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+  }
+  
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
 }

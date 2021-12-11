@@ -28,44 +28,23 @@ HW 1, Part 2, Author: Wenjin Zhou
     <link href="style/style.css" rel="stylesheet">
 </head>
 <body class="bg-dark">
+    <!-- NAV BAR -->
     <div class="container-fluid bg-dark text-white">
         <h1 class="text-center p-3 m-0">JBR 2.0</h1>
     </div>
 
-    <div class="container-fluid bg-light text-black">
-        <div class="row">
+    <!-- INITIAL COLUMNS -->
+    <div class="container-fluid bg-info text-black col-container">
+        <div class="row align-items-center">
             <div class="col-md-4 d-none d-md-block bg-light">
-                <h1 class="text-center p-3 my-auto"><img src="assets/RSC_LOGO.png" alt="RSC_LOGO"></h1>
+                <h1 class="text-center p-3"><img src="assets/RSC_LOGO.png" alt="RSC_LOGO"></h1>
             </div>
-            <div class="col-md-4 bg-info text-light text-center justify-content-center">
+            <div class="col-md-4 bg-info text-light text-center">
                 <h1 id="yourName" class="text-center pt-2">Who Are You?</h1>
                 <div id="googleSigningForRemoval" class="g-signin2" data-onsuccess="onSignIn"></div>
-                <div id="googleProfilePicture"></div>
-                <!-- 
-
-                <div class="row">
-                    <div class="col">
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Jay</button></p>
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Suzanne</button></p>
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Connor</button></p>
-                    </div>
-                    
-                    <div class="col">
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Liz</button></p>
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Tynan</button></p>
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Aaron</button></p>
-                    </div>
-
-                    <div class="col">
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Damian</button></p>
-                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Brady</button></p>
-                    </div>
-                </div>
-
-                -->
-                
+                <div id="googleProfilePicture"></div>                
             </div>
-            <div class="col-md-4 bg-light my-auto">
+            <div class="col-md-4 bg-light">
                 <h1 id="time" class="text-center p-3"></h1>
             </div>
         </div>
@@ -95,3 +74,26 @@ HW 1, Part 2, Author: Wenjin Zhou
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
+
+<!-- OLD CODE
+
+                <div class="row">
+                    <div class="col">
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Jay</button></p>
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Suzanne</button></p>
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Connor</button></p>
+                    </div>
+                    
+                    <div class="col">
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Liz</button></p>
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Tynan</button></p>
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Aaron</button></p>
+                    </div>
+
+                    <div class="col">
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Damian</button></p>
+                        <p><button type="button" class="btn btn-primary btn-block btn-set-width">Brady</button></p>
+                    </div>
+                </div>
+
+                -->
