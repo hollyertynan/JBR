@@ -36,3 +36,7 @@ a:active {
 .abcRioButton.abcRioButtonLightBlue {
     margin: 0 auto;
 }
+
+.InitialButtons {
+    width: 90%;
+}
