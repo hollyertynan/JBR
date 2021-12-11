@@ -44,16 +44,20 @@ function onTicket() {
 
 // function if accept in ticket is clicked
 function onTicketAccept() {
-    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pt-5 pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><h4>Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT()\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
+    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pt-5 pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT()\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
 
     document.getElementById("onEnterTicket").disabled = true;
+    document.getElementById("onEnterTicket").classList.remove("btn-info");
+    document.getElementById("onEnterTicket").classList.add("btn-success");
 }
 
 // function if IT in ticket is clicked
 function onIT() {
-    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pt-5 pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"register\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><h4>Register</h4></button></div><div class=\"col-4\"><button id=\"paymentterminal\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><h4>Payment Terminal</h4></button></div><div class=\"col-4\"><button id=\"backoffice\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><h4>Back Office</h4></button></div></div></div>";
-
     document.getElementById("it").disabled = true;
+    document.getElementById("it").classList.remove("btn-info");
+    document.getElementById("it").classList.add("btn-success");
+    document.getElementById("product").disabled = true;
+    document.getElementById("accounting").disabled = true;
 }
 
 // function if phone is clicked
