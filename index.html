@@ -54,7 +54,7 @@ Hello
 
                 <div class="container-fluid text-center pb-3">
                         <div id="taskInfo" class="bg-dark text-center">
-                            <select name="stores" id="stores" class="form-select form-select-lg InitialButtons bg-info text-light text-center border-dark" style="width: 100%">
+                            <select name="stores" id="stores" name="stores" class="form-select form-select-lg InitialButtons bg-info text-light text-center border-dark" style="width: 100%">
                                 <option value="001"> 001 - Fitchburg, MA </option>
                                 <option value="003"> 003 - Meredith, NH </option>
                                 <option value="004"> 004 - Gardner, MA </option>
@@ -65,7 +65,7 @@ Hello
                         </select>
                     </div>
                 </div>
-                <div class="pb-3"><input id="ticketinfo" type="text" placeholder="Please input ticket number, then click the check." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons" onchange="taskDepartmentVisibility()"></div>
+                <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Please input ticket number, then click the check." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons"></div>
             </div>
         </div>
     </div>
@@ -96,12 +96,12 @@ Hello
     <div id="dropDownMenus" class="text-light text-center"></div>
 
     <div class="container">
-        <form id="submitMyForm" class="text-light">
+        <form id="submitMyForm">
             <input name="Submitted" hidden/>
             <input name="Person" hidden/>
-            <input name="T/P/M" hidden/>
             <input name="Ticket# / Caller" hidden/>
             <input name="Store" hidden/>
+            <input name="T/P/M" hidden/>
             <input name="Department" hidden/>
         </form>
     </div>
