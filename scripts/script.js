@@ -75,6 +75,13 @@ function onIT() {
 }
 
 function SubForm() {
+    document.forms['submitMyForm'].elements['Submitted'].value = date;
+    document.forms['submitMyForm'].elements['Person'].value = user;
+    document.forms['submitMyForm'].elements['T/P/M'].value = "";
+    document.forms['submitMyForm'].elements['Ticket# / Caller'].value = "";
+    document.forms['submitMyForm'].elements['Store'].value = "";
+    document.forms['submitMyForm'].elements['Department'].value = "";
+
     $.ajax({
         url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",
         type: "post",
