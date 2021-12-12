@@ -34,7 +34,7 @@ document.getElementById("time").innerHTML = date;
 // function if ticket is clicked
 function onTicket() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
+    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
 
     document.getElementById("ticket").disabled = true;
     document.getElementById("ticket").classList.remove("btn-info");
@@ -47,7 +47,7 @@ function onTicket() {
 // function if phone is clicked
 function onPhone() {
     document.getElementById("myForm").innerHTML = "";
-    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
+    document.getElementById("myForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-4\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-4\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-4\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light col-3 InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div></div></div>";
 
     document.getElementById("phone").disabled = true;
     document.getElementById("phone").classList.remove("btn-info");
@@ -77,6 +77,24 @@ function onIT() {
     document.getElementById("it").classList.add("btn-success");
     document.getElementById("product").disabled = true;
     document.getElementById("accounting").disabled = true;
+    chosenDepartment = "IT";
+}
+
+function onProduct() {
+    document.getElementById("product").disabled = true;
+    document.getElementById("product").classList.remove("btn-info");
+    document.getElementById("product").classList.add("btn-success");
+    document.getElementById("it").disabled = true;
+    document.getElementById("accounting").disabled = true;
+    chosenDepartment = "IT";
+}
+
+function onAccounting() {
+    document.getElementById("accounting").disabled = true;
+    document.getElementById("accounting").classList.remove("btn-info");
+    document.getElementById("accounting").classList.add("btn-success");
+    document.getElementById("product").disabled = true;
+    document.getElementById("it").disabled = true;
     chosenDepartment = "IT";
 }
 
