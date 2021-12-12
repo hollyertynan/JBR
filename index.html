@@ -51,6 +51,22 @@ Hello
             </div>
             <div class="col-md-4">
                 <h1 id="time" class="text-center p-3"></h1>
+
+                <div class="container-fluid text-center pb-3">
+                        <div id="taskInfo" class="bg-dark text-center">
+                            <select name="stores" id="stores" class="form-select form-select-lg InitialButtons bg-info text-light text-center border-dark" style="width: 100%">
+                                <option value="001"> 001 - Fitchburg, MA </option>
+                                <option value="003"> 003 - Meredith, NH </option>
+                                <option value="004"> 004 - Gardner, MA </option>
+                                <option value="006"> 006 - Moultonboro, NH </option>
+                                <option value="007"> 007 - Tewksbury, MA </option>
+                                <option value="008"> 008 - Clinton, MA </option>
+                                <option value="010"> 010 - Peru, NY </option>
+                        </select>
+                    </div>
+                </div>
+
+                <input id="ticketinfo" type="text" placeholder="Please input ticket number, then click the check." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons" onchange="taskDepartmentVisibility()">
             </div>
         </div>
     </div>
@@ -101,6 +117,18 @@ Hello
             <input name="Department" />
             <br/>
         </form>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Maintenance Tasks
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Select One:</a></li>
+            <li><a class="dropdown-item" href="#">Benjamin Moore National Accounts Order</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a</li>>
+        </ul>
     </div>
 
     <div class="container-fluid bg-dark text-center pt-5 pb-5">
