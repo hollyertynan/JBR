@@ -14,6 +14,8 @@ HW 1, Part 2, Author: Wenjin Zhou
 
 // global user value
 let user = "";
+let chosenFirstButton = "";
+let chosenDepartment = "Maintenance";
 
 // when signed in, this is performed
 function onSignIn(googleUser) {
@@ -39,6 +41,7 @@ function onTicket() {
     document.getElementById("ticket").classList.add("btn-success");
     document.getElementById("phone").disabled = true;
     document.getElementById("maintenance").disabled = true;
+    chosenFirstButton = "Ticket";
 }
 
 // function if phone is clicked
@@ -51,6 +54,7 @@ function onPhone() {
     document.getElementById("phone").classList.add("btn-success");
     document.getElementById("ticket").disabled = true;
     document.getElementById("maintenance").disabled = true;
+    chosenFirstButton = "Phone";
 }
 
 // function if maintenance is clicked
@@ -63,6 +67,7 @@ function onMaintenance() {
     document.getElementById("maintenance").classList.add("btn-success");
     document.getElementById("phone").disabled = true;
     document.getElementById("ticket").disabled = true;
+    chosenFirstButton = "Maintenance";
 }
 
 // function if IT in ticket is clicked
@@ -72,15 +77,43 @@ function onIT() {
     document.getElementById("it").classList.add("btn-success");
     document.getElementById("product").disabled = true;
     document.getElementById("accounting").disabled = true;
+    chosenDepartment = "IT";
 }
+
+/* trying to require form filling in
+
+$(document).ready(function() {
+    $("#submitMyForm").validate({
+        rules: {
+
+        }
+    });
+    $("#stores").validate({
+        rules: {
+            stores: {
+                required: true
+            }
+        }
+    });
+    $("#ticketinfo").validate({
+        rules: {
+            tikcal: {
+                required: true
+            }
+        }
+    });
+});
+
+*/
+
 
 function SubForm() {
     document.forms['submitMyForm'].elements['Submitted'].value = date;
     document.forms['submitMyForm'].elements['Person'].value = user;
-    document.forms['submitMyForm'].elements['T/P/M'].value = "";
-    document.forms['submitMyForm'].elements['Ticket# / Caller'].value = "";
-    document.forms['submitMyForm'].elements['Store'].value = "";
-    document.forms['submitMyForm'].elements['Department'].value = "";
+    document.forms['submitMyForm'].elements['T/P/M'].value = chosenFirstButton;
+    document.forms['submitMyForm'].elements['Ticket# / Caller'].value = document.getElementById("ticketinfo").value;
+    document.forms['submitMyForm'].elements['Store'].value = document.getElementById("stores").value;
+    document.forms['submitMyForm'].elements['Department'].value = chosenDepartment;
 
     $.ajax({
         url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",
