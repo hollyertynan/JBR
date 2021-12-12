@@ -124,6 +124,15 @@ $(document).ready(function() {
 
 */
 
+function ticketValidation() {
+	if (document.getElementById("ticketinfo").value == "" || document.getElementById("stores").value == 000) {
+		alert("Please fill out the ticket number and the store number.");
+	} else {
+		SubForm();
+	}
+	
+}
+
 
 function SubForm() {
     document.forms['submitMyForm'].elements['Submitted'].value = date;
