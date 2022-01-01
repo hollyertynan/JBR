@@ -53,6 +53,7 @@ function onTicket() {
     document.getElementById("phone").disabled = true;
     document.getElementById("maintenance").disabled = true;
     */
+    document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Ticket";
 }
 
@@ -78,6 +79,7 @@ function onPhone() {
     document.getElementById("ticket").disabled = true;
     document.getElementById("maintenance").disabled = true;
     */
+    document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Phone";
 }
 
@@ -103,6 +105,7 @@ function onMaintenance() {
     document.getElementById("phone").disabled = true;
     document.getElementById("ticket").disabled = true;
     */
+    document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Maintenance";
 }
 
@@ -128,6 +131,7 @@ function onIT() {
     document.getElementById("product").disabled = true;
     document.getElementById("accounting").disabled = true;
     */
+    document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "IT";
 }
 
@@ -151,6 +155,7 @@ function onProduct() {
     document.getElementById("it").disabled = true;
     document.getElementById("accounting").disabled = true;
     */
+    document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Product";
 }
 
@@ -174,6 +179,7 @@ function onAccounting() {
     document.getElementById("product").disabled = true;
     document.getElementById("it").disabled = true;
     */
+    document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Accounting";
 }
 
