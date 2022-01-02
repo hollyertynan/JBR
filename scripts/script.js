@@ -237,7 +237,7 @@ function onCustomer() {
     document.getElementById("it").disabled = true;
     */
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
-    chosenDepartment = "Accounting";
+    chosenDepartment = "Customer";
 }
 
 function onOperations() {
@@ -267,7 +267,7 @@ function onOperations() {
     document.getElementById("it").disabled = true;
     */
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
-    chosenDepartment = "Accounting";
+    chosenDepartment = "Operations";
 }
 
 function onMarketing() {
@@ -297,7 +297,7 @@ function onMarketing() {
     document.getElementById("it").disabled = true;
     */
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
-    chosenDepartment = "Accounting";
+    chosenDepartment = "Marketing / HR";
 }
 
 function ticketValidation() {
