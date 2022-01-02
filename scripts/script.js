@@ -55,13 +55,7 @@ function onTicket() {
     document.getElementById("phone").classList.add("btn-info");
     document.getElementById("maintenance").classList.add("btn-info");
     document.getElementById("ticket").classList.add("btn-success");
-    /*
-    document.getElementById("ticket").disabled = true;
-    document.getElementById("ticket").classList.remove("btn-info");
-    document.getElementById("ticket").classList.add("btn-success");
-    document.getElementById("phone").disabled = true;
-    document.getElementById("maintenance").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Ticket";
 }
@@ -81,13 +75,7 @@ function onPhone() {
     document.getElementById("phone").classList.add("btn-success");
     document.getElementById("maintenance").classList.add("btn-info");
     document.getElementById("ticket").classList.add("btn-info");
-    /*
-    document.getElementById("phone").disabled = true;
-    document.getElementById("phone").classList.remove("btn-info");
-    document.getElementById("phone").classList.add("btn-success");
-    document.getElementById("ticket").disabled = true;
-    document.getElementById("maintenance").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Phone";
 }
@@ -107,13 +95,7 @@ function onMaintenance() {
     document.getElementById("phone").classList.add("btn-info");
     document.getElementById("maintenance").classList.add("btn-success");
     document.getElementById("ticket").classList.add("btn-info");
-    /*
-    document.getElementById("maintenance").disabled = true;
-    document.getElementById("maintenance").classList.remove("btn-info");
-    document.getElementById("maintenance").classList.add("btn-success");
-    document.getElementById("phone").disabled = true;
-    document.getElementById("ticket").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Maintenance";
 }
@@ -139,13 +121,6 @@ function onIT() {
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
 
-    /*
-    document.getElementById("it").disabled = true;
-    document.getElementById("it").classList.remove("btn-info");
-    document.getElementById("it").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("accounting").disabled = true;
-    */
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "IT";
 }
@@ -169,13 +144,7 @@ function onProduct() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("product").disabled = true;
-    document.getElementById("product").classList.remove("btn-info");
-    document.getElementById("product").classList.add("btn-success");
-    document.getElementById("it").disabled = true;
-    document.getElementById("accounting").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Product";
 }
@@ -199,13 +168,7 @@ function onAccounting() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Accounting";
 }
@@ -229,13 +192,7 @@ function onCustomer() {
     document.getElementById("customer").classList.add("btn-success");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Customer";
 }
@@ -259,13 +216,7 @@ function onOperations() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-success");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Operations";
 }
@@ -289,13 +240,7 @@ function onMarketing() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-success");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Marketing / HR";
 }
