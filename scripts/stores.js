@@ -326,7 +326,7 @@ var allStoreNames = [
 
 var inputTable = "";
 
-inputTable += "<input type=\"text\" name=\"typeStore\" list=\"\stores\" class=\"form-select-lg InitialButtons bg-secondary text-center border-dark whitePlaceholder\" style=\"width: 100%\" placeholder=\"Store Number\"><datalist name=\"stores\" id=\"stores\">";
+inputTable += "<input type=\"text\" inputmode=\"numeric\" name=\"typeStore\" list=\"\stores\" class=\"form-select-lg InitialButtons bg-secondary text-center border-dark whitePlaceholder\" style=\"width: 100%\" placeholder=\"Store Number\"><datalist name=\"stores\" id=\"stores\">";
 
 for(var index in allStoreNames) {
     inputTable += "<option value=\"" + allStoreNames[index].Store + "\">" + allStoreNames[index].Name + "</option>";
