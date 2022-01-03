@@ -52,7 +52,8 @@ HW 1, Part 2, Author: Wenjin Zhou
                     <div class="container-fluid text-center pb-3">
                         <div id="taskInfo" class="bg-dark text-center"></div>
                     </div>
-                    <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Please input ticket number or the caller's name." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons"></div>
+                    <!-- maxlength="5" removing max length five until I can figure out how to let people type whole name but only 5 numbers max -->
+                    <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Please input ticket number or the caller's name." style="width: 100%; text-align: center" class="InitialButtons"></div>
                 </form>
                 
             </div>
@@ -63,13 +64,13 @@ HW 1, Part 2, Author: Wenjin Zhou
     <div class="container-fluid bg-dark text-center pt-5 pb-5">
         <div class="row align-items-center">
             <div class="col-4">
-                <button id="ticket" type="button" class="btn btn-info text-light InitialButtons" onclick="onTicket()"><i class="bi bi-ticket-perforated" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Ticket</h4></button>
+                <button id="ticket" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onTicket()"><i class="bi bi-ticket-perforated" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Ticket</h4></button>
             </div>
             <div class="col-4">
-                <button id="phone" type="button" class="btn btn-info text-light InitialButtons" onclick="onPhone()"><i class="bi bi-telephone" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Phone</h4></button>
+                <button id="phone" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onPhone()"><i class="bi bi-telephone" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Phone</h4></button>
             </div>
             <div class="col-4">
-                <button id="maintenance" type="button" class="btn btn-info text-light InitialButtons" onclick="onMaintenance()"><i class="bi bi-gear" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Maintenance</h4></button>
+                <button id="maintenance" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onMaintenance()"><i class="bi bi-gear" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Maintenance</h4></button>
             </div>
         </div>
     </div>
