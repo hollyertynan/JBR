@@ -332,26 +332,6 @@ for(var index in allStoreNames) {
     inputTable += "<option value=\"" + allStoreNames[index].Store + "\">" + allStoreNames[index].Name + "</option>";
 }
 
-/*
-
-inputTable += "<option value=\"" + allStoreNames["FITCHBURG, MA"].location + "\">FITCHBURG, MA</option>";
-inputTable += "<option value=\"" + allStoreNames["MEREDITH, NH"].location + "\">FITCHBURG, MA</option>";
-inputTable += "<option value=\"" + allStoreNames["GARDNER, MA"].location + "\">FITCHBURG, MA</option>";
-*/
-
 inputTable += "</datalist>";
 
 document.getElementById("taskInfo").innerHTML += inputTable;
-
-/*
-
-<option value="000"> Please select a store. </option>
-                                <option value="001"> 001 - Fitchburg, MA </option>
-                                <option value="003"> 003 - Meredith, NH </option>
-                                <option value="004"> 004 - Gardner, MA </option>
-                                <option value="006"> 006 - Moultonboro, NH </option>
-                                <option value="007"> 007 - Tewksbury, MA </option>
-                                <option value="008"> 008 - Clinton, MA </option>
-                                <option value="010"> 010 - Peru, NY </option>
-
-                                */
