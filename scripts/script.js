@@ -46,7 +46,7 @@ function onTicket() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
+    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
 
     document.getElementById("phone").classList.remove("btn-success");
     document.getElementById("maintenance").classList.remove("btn-success");
@@ -55,13 +55,7 @@ function onTicket() {
     document.getElementById("phone").classList.add("btn-info");
     document.getElementById("maintenance").classList.add("btn-info");
     document.getElementById("ticket").classList.add("btn-success");
-    /*
-    document.getElementById("ticket").disabled = true;
-    document.getElementById("ticket").classList.remove("btn-info");
-    document.getElementById("ticket").classList.add("btn-success");
-    document.getElementById("phone").disabled = true;
-    document.getElementById("maintenance").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Ticket";
 }
@@ -72,7 +66,7 @@ function onPhone() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\" style=\"font-size: 2.5rem;\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
+    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
 
     document.getElementById("phone").classList.remove("btn-info");
     document.getElementById("maintenance").classList.remove("btn-success");
@@ -81,13 +75,7 @@ function onPhone() {
     document.getElementById("phone").classList.add("btn-success");
     document.getElementById("maintenance").classList.add("btn-info");
     document.getElementById("ticket").classList.add("btn-info");
-    /*
-    document.getElementById("phone").disabled = true;
-    document.getElementById("phone").classList.remove("btn-info");
-    document.getElementById("phone").classList.add("btn-success");
-    document.getElementById("ticket").disabled = true;
-    document.getElementById("maintenance").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Phone";
 }
@@ -107,13 +95,7 @@ function onMaintenance() {
     document.getElementById("phone").classList.add("btn-info");
     document.getElementById("maintenance").classList.add("btn-success");
     document.getElementById("ticket").classList.add("btn-info");
-    /*
-    document.getElementById("maintenance").disabled = true;
-    document.getElementById("maintenance").classList.remove("btn-info");
-    document.getElementById("maintenance").classList.add("btn-success");
-    document.getElementById("phone").disabled = true;
-    document.getElementById("ticket").disabled = true;
-    */
+
     document.getElementById("firstForm").scrollIntoView({behavior: "smooth"});
     chosenFirstButton = "Maintenance";
 }
@@ -123,7 +105,7 @@ function onIT() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" onchange=\"onEvent(event);\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
 
     document.getElementById("it").classList.remove("btn-info");
     document.getElementById("product").classList.remove("btn-success");
@@ -139,13 +121,6 @@ function onIT() {
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
 
-    /*
-    document.getElementById("it").disabled = true;
-    document.getElementById("it").classList.remove("btn-info");
-    document.getElementById("it").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("accounting").disabled = true;
-    */
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "IT";
 }
@@ -154,7 +129,7 @@ function onProduct() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "";
 
     document.getElementById("it").classList.remove("btn-success");
     document.getElementById("product").classList.remove("btn-info");
@@ -169,13 +144,7 @@ function onProduct() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("product").disabled = true;
-    document.getElementById("product").classList.remove("btn-info");
-    document.getElementById("product").classList.add("btn-success");
-    document.getElementById("it").disabled = true;
-    document.getElementById("accounting").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Product";
 }
@@ -184,7 +153,7 @@ function onAccounting() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "";
 
     document.getElementById("it").classList.remove("btn-success");
     document.getElementById("product").classList.remove("btn-success");
@@ -199,13 +168,7 @@ function onAccounting() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Accounting";
 }
@@ -214,7 +177,7 @@ function onCustomer() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "";
 
     document.getElementById("it").classList.remove("btn-success");
     document.getElementById("product").classList.remove("btn-success");
@@ -229,13 +192,7 @@ function onCustomer() {
     document.getElementById("customer").classList.add("btn-success");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Customer";
 }
@@ -244,7 +201,7 @@ function onOperations() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "";
 
     document.getElementById("it").classList.remove("btn-success");
     document.getElementById("product").classList.remove("btn-success");
@@ -259,13 +216,7 @@ function onOperations() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-success");
     document.getElementById("marketing").classList.add("btn-info");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Operations";
 }
@@ -274,7 +225,7 @@ function onMarketing() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "";
 
     document.getElementById("it").classList.remove("btn-success");
     document.getElementById("product").classList.remove("btn-success");
@@ -289,15 +240,61 @@ function onMarketing() {
     document.getElementById("customer").classList.add("btn-info");
     document.getElementById("operations").classList.add("btn-info");
     document.getElementById("marketing").classList.add("btn-success");
-    /*
-    document.getElementById("accounting").disabled = true;
-    document.getElementById("accounting").classList.remove("btn-info");
-    document.getElementById("accounting").classList.add("btn-success");
-    document.getElementById("product").disabled = true;
-    document.getElementById("it").disabled = true;
-    */
+
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Marketing / HR";
+}
+
+function onEvent(event) {
+    switch(event.target.value) {
+        case "1":
+            onRegister();
+            break;
+        default: 
+            blank();
+            break;
+    }
+
+    /*
+    if (event.target.value == "1") {
+        onRegister();
+    } else {
+        blank();
+    }
+    */
+}
+
+function onRegister() {
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("thirdForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-3\"><button id=\"hardware\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onHardware()\"><h4 class=\"d-none d-md-block\">Hardware</h4></button></div><div class=\"col-3\"><button id=\"software\" type=\"button\" class=\"btn btn-info text-light InitialButtons\" onclick=\"onSoftware()\"><h4 class=\"d-none d-md-block\">Software</h4></button></div><div class=\"col-3\"></div></div></div>";
+
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+}
+
+function blank() {
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+}
+
+function onHardware() {
+    document.getElementById("software").classList.remove("btn-success");
+    document.getElementById("hardware").classList.remove("btn-info");
+
+    document.getElementById("software").classList.add("btn-info");
+    document.getElementById("hardware").classList.add("btn-success");
+
+    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+}
+
+function onSoftware() {
+    document.getElementById("software").classList.remove("btn-info");
+    document.getElementById("hardware").classList.remove("btn-success");
+
+    document.getElementById("software").classList.add("btn-success");
+    document.getElementById("hardware").classList.add("btn-info");
+
+    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
 }
 
 function ticketValidation() {
