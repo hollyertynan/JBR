@@ -33,12 +33,14 @@ document.getElementById("time").innerHTML = date;
 
 // only accept numbers while still using text option to limit max amount of characters
 // https://stackoverflow.com/questions/18510845/maxlength-ignored-for-input-type-number-in-chrome
+/* COMMENTED OUT, MAY NEED FOR FUTURE USE, WILL DELETE IF NOT USED
 function numberOnly(id) {
     // Get element by id which passed as parameter within HTML element event
     var element = document.getElementById(id);
     // This removes any other character but numbers as entered by user
     element.value = element.value.replace(/[^0-9]/gi, "");
 }
+*/
 
 // function if ticket is clicked
 function onTicket() {
