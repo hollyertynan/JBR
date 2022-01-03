@@ -35,7 +35,7 @@ HW 1, Part 2, Author: Wenjin Zhou
     </div>
 
     <!-- INITIAL COLUMNS -->
-    <div class="container-fluid bg-info text-light">
+    <div class="container-fluid text-light bg-secondary">
         <div class="row align-items-center">
             <div class="col-md-4 d-none d-md-block">
                 <h1 class="text-center p-3 my-auto"><img src="assets/RSC_LOGO.png" alt="RSC_LOGO"></h1>
@@ -48,23 +48,13 @@ HW 1, Part 2, Author: Wenjin Zhou
             <div class="col-md-4">
                 <h1 id="time" class="text-center p-3"></h1>
 
-                <div class="container-fluid text-center pb-3">
-                    <div id="taskInfo" class="bg-dark text-center">
-                             <!--
-                            <datalist name="stores" id="stores" class="form-select form-select-lg InitialButtons bg-info text-light text-center border-dark" style="width: 100%">
-                                <option value="000"> Please select a store. </option>
-                                <option value="001"> 001 - Fitchburg, MA </option>
-                                <option value="003"> 003 - Meredith, NH </option>
-                                <option value="004"> 004 - Gardner, MA </option>
-                                <option value="006"> 006 - Moultonboro, NH </option>
-                                <option value="007"> 007 - Tewksbury, MA </option>
-                                <option value="008"> 008 - Clinton, MA </option>
-                                <option value="010"> 010 - Peru, NY </option>
-                            </datalist>
-                            -->
+                <form id="storeTicketForm">
+                    <div class="container-fluid text-center pb-3">
+                        <div id="taskInfo" class="bg-dark text-center"></div>
                     </div>
-                </div>
-                <div class="pb-3"><input id="ticketinfo" type="text" oninput="numberOnly(this.id);" name="tikcal" placeholder="Please input ticket number or the caller's name." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons"></div>
+                    <div class="pb-3"><input id="ticketinfo" type="text" oninput="numberOnly(this.id);" name="tikcal" placeholder="Please input ticket number or the caller's name." maxlength="5" style="width: 100%; text-align: center" class="InitialButtons"></div>
+                </form>
+                
             </div>
         </div>
     </div>
