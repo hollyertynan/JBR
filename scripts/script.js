@@ -300,7 +300,7 @@ function onSoftware() {
 }
 
 function ticketValidation() {
-	if (document.getElementById("ticketinfo").value == "" || document.getElementById("stores").value == 000) {
+	if (document.getElementById("ticketinfo").value == "" || document.getElementById("typeStore").value == 000) {
 		alert("Please fill out the ticket number and the store number.");
 	} else {
 		SubForm();
