@@ -52,3 +52,7 @@ i {
 @media (min-width: 600px) { 
     i {font-size:2.5rem;} /*1rem = 16px*/
 }
+
+input::placeholder {
+    color: white;
+}
