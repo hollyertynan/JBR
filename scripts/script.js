@@ -265,7 +265,7 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Person'].value = user;
     document.forms['submitMyForm'].elements['T/P/M'].value = chosenFirstButton;
     document.forms['submitMyForm'].elements['Ticket# / Caller'].value = document.getElementById("ticketinfo").value;
-    document.forms['submitMyForm'].elements['Store'].value = document.getElementById("stores").value;
+    document.forms['submitMyForm'].elements['Store'].value = document.getElementById("typeStore").value;
     document.forms['submitMyForm'].elements['Department'].value = chosenDepartment;
 
     $.ajax({
