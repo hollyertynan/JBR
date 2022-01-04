@@ -152,9 +152,6 @@ var allStoreNames = [
         "Store": "097", 
         "Name": "LISBON FALLS, ME"}, 
     {
-        "Store": "098", 
-        "Name": "SO. BURLINGTON, VT"}, 
-    {
         "Store": "100", 
         "Name": "MILTON, VT"}, 
     {
@@ -322,6 +319,10 @@ var allStoreNames = [
     {
         "Store": "200", 
         "Name": "NEW HOPE, PA"}
+    {
+        "Store": "201",
+        "Name": "SOUTH ROYALTON, VT"
+    }
     ]
 
 var inputTable = "";
