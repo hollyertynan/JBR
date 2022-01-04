@@ -103,6 +103,10 @@ function onHardware() {
     document.getElementById("software").classList.add("btn-info");
     document.getElementById("hardware").classList.add("btn-success");
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -113,6 +117,10 @@ function onSoftware() {
     document.getElementById("software").classList.add("btn-success");
     document.getElementById("hardware").classList.add("btn-info");
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -127,6 +135,10 @@ function onPaymentTerminal() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -141,6 +153,10 @@ function onBackOfficeMi9() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -155,6 +171,10 @@ function onEmailServer() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -169,6 +189,10 @@ function onPrinters() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -183,6 +207,10 @@ function onKiosk() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -197,6 +225,10 @@ function onChromebook() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -211,6 +243,10 @@ function onIpad() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -225,6 +261,10 @@ function onPaintComputer() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -239,6 +279,10 @@ function onReports() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -253,6 +297,10 @@ function onOnlineOrder() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -267,6 +315,10 @@ function onItMaintenance() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -281,6 +333,10 @@ function onRequestNewPhone() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -295,6 +351,10 @@ function onVOIP() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -309,6 +369,10 @@ function onSecurity() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -323,6 +387,10 @@ function onWifi() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -337,6 +405,10 @@ function onV9() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
 
@@ -351,5 +423,9 @@ function onITOther() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
+    document.getElementById("itDropdown").classList.remove("bg-info");
+    document.getElementById("itDropdown").classList.remove("border-info");
+    document.getElementById("itDropdown").classList.add("bg-success");
+    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
 }
