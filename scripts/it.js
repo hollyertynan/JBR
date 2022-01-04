@@ -5,7 +5,6 @@ passing in value from dropdown menu and continues logically
 
 */
 
-/* j */
 function onEventIT(event) {
     switch(event.target.value) {
         case "1":
@@ -134,7 +133,7 @@ onPaymentTerminal() pipeline
 function onPaymentTerminal() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += ":)";
+    makePaymentTerminalForm();
 
     document.getElementById("itDropdown").classList.remove("bg-info");
     document.getElementById("itDropdown").classList.remove("border-info");
