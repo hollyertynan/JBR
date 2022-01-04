@@ -318,11 +318,10 @@ var allStoreNames = [
         "Name": "RICHBORO, PA"}, 
     {
         "Store": "200", 
-        "Name": "NEW HOPE, PA"}
+        "Name": "NEW HOPE, PA"},
     {
         "Store": "201",
-        "Name": "SOUTH ROYALTON, VT"
-    }
+        "Name": "SOUTH ROYALTON, VT"},
     ]
 
 var inputTable = "";
