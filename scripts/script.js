@@ -13,7 +13,7 @@ HW 1, Part 2, Author: Wenjin Zhou
 */
 
 // global user value
-let user = "";
+let user = "Joe";
 let chosenFirstButton = "";
 let chosenDepartment = "Maintenance";
 
