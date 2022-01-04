@@ -86,7 +86,9 @@ function blankPaymentTerminal() {
 }
 
 function onDisplaysNone() {
-    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-1\"></div><div class=\"col-5\"><img src=\"assets\\itAssets\\cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-5 text-start\"><h3>Steps:</h3><h6><br><br>1. Unplug the power to the card reader. The image attached above is where power should be unplugged from.<br><br><hr><br>2. Shut Down WinPos. If on Register 1, STOP MI9 STORE<br><br><hr><br>3. Restart Computer<br><br><hr><br>4. Once the computer has completely come back up, plug the power back into the card reader.<br><br><hr><br>5. (Subject to Change) The Card reader will begin to boot up. It should go in the order of: Verifone Screen, System Information, Synchronizing With XPI App, System Information, then back to the Ads. If this didn't happen, it's likely you'll have to restart from step 1.</h6></div><div class=\"col-2\"></div></div></div>";
+    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets\\itAssets\\cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6 text-start\"><h3>Steps:</h3><h6><br><br>1. Unplug the power to the card reader. The image attached above is where power should be unplugged from.<br><br><hr><br>2. Shut Down WinPos. If on Register 1, STOP MI9 STORE<br><br><hr><br>3. Restart Computer<br><br><hr><br>4. Once the computer has completely come back up, plug the power back into the card reader.<br><br><hr><br>5. (Subject to Change) The Card reader will begin to boot up. It should go in the order of: Verifone Screen, System Information, Synchronizing With XPI App, System Information, then back to the Ads. If this didn't happen, it's likely you'll have to restart from step 1.</h6></div></div></div>";
+
+    input += "<div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: center\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
 
     document.getElementById("fourthForm").innerHTML = input;
 
@@ -99,7 +101,11 @@ function onDisplaysNone() {
 }
 
 function onStuckOnSystemInfo() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets\\itAssets\\cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6 text-start\"><h3>Steps:</h3><h6><br><br>1. Unplug the power to the card reader. The image attached above is where power should be unplugged from.<br><br><hr><br>2. Shut Down WinPos. If on Register 1, STOP MI9 STORE<br><br><hr><br>3. Restart Computer<br><br><hr><br>4. Once the computer has completely come back up, plug the power back into the card reader.<br><br><hr><br>5. (Subject to Change) The Card reader will begin to boot up. It should go in the order of: Verifone Screen, System Information, Synchronizing With XPI App, System Information, then back to the Ads. If this didn't happen, it's likely you'll have to restart from step 1.</h6></div></div></div>";
+
+    input += "<div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: center\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+
+    document.getElementById("fourthForm").innerHTML = input;
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");

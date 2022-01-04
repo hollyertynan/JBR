@@ -246,7 +246,10 @@ var allStoreNames = [
         "Name": "ALTON, NH"}, 
     {
         "Store": "168", 
-        "Name": "HILLSBORO, NH"}, 
+        "Name": "HILLSBORO, NH"},
+    {
+        "Store": "170",
+        "Name": "WESTMINSTER, MA"},
     {
         "Store": "171", 
         "Name": "BELFAST, ME"}, 

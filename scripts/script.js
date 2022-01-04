@@ -42,7 +42,7 @@ function numberOnly(id) {
 }
 */
 
-var firstTask, secondTask, thirdTask, fourthTask, fifthTask = "-";
+var firstTask = secondTask = thirdTask = fourthTask = fifthTask = comments = "-----";
 
 // function if ticket is clicked
 function onTicket() {
@@ -274,6 +274,7 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Third Task'].value = thirdTask;
     document.forms['submitMyForm'].elements['Fourth Task'].value = fourthTask;
     document.forms['submitMyForm'].elements['Fifth Task'].value = fifthTask;
+    document.forms['submitMyForm'].elements['Comments'].value = document.getElementById("comments").value;
 
     $.ajax({
         url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",
