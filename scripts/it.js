@@ -94,6 +94,7 @@ function onRegister() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Register";
 }
 
 function onHardware() {
@@ -108,6 +109,7 @@ function onHardware() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Hardware";
 }
 
 function onSoftware() {
@@ -122,6 +124,7 @@ function onSoftware() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Software";
 }
 
 /* 
@@ -140,6 +143,7 @@ function onPaymentTerminal() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Payment Terminal";
 }
 
 /*
@@ -158,6 +162,7 @@ function onBackOfficeMi9() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Back Office (Mi9)";
 }
 
 /*
@@ -176,6 +181,7 @@ function onEmailServer() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Email Server";
 }
 
 /*
@@ -194,6 +200,7 @@ function onPrinters() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Printers";
 }
 
 /*
@@ -212,6 +219,7 @@ function onKiosk() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Kiosk";
 }
 
 /*
@@ -230,6 +238,7 @@ function onChromebook() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Chromebook";
 }
 
 /*
@@ -248,6 +257,7 @@ function onIpad() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "iPad";
 }
 
 /*
@@ -266,6 +276,7 @@ function onPaintComputer() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Paint Computer";
 }
 
 /*
@@ -284,6 +295,7 @@ function onReports() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Reports";
 }
 
 /*
@@ -302,6 +314,7 @@ function onOnlineOrder() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Online Orders";
 }
 
 /*
@@ -320,6 +333,7 @@ function onItMaintenance() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "IT Maintenance";
 }
 
 /*
@@ -338,6 +352,7 @@ function onRequestNewPhone() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Request New Phone";
 }
 
 /*
@@ -356,6 +371,7 @@ function onVOIP() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "VOIP";
 }
 
 /*
@@ -374,6 +390,7 @@ function onSecurity() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Security";
 }
 
 /*
@@ -392,6 +409,7 @@ function onWifi() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "WiFi";
 }
 
 /*
@@ -410,6 +428,7 @@ function onV9() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "V9";
 }
 
 /*
@@ -428,4 +447,5 @@ function onITOther() {
     document.getElementById("itDropdown").classList.add("bg-success");
     document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "IT Other";
 }
