@@ -42,6 +42,8 @@ function numberOnly(id) {
 }
 */
 
+var firstTask, secondTask, thirdTask, fourthTask, fifthTask = "-";
+
 // function if ticket is clicked
 function onTicket() {
     document.getElementById("firstForm").innerHTML = "";
@@ -267,6 +269,11 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Ticket# / Caller'].value = document.getElementById("ticketinfo").value;
     document.forms['submitMyForm'].elements['Store'].value = document.getElementById("typeStore").value;
     document.forms['submitMyForm'].elements['Department'].value = chosenDepartment;
+    document.forms['submitMyForm'].elements['First Task'].value = firstTask;
+    document.forms['submitMyForm'].elements['Second Task'].value = secondTask;
+    document.forms['submitMyForm'].elements['Third Task'].value = thirdTask;
+    document.forms['submitMyForm'].elements['Fourth Task'].value = fourthTask;
+    document.forms['submitMyForm'].elements['Fifth Task'].value = fifthTask;
 
     $.ajax({
         url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",

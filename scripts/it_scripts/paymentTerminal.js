@@ -95,6 +95,7 @@ function onDisplaysNone() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Displays None";
 }
 
 function onStuckOnSystemInfo() {
@@ -105,6 +106,7 @@ function onStuckOnSystemInfo() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Stuck on System Information";
 }
 
 function onDeclinesAllCards() {
@@ -115,6 +117,7 @@ function onDeclinesAllCards() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Declines all Cards";
 }
 
 function onDebitBeingDeclined() {
@@ -125,6 +128,7 @@ function onDebitBeingDeclined() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Debit Being Declined";
 }
 
 function onSignatureStuckInLoop() {
@@ -135,6 +139,7 @@ function onSignatureStuckInLoop() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Signature Stuck in Loop";
 }
 
 function onScreenIsBlank() {
@@ -145,6 +150,7 @@ function onScreenIsBlank() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Screen is Blank / White";
 }
 
 function onAutomaticallyCancelled() {
@@ -155,6 +161,7 @@ function onAutomaticallyCancelled() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Automatically Cancelled";
 }
 
 function onCriticalError() {
@@ -165,6 +172,7 @@ function onCriticalError() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Critical Error";
 }
 
 function onMaintenanceRequired() {
@@ -175,6 +183,7 @@ function onMaintenanceRequired() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Maintenance Required";
 }
 
 function onNewPaymentTerminal() {
@@ -185,6 +194,7 @@ function onNewPaymentTerminal() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "New Payment Terminal";
 }
 
 function onNeedPen() {
@@ -195,6 +205,7 @@ function onNeedPen() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Needs Pen";
 }
 
 function onNeedTerminal() {
@@ -205,6 +216,7 @@ function onNeedTerminal() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Needs Terminal";
 }
 
 function onUnableCommunicate() {
@@ -215,6 +227,7 @@ function onUnableCommunicate() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Unable to Communicate";
 }
 
 function onReturnNotProcessing() {
@@ -225,6 +238,7 @@ function onReturnNotProcessing() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Returns Not Processing";
 }
 
 function onOtherPaymentTerminal() {
@@ -235,4 +249,5 @@ function onOtherPaymentTerminal() {
     document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
     document.getElementById("paymentTerminalDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    secondTask = "Other Payment Terminals";
 }
