@@ -5,6 +5,7 @@ passing in value from dropdown menu and continues logically
 
 */
 
+/* j */
 function onEventIT(event) {
     switch(event.target.value) {
         case "1":
