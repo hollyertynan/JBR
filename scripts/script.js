@@ -107,7 +107,7 @@ function onIT() {
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" onchange=\"onEvent(event);\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-3\"></div><div class=\"col-6\"><div id=\"taskInfo\" class=\"bg-dark text-center\"><select name=\"itDropdown\" id=\"itDropdown\" onchange=\"onEventIT(event);\" class=\"form-select form-select-lg InitialButtons bg-dark text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Inventory Scanner</option><option value=\"11\">Reports</option><option value=\"12\">Online Orders</option><option value=\"13\">IT Maintenance</option><option value=\"14\">Request for New Phone Line</option><option value=\"15\">VoIP / Phone Issues</option><option value=\"16\">Security System</option><option value=\"17\">WiFi Issues</option><option value=\"18\">V9 Issues</option><option value=\"19\">Other</option></select></div></div><div class=\"col-3\"></div></div></div>";
 
     document.getElementById("it").classList.remove("btn-info");
     document.getElementById("product").classList.remove("btn-success");
@@ -247,57 +247,7 @@ function onMarketing() {
     chosenDepartment = "Marketing / HR";
 }
 
-function onEvent(event) {
-    switch(event.target.value) {
-        case "1":
-            onRegister();
-            break;
-        default: 
-            blank();
-            break;
-    }
 
-    /*
-    if (event.target.value == "1") {
-        onRegister();
-    } else {
-        blank();
-    }
-    */
-}
-
-function onRegister() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-4\"><button id=\"hardware\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onHardware()\"><h4>Hardware</h4></button></div><div class=\"col-4\"><button id=\"software\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onSoftware()\"><h4 >Software</h4></button></div><div class=\"col-2\"></div></div></div>";
-
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-}
-
-function blank() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-}
-
-function onHardware() {
-    document.getElementById("software").classList.remove("btn-success");
-    document.getElementById("hardware").classList.remove("btn-info");
-
-    document.getElementById("software").classList.add("btn-info");
-    document.getElementById("hardware").classList.add("btn-success");
-
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
-}
-
-function onSoftware() {
-    document.getElementById("software").classList.remove("btn-info");
-    document.getElementById("hardware").classList.remove("btn-success");
-
-    document.getElementById("software").classList.add("btn-success");
-    document.getElementById("hardware").classList.add("btn-info");
-
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
-}
 
 function ticketValidation() {
 	if (document.getElementById("ticketinfo").value == "" || document.getElementById("typeStore").value == 000) {
