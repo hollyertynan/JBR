@@ -105,7 +105,7 @@ function onHardware() {
 
 function onSoftware() {
     $("#hardware").removeClass("btn-success").addClass("btn-info");
-    $("#software").removeClass("btn-info").addClass("btn-success");
+    $("#hardware").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Software";
