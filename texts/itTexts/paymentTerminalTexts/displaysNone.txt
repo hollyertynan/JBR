@@ -3,7 +3,7 @@
         <div class="col-6">
             <img src="assets\itAssets\payment_terminal\cardReaderPlug.jpeg" class="img-fluid" alt="card reader plug"><br><br>
             <video class="video-fluid z-depth-1" controls>
-                <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
+                <source src="assets\itAssets\payment_terminal\cardreader_startup.mp4" type="video/mp4" />
             </video>
         </div>
         <div class="col-6 text-start">
