@@ -115,10 +115,8 @@ function onDeclinesAllCards() {
 function onDebitBeingDeclined() {
     document.getElementById("fourthForm").innerHTML = ":O";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Debit Being Declined";
 }
@@ -126,10 +124,8 @@ function onDebitBeingDeclined() {
 function onSignatureStuckInLoop() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Signature Stuck in Loop";
 }
@@ -137,10 +133,8 @@ function onSignatureStuckInLoop() {
 function onScreenIsBlank() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Screen is Blank / White";
 }
@@ -148,10 +142,8 @@ function onScreenIsBlank() {
 function onAutomaticallyCancelled() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Automatically Cancelled";
 }
@@ -159,10 +151,8 @@ function onAutomaticallyCancelled() {
 function onCriticalError() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Critical Error";
 }
@@ -170,10 +160,8 @@ function onCriticalError() {
 function onMaintenanceRequired() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Maintenance Required";
 }
@@ -181,10 +169,8 @@ function onMaintenanceRequired() {
 function onNewPaymentTerminal() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "New Payment Terminal";
 }
@@ -192,10 +178,8 @@ function onNewPaymentTerminal() {
 function onNeedPen() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Needs Pen";
 }
@@ -203,10 +187,8 @@ function onNeedPen() {
 function onNeedTerminal() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Needs Terminal";
 }
@@ -214,10 +196,8 @@ function onNeedTerminal() {
 function onUnableCommunicate() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Unable to Communicate";
 }
@@ -225,10 +205,8 @@ function onUnableCommunicate() {
 function onReturnNotProcessing() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Returns Not Processing";
 }
@@ -236,10 +214,8 @@ function onReturnNotProcessing() {
 function onOtherPaymentTerminal() {
     document.getElementById("fourthForm").innerHTML = ":)";
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Other Payment Terminals";
 }

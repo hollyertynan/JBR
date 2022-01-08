@@ -89,10 +89,8 @@ function onRegister() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += "<div class=\"container-fluid bg-dark text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-4\"><button id=\"hardware\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onHardware()\"><h4>Hardware</h4></button></div><div class=\"col-4\"><button id=\"software\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onSoftware()\"><h4 >Software</h4></button></div><div class=\"col-2\"></div></div></div>";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Register";
 }
@@ -104,10 +102,6 @@ function onHardware() {
     document.getElementById("software").classList.add("btn-info");
     document.getElementById("hardware").classList.add("btn-success");
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Hardware";
 }
@@ -119,10 +113,6 @@ function onSoftware() {
     document.getElementById("software").classList.add("btn-success");
     document.getElementById("hardware").classList.add("btn-info");
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Software";
 }
@@ -138,10 +128,8 @@ function onPaymentTerminal() {
     document.getElementById("fourthForm").innerHTML = "";
     makePaymentTerminalForm();
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Payment Terminal";
 }
@@ -157,10 +145,8 @@ function onBackOfficeMi9() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Back Office (Mi9)";
 }
@@ -176,10 +162,8 @@ function onEmailServer() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Email Server";
 }
@@ -195,10 +179,8 @@ function onPrinters() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Printers";
 }
@@ -214,10 +196,8 @@ function onKiosk() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Kiosk";
 }
@@ -233,10 +213,8 @@ function onChromebook() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Chromebook";
 }
@@ -252,10 +230,8 @@ function onIpad() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "iPad";
 }
@@ -271,10 +247,8 @@ function onPaintComputer() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Paint Computer";
 }
@@ -290,10 +264,8 @@ function onReports() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Reports";
 }
@@ -309,10 +281,8 @@ function onOnlineOrder() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Online Orders";
 }
@@ -328,10 +298,8 @@ function onItMaintenance() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "IT Maintenance";
 }
@@ -347,10 +315,8 @@ function onRequestNewPhone() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Request New Phone";
 }
@@ -366,10 +332,8 @@ function onVOIP() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "VOIP";
 }
@@ -385,10 +349,8 @@ function onSecurity() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Security";
 }
@@ -404,10 +366,8 @@ function onWifi() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "WiFi";
 }
@@ -423,10 +383,8 @@ function onV9() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "V9";
 }
@@ -442,10 +400,8 @@ function onITOther() {
     document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML += ":)";
 
-    document.getElementById("itDropdown").classList.remove("bg-info");
-    document.getElementById("itDropdown").classList.remove("border-info");
-    document.getElementById("itDropdown").classList.add("bg-success");
-    document.getElementById("itDropdown").classList.add("border-success");
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "IT Other";
 }
