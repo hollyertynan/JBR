@@ -96,22 +96,16 @@ function onRegister() {
 }
 
 function onHardware() {
-    document.getElementById("software").classList.remove("btn-success");
-    document.getElementById("hardware").classList.remove("btn-info");
-
-    document.getElementById("software").classList.add("btn-info");
-    document.getElementById("hardware").classList.add("btn-success");
+    $("#software").removeClass("btn-success").addClass("btn-info");
+    $("#hardware").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Hardware";
 }
 
 function onSoftware() {
-    document.getElementById("software").classList.remove("btn-info");
-    document.getElementById("hardware").classList.remove("btn-success");
-
-    document.getElementById("software").classList.add("btn-success");
-    document.getElementById("hardware").classList.add("btn-info");
+    $("#hardware").removeClass("btn-success").addClass("btn-info");
+    $("#software").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Software";

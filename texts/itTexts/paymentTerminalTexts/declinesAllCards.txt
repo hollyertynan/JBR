@@ -22,7 +22,7 @@
         <div class="col-2"></div>
         <div class="col-8">
             <div class="pb-3">
-                <input id="comments" type="text" name="comments" placeholder="Comments" style="width: 100%; text-align: center" class="InitialButtons text-light bg-secondary text-light form-select-lg">
+                <input id="comments" type="text" name="comments" placeholder="Comments" style="width: 100%; text-align: left" class="InitialButtons text-light bg-secondary text-light form-select-lg">
             </div>
         </div>
         <div class="col-2"></div>

@@ -131,7 +131,7 @@ function onSignatureStuckInLoop() {
 }
 
 function onScreenIsBlank() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -140,7 +140,7 @@ function onScreenIsBlank() {
 }
 
 function onAutomaticallyCancelled() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
