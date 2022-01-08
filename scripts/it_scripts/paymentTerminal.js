@@ -113,7 +113,7 @@ function onDeclinesAllCards() {
 }
 
 function onDebitBeingDeclined() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = ":O";
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
