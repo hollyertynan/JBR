@@ -86,11 +86,7 @@ function blankPaymentTerminal() {
 }
 
 function onDisplaysNone() {
-    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets\\itAssets\\cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6 text-start\"><h3>Steps:</h3><h6><br><br>1. Unplug the power to the card reader. The image attached above is where power should be unplugged from.<br><br><hr><br>2. Shut Down WinPos. If on Register 1, STOP MI9 STORE<br><br><hr><br>3. Restart Computer<br><br><hr><br>4. Once the computer has completely come back up, plug the power back into the card reader.<br><br><hr><br>5. (Subject to Change) The Card reader will begin to boot up. It should go in the order of: Verifone Screen, System Information, Synchronizing With XPI App, System Information, then back to the Ads. If this didn't happen, it's likely you'll have to restart from step 1.</h6></div></div></div>";
-
-    input += "<div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: center\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    document.getElementById("fourthForm").innerHTML = input;
+    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
@@ -101,11 +97,7 @@ function onDisplaysNone() {
 }
 
 function onStuckOnSystemInfo() {
-    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets\\itAssets\\cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6 text-start\"><h3>Steps:</h3><h6><br><br>1. Unplug the power to the card reader. The image attached above is where power should be unplugged from.<br><br><hr><br>2. Shut Down WinPos. If on Register 1, STOP MI9 STORE<br><br><hr><br>3. Restart Computer<br><br><hr><br>4. Once the computer has completely come back up, plug the power back into the card reader.<br><br><hr><br>5. (Subject to Change) The Card reader will begin to boot up. It should go in the order of: Verifone Screen, System Information, Synchronizing With XPI App, System Information, then back to the Ads. If this didn't happen, it's likely you'll have to restart from step 1.</h6></div></div></div>";
-
-    input += "<div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: center\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    document.getElementById("fourthForm").innerHTML = input;
+    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
@@ -116,7 +108,11 @@ function onStuckOnSystemInfo() {
 }
 
 function onDeclinesAllCards() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    var input = "<div class=\"container-fluid\"><div class=\"row\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining1.PNG\" class=\"img-fluid\" alt=\"all cards declining\"><br><br><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining2.PNG\" class=\"img-fluid\" alt=\"all cards declining\"><br><br><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining3.PNG\" class=\"img-fluid\" alt=\"all cards declining\"><br><br><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining4.PNG\" class=\"img-fluid\" alt=\"all cards declining\"><br><br><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining5.PNG\" class=\"img-fluid\" alt=\"all cards declining\"><br><br><img src=\"assets\\itAssets\\payment_terminal\\cardreaderdeclining\\allCardsDeclining6.PNG\" class=\"img-fluid\" alt=\"all cards declining\"></div><div class=\"col-5 text-start\"><h3>Steps:</h3><h6><br><br>1. Connect to store's storePC10.<br><br><hr><br>2. Click the message dispatcher on the taskbar on the bottom of the screen, it looks like a small red envelope.<br><br><hr><br>3. In the child processes dropdown menu, select EPPEPS.<br><br><hr><br>4. Click Suspend, verify that the task is no longer showing on the task bar on the bottom of the screen. Once it's gone, click resume.<br><br><hr><br>5. Once EPPEPS is resumed, click OK, then minimize the Message Dispatcher (you cannot close it).</h6></div><div class=\"row\"><div class=\"col-1\"></div></div></div>";
+
+    input += "<div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: center\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    
+    document.getElementById("fourthForm").innerHTML = input;
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
