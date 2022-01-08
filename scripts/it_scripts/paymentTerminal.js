@@ -88,10 +88,8 @@ function blankPaymentTerminal() {
 function onDisplaysNone() {
     $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Displays None";
 }
@@ -99,29 +97,23 @@ function onDisplaysNone() {
 function onStuckOnSystemInfo() {
     $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Stuck on System Information";
 }
 
 function onDeclinesAllCards() {
     $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\declinesAllCards.txt");
-    
-    document.getElementById("fourthForm").innerHTML = input;
 
-    document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
-    document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
-    document.getElementById("paymentTerminalDropdown").classList.add("bg-success");
-    document.getElementById("paymentTerminalDropdown").classList.add("border-success");
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
+    $("#paymentTerminalDropdown").addClass("bg-success border-success");
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Declines all Cards";
 }
 
 function onDebitBeingDeclined() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = ":O";
 
     document.getElementById("paymentTerminalDropdown").classList.remove("bg-info");
     document.getElementById("paymentTerminalDropdown").classList.remove("border-info");
