@@ -2,9 +2,7 @@
     <div class="row">
         <div class="col-6">
             <img src="assets\itAssets\payment_terminal\cardReaderPlug.jpeg" class="img-fluid" alt="card reader plug"><br><br>
-            <video class="video-fluid z-depth-1" controls>
-                <source src="assets\itAssets\payment_terminal\cardreader_startup.mp4" type="video/mp4" />
-            </video>
+            <video class="video-fluid" controls><source src="assets\itAssets\payment_terminal\cardreader_startup.mp4" type="video/mp4" /></video>
         </div>
         <div class="col-6 text-start">
             <h3>Steps:</h3>
