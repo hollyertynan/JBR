@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<div class="container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5">
+<div class="container-fluid  text-center whitePlaceholder pt-5 pb-5">
     <div class="row align-items-center">
         <div class="col-2"></div>
         <div class="col-8">
