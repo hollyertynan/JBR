@@ -46,11 +46,13 @@ var firstTask = secondTask = thirdTask = fourthTask = fifthTask = comments = "--
 
 function changeColor() {
     if ($("body").hasClass("bg-dark")) {
-        $(".bg-secondary").removeClass("bg-secondary").addClass("bg-light");
+        $(".bg-secondary").removeClass("bg-secondary").addClass("testLighterGray");
         $(".bg-dark").removeClass("bg-dark").addClass("bg-secondary");
+        $(".fixTextLight").removeClass("fixTextLight").addClass("fixTextDark");
     } else if ($("body").hasClass("bg-secondary")) {
         $(".bg-secondary").removeClass("bg-secondary").addClass("bg-dark");
-        $(".bg-light").removeClass("bg-light").addClass("bg-secondary");
+        $(".testLighterGray").removeClass("bg-testLighterGray").addClass("bg-secondary");
+        $(".fixTextDark").removeClass("fixTextDark").addClass("fixTextLight");
     }
 }
 
