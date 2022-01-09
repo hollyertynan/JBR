@@ -203,7 +203,7 @@ a.text-hyperlink-color:active {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
-    background: url('../assets/sun.png');
+    background: url('../assets/sun.PNG');
     background-repeat: no-repeat;
     background-position: center;
   }
