@@ -107,7 +107,7 @@ function onBenMooreNationalAccountsOrder() {
 function onBenMooreWebSalesOrder() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\" target=\"_blank\" class=\"text-warning\">HERE</a> for a link to the Benjamin Moore vendor playbook to process web sales orders.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -140,7 +140,7 @@ function onPOEDI() {
 function onPaintOverMax() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\" target=\"_blank\" class=\"text-warning\">HERE</a> for instructions on how to handle Paint Over Max Orders.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -151,7 +151,7 @@ function onPaintOverMax() {
 function onNeedsSKU() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>If you have a min/max request that contains a product in need of a new sku, or if you have a request to have a sku created for a new item(s), please reassign the ticket/request to the person listed <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B16:D16\" target=\"_blank\" class=\"text-warning\">HERE</a> and make the backup person a follower.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -162,7 +162,7 @@ function onNeedsSKU() {
 function onUPCNotOnFile() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=C12\" target=\"_blank\" class=\"text-warning\">HERE</a> for the person to send all UPC Not On File issues to.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -195,7 +195,7 @@ function onRetailPriceIssueNotMarkdown() {
 function onCostIssue() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B2:D2\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Cost Issues to. After following the link, please click Submit.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -206,7 +206,7 @@ function onCostIssue() {
 function onSmartCycleCounts() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B7:D7\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Smart Cycle Count issues to.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
