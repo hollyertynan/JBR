@@ -62,7 +62,7 @@ function onEventIT(event) {
             onITOther();
             break; 
         default: 
-            blank();
+            blankIT();
             break;
     }
 }
@@ -73,9 +73,12 @@ default pipeline
 
 */
 
-function blank() {
+function blankIT() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
+
+    $("#itDropdown").addClass("bg-info border-info");
+    $("#itDropdown").removeClass("bg-success border-success");
 }
 
 /* 
@@ -105,7 +108,7 @@ function onHardware() {
 
 function onSoftware() {
     $("#hardware").removeClass("btn-success").addClass("btn-info");
-    $("#hardware").removeClass("btn-info").addClass("btn-success");
+    $("#software").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Software";
@@ -392,7 +395,7 @@ onITOther() pipeline
 function onITOther() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += ":)";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br><br>";
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");

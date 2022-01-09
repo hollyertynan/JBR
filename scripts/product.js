@@ -47,7 +47,7 @@ function onEventProduct(event) {
             onStoreSpecificClearance();
             break; 
         case "14":
-            onStoreSpecificClearance();
+            onStoreSpecificTemporary();
             break; 
         case "15":
             onCustomerPricingQuote();
@@ -76,21 +76,13 @@ function onEventProduct(event) {
         case "23":
             onItemDiscriptionIncorrect();
             break; 
+        case "24":
+            onProductOther();
+            break;     
         default: 
             blankProduct();
             break;
     }
-}
-
-/* 
-
-default pipeline
-
-*/
-
-function blank() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
 }
 
 function onBenMooreNationalAccountsOrder() {
@@ -217,7 +209,7 @@ function onSmartCycleCounts() {
 function onSpecialOrderIssues() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B8:C8\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Special Order issues and inquiries to. After following the link, please click Submit.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -228,7 +220,7 @@ function onSpecialOrderIssues() {
 function onStoreSpecificClearance() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.pufx8h954y10\" target=\"_blank\" class=\"text-warning\">HERE</a> for insturctions to process requests for Store Specific Clearance Pricing.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -236,10 +228,10 @@ function onStoreSpecificClearance() {
     firstTask = "";
 }
 
-function onStoreSpecificClearance() {
+function onStoreSpecificTemporary() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B10\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Store Specific Temporary Pricing issues to.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -250,7 +242,7 @@ function onStoreSpecificClearance() {
 function onCustomerPricingQuote() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B3:D3\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Special Order issues and inquiries to. After following the link, please click Submit.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -261,7 +253,7 @@ function onCustomerPricingQuote() {
 function onHonda() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B5:D5\" target=\"_blank\" class=\"text-warning\">HERE</a> for the name of the person to forward all Honda Order issues and inquiries to. After following the link, please click Submit</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -272,7 +264,7 @@ function onHonda() {
 function onOrderBadAirSponge() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B30:C30\" target=\"_blank\" class=\"text-warning\">HERE</a> for the person who creates new POs for Bad Air Sponges.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -283,7 +275,7 @@ function onOrderBadAirSponge() {
 function onImmediatePriceChanges() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.wci5p6vv6cm7\" target=\"_blank\" class=\"text-warning\">HERE</a> for instructions to do Immediate Price Changes.</h3><br><br><h5>After following the instructions, if you have any problems, please escalate this issue to <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B31\" target=\"_blank\" class=\"text-warning\">HERE</a>, provide any information you think may be helpful and click Submit.</h5><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -294,7 +286,7 @@ function onImmediatePriceChanges() {
 function onBloodborneKit() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>These tickets should be going to the stores Inventory/Operations manager. Please click <a href=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&range=A21\" target=\"_blank\" class=\"text-warning\">HERE</a> for a list of team managers. To determine which team the store is a part of go to the Stores tab, ctrl+f search the store number and look in column c.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -305,7 +297,7 @@ function onBloodborneKit() {
 function onItemPackagingNotCorrect() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Only choose this option if you are 100% certain that the item doesn't match the packaging. Call the store and talk with the person who submitted the ticket to confirm. Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=790165298&range=B25\" target=\"_blank\" class=\"text-warning\">HERE</a> for the person to send these tickets to.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -316,7 +308,7 @@ function onItemPackagingNotCorrect() {
 function onBatteryCoreCharges() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>We are legally required to charge a core charge when selling the lawnmower batteries. We are also legally required to take the old battery back. When a store inquires about how the battery core charges work when ringing out a customer, click <a href=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A122:B122\" target=\"_blank\" class=\"text-warning\">HERE</a> for an explanation from the Product Team.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -327,7 +319,7 @@ function onBatteryCoreCharges() {
 function onMinQuantityRequiredClosePO() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1GPHOQxF7bteImiyo-pWVcbZG01d5kVfLHiDy62R087k/edit#gid=0\" target=\"_blank\" class=\"text-warning\">HERE</a> for a list of all Product Team responsible people and their vendors, then forward the PO issue to whoever deals with that vendor.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -338,7 +330,7 @@ function onMinQuantityRequiredClosePO() {
 function onItemDiscriptionIncorrect() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B38\" target=\"_blank\" class=\"text-warning\">HERE</a> for the person to forward all Item Description issues to.</h3><br><br>";
 
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
@@ -349,10 +341,20 @@ function onItemDiscriptionIncorrect() {
 function blankProduct() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "";
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    $("#productDropdown").addClass("bg-info border-info");
+    $("#productDropdown").removeClass("bg-success border-success");
+    document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     firstTask = "";
+}
+
+function onProductOther() {
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br><br>";
+
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Product Other";
 }
