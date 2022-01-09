@@ -218,3 +218,11 @@ a.text-hyperlink-color:active {
   }
 
   /* */
+
+  .fixTextDark {
+      color: black;
+  }
+
+  .fixTextLight {
+      color: white;
+  }
