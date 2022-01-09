@@ -44,7 +44,7 @@ function onPOEDIIssuesAccounting() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Accounting PO EDI Issues";
 }
 
 function onMissingVoidedTransactions() {
@@ -55,7 +55,7 @@ function onMissingVoidedTransactions() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Missing / Voided Transactions";
 }
  
 function onChangingCanadian() {
@@ -66,7 +66,7 @@ function onChangingCanadian() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Changing Canadian";
 }
  
 function onHomeHeatingCustomer() {
@@ -77,7 +77,7 @@ function onHomeHeatingCustomer() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Home Heating Customer";
 }
  
 function onDefectiveItemsCredits() {
@@ -88,7 +88,7 @@ function onDefectiveItemsCredits() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Defective Item Credits";
 }
  
 function onCustomerDoubleCharged() {
@@ -99,7 +99,7 @@ function onCustomerDoubleCharged() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Customer Double Charged";
 }
  
 function onInHouseUpdates() {
@@ -110,7 +110,7 @@ function onInHouseUpdates() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "In House Updates";
 }
  
 function onSalesAuditDaybook() {
@@ -121,7 +121,7 @@ function onSalesAuditDaybook() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Sales Audit Daybook";
 }
  
 function onReturnBeingDeclined() {
@@ -132,7 +132,7 @@ function onReturnBeingDeclined() {
     $("#accountingDropdown").removeClass("bg-info border-info");
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "";
+    firstTask = "Returns Being Declined";
 }
  
 function onOtherAccounting() {
