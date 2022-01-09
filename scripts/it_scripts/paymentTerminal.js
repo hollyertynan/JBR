@@ -113,7 +113,7 @@ function onDeclinesAllCards() {
 }
 
 function onDebitBeingDeclined() {
-    document.getElementById("fourthForm").innerHTML = ":O";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -122,7 +122,7 @@ function onDebitBeingDeclined() {
 }
 
 function onSignatureStuckInLoop() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -149,7 +149,7 @@ function onAutomaticallyCancelled() {
 }
 
 function onCriticalError() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -158,7 +158,7 @@ function onCriticalError() {
 }
 
 function onMaintenanceRequired() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -167,7 +167,7 @@ function onMaintenanceRequired() {
 }
 
 function onNewPaymentTerminal() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -176,7 +176,7 @@ function onNewPaymentTerminal() {
 }
 
 function onNeedPen() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -185,7 +185,7 @@ function onNeedPen() {
 }
 
 function onNeedTerminal() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -194,7 +194,7 @@ function onNeedTerminal() {
 }
 
 function onUnableCommunicate() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -203,7 +203,7 @@ function onUnableCommunicate() {
 }
 
 function onReturnNotProcessing() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
@@ -212,7 +212,7 @@ function onReturnNotProcessing() {
 }
 
 function onOtherPaymentTerminal() {
-    document.getElementById("fourthForm").innerHTML = ":)";
+    document.getElementById("fourthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\">";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");
     $("#paymentTerminalDropdown").addClass("bg-success border-success");
