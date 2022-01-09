@@ -59,6 +59,10 @@ function onEventIT(event) {
             onV9();
             break; 
         case "18":
+            onElvis();
+            
+            break; 
+        case "19":
             onITOther();
             break; 
         default: 
@@ -395,10 +399,28 @@ onITOther() pipeline
 function onITOther() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br><br>";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><div class=\"container-fluid bg-dark text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "IT Other";
+}
+
+/*
+
+onElvis() pipeline
+
+*/
+
+
+function onElvis() {
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Elvis";
 }
