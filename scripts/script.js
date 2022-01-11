@@ -49,10 +49,12 @@ function changeColor() {
         $(".bg-secondary").removeClass("bg-secondary").addClass("testLighterGray");
         $(".bg-dark").removeClass("bg-dark").addClass("bg-secondary");
         $(".fixTextLight").removeClass("fixTextLight").addClass("fixTextDark");
+        $(".btn-dark").removeClass("btn-dark").addClass("btn-secondary");
     } else if ($("body").hasClass("bg-secondary")) {
         $(".bg-secondary").removeClass("bg-secondary").addClass("bg-dark");
         $(".testLighterGray").removeClass("bg-testLighterGray").addClass("bg-secondary");
         $(".fixTextDark").removeClass("fixTextDark").addClass("fixTextLight");
+        $(".btn-secondary").removeClass("btn-secondary").addClass("btn-dark");
     }
 }
 
