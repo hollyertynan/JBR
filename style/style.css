@@ -226,3 +226,7 @@ a.text-hyperlink-color:active {
   .fixTextLight {
       color: white;
   }
+
+  .testiframe {
+    background-color: black;
+  }

@@ -45,101 +45,22 @@ HW 1, Part 2, Author: Wenjin Zhou
             </div>
             <div class="col-2 py-3">
                 <div class="align-middle align-items-center">
-                    <a href="results.html"><h4 class="d-none d-md-block"></h4><button id="ticket" type="button" class="btn btn-info text-light InitialButtons align-self-center"></h4>RESULTS</h4></button></a>
+                    <a href="index.html"><h4 class="d-none d-md-block"></h4><button id="ticket" type="button" class="btn btn-info text-light InitialButtons align-self-center"></h4>JBR</h4></button></a>
                 </div>
             </div>
         </div>
         
     </div>
 
-    <!--
-        <iframe src="https://docs.google.com/spreadsheets/d/1gd943ido3fOz6U8ROGD588Ck9EQRywTaQMojwA6FhyA/edit#gid=0" width="100%" height="100%"></iframe>
-    -->
-
-    <!-- INITIAL COLUMNS -->
-    <div class="container-fluid fixTextLight bg-secondary">
-        <div class="row align-items-center">
-            <div class="col-md-4 d-none d-md-block">
-                <h1 class="text-center p-3 my-auto"><img src="assets/RSC_LOGO.png" alt="RSC_LOGO"></h1>
+    
+    <!-- 
+        this is the bare minimum for now, likely does not format nicely on phones, just wanted to implement it so we had it
+     -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkl2b1fAAcGhFJU1wHMqa4G1ELMVn5HdJQBptMTJmtUSObAE8Voj_yw7QxMX02Gwg3zYNTZPT80Xvq/pubhtml?widget=true&amp;headers=false&chrome=false&gridlines=false" width="100%" height="auto"></iframe>
             </div>
-            <div class="col-md-4 text-center">
-                <h1 id="yourName" class="text-center pt-2">Who Are You?</h1>
-                <div id="googleSigningForRemoval" class="g-signin2" data-onsuccess="onSignIn"></div>
-                <div id="googleProfilePicture"></div>
-            </div>
-            <div class="col-md-4">
-                <h1 id="time" class="text-center p-3"></h1>
-
-                <form id="storeTicketForm">
-                    <div class="container-fluid text-center pb-3">
-                        <div id="taskInfo" class="bg-dark text-center"></div>
-                        <br>
-                        <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Ticket number or caller's name" style="width: 100%; text-align: center" class="InitialButtons bg-dark form-select-lg text-light"></div>
-                    </div>
-                  
-                    <!-- removing max length until I can get it so you can only type 5 number or full name -->
-                
-                </form>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- START BUTTONS -->
-    <div class="container-fluid bg-dark text-center pt-5 pb-5">
-        <div class="row align-items-center">
-            <div class="col-4">
-                <button id="ticket" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onTicket()"><i class="bi bi-ticket-perforated" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Ticket</h4></button>
-            </div>
-            <div class="col-4">
-                <button id="phone" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onPhone()"><i class="bi bi-telephone" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Phone</h4></button>
-            </div>
-            <div class="col-4">
-                <button id="maintenance" type="button" class="btn btn-info text-light InitialButtons h-100" onclick="onMaintenance()"><i class="bi bi-gear" style="font-size: 2.5rem;"></i><h4 class="d-none d-md-block">Maintenance</h4></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- DIV FOR FIRST BUTTON CLICK -->
-    <div id="firstForm" class="text-light text-center"></div>
-
-    <!-- DIV FOR SECOND BUTTON CLICK -->
-    <div id="secondForm" class="text-light text-center"></div>
-
-    <!-- DIV FOR THIRD BUTTON CLICK -->
-    <div id="thirdForm" class="text-light text-center"></div>
-
-    <!-- DIV FOR FOURTH BUTTON CLICK -->
-    <div id="fourthForm" class="text-light text-center"></div>
-
-    <!-- DIV FOR DROPDOWNS 
-    <div id="dropDownMenus" class="text-light text-center"></div>
-    -->
-
-    <div class="container">
-        <form id="submitMyForm">
-            <input name="Submitted" hidden/>
-            <input name="Person" hidden/>
-            <input name="Ticket# / Caller" hidden/>
-            <input name="Store" hidden/>
-            <input name="T/P/M" hidden/>
-            <input name="Department" hidden/>
-            <input name="First Task" hidden/>
-            <input name="Second Task" hidden/>
-            <input name="Third Task" hidden/>
-            <input name="Fourth Task" hidden/>
-            <input name="Fifth Task" hidden/>
-            <input name="Comments" hidden/>
-        </form>
-    </div>
-
-    <div class="container-fluid bg-dark text-center pb-5">
-        <div class="row align-items-center">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <button id="submit" type="button" class="btn btn-success text-light InitialButtons" onclick="ticketValidation()"><i class="bi bi-check-circle" style="font-size: 2.5rem;"></i><h4>Submit</h4></button>
-            </div>
-            <div class="col-2"></div>
         </div>
     </div>
 
