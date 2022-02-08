@@ -1,7 +1,7 @@
 var paymentTerminalIssues = [
     "Displays 'None' When Being Inserted",
     "Stuck On System Information",
-    "Decling All Cards",
+    "Declining All Cards",
     "Debit Being Declined / Credit Being Stored for Later Processing",
     "Signature Stuck in Loop",
     "Screen is blank and white",
@@ -85,133 +85,203 @@ function blankPaymentTerminal() {
     document.getElementById("fourthForm").innerHTML += "";
 }
 
-function onDisplaysNone() {
-    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+
+
+//USE OF SOURCE VARIABLE MAKES IT EASIER TO CHANGE SOURCE IN THE FUTURE IF NEED BE
+
+function onDisplaysNone() {
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
+    
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A2:B2\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "Displays None";
 }
 
 function onStuckOnSystemInfo() {
-    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A14\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
+    
     secondTask = "Stuck on System Information";
 }
 
+//START DECLINE CARD FUNCTIONS
 function onDeclinesAllCards() {
-    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\declinesAllCards.txt");
+    hidePreviousInfo();
+    document.getElementById("radioOne").innerHTML = "Yes";
+    document.getElementById("radioTwo").innerHTML = "No";
+    showBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("prompt").innerHTML += "Is this happening on all registers?";
     secondTask = "Declines all Cards";
+
+    //CARDS DECLINE ALL REGISTERS
+    document.getElementById("inlineRadio1").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A20:B20\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+
+    //CARDS DECLINE SPECIFIC REGISTER
+    document.getElementById("inlineRadio2").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A4:B6\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
 }
 
-function onDebitBeingDeclined() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+function onDebitBeingDeclined() {
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A4:B6\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
+
     secondTask = "Debit Being Declined";
 }
 
 function onSignatureStuckInLoop() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A12:B12\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
+
     secondTask = "Signature Stuck in Loop";
 }
 
 function onScreenIsBlank() {
-    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A54:B54\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
+
     secondTask = "Screen is Blank / White";
 }
 
 function onAutomaticallyCancelled() {
-    $("#fourthForm").html("Loading...").load("texts\\itTexts\\paymentTerminalTexts\\displaysNone.txt");
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A50:B50\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "Automatically Cancelled";
 }
 
 function onCriticalError() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A46:B46\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "Critical Error";
 }
 
 function onMaintenanceRequired() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B24:D24\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    alert("Please assign the ticket to the person listed.");
+    document.getElementById("resolutionFrame").style.display = "block";
+
     secondTask = "Maintenance Required";
 }
 
 function onNewPaymentTerminal() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A76:B76\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "New Payment Terminal";
 }
 
 function onNeedPen() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B20:D20\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    alert("Please assign the ticket to the person listed.");
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "Needs Pen";
 }
 
 function onNeedTerminal() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    document.getElementById("radioOne").innerHTML = "Yes";
+    document.getElementById("radioTwo").innerHTML = "No";
+    showBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("prompt").innerHTML += "Does the POS Team know you plan to order a new payment terminal?";
+
+    //POS IS AWARE
+    document.getElementById("inlineRadio1").onclick = function() {
+        alert("Please assign the ticket to the person listed.");
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B24:D24\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+
+    //POS IS NOT AWARE
+    document.getElementById("inlineRadio2").onclick = function() {
+        alert("Please consult the POS Team before ordering a new payment terminal for the store.");
+    }
     secondTask = "Needs Terminal";
 }
 
 function onUnableCommunicate() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A14:B14\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     secondTask = "Unable to Communicate";
 }
 
 function onReturnNotProcessing() {
-    document.getElementById("fourthForm").innerHTML = "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    document.getElementById("radioOne").innerHTML = "Yes";
+    document.getElementById("radioTwo").innerHTML = "No";
+    showBlankQuestionnaire();
 
-    $("#paymentTerminalDropdown").removeClass("bg-info border-info");
-    $("#paymentTerminalDropdown").addClass("bg-success border-success");
-    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("prompt").innerHTML += "Was the return that is being processed purchased from the store processing the return?";
+
+    //POS IS AWARE
+    document.getElementById("inlineRadio1").onclick = function() {
+        alert("The return should work automatically, if not escalate to L2.");
+    }
+
+
+    //POS IS NOT AWARE
+    document.getElementById("inlineRadio2").onclick = function() {
+        alert("Since the returned item(s) wasn't purchased at the store that's processing the return, the customer needs to insert their card into the payment terminal to finish the process. If after trying this it still isn't working, escalate to L2.");
+    }
     secondTask = "Returns Not Processing";
 }
 
 function onOtherPaymentTerminal() {
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
     document.getElementById("fourthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\">";
 
     $("#paymentTerminalDropdown").removeClass("bg-info border-info");

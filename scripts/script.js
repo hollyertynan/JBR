@@ -42,6 +42,53 @@ function numberOnly(id) {
 }
 */
 
+//BLANK QUESTIONNAIRE VARIABLE CREATED TO BE CALLED IN SHOW/HIDE FUNCTIONS
+const blankQuestionnaire = document.getElementById("blankQuestionnaire");
+
+//HIDES AND RESETS QUESTIONNAIRE & PROMPT
+function hideBlankQuestionnaire() {
+    blankQuestionnaire.style.display = "none";
+    document.getElementById("prompt").innerHTML = "";
+    document.getElementById("optionalNote").innerHTML = "";
+}
+
+//SHOWS AND RESETS QUESTIONNAIRE & PROMPT
+function showBlankQuestionnaire() {
+    blankQuestionnaire.style.display = "block";
+    document.getElementById("prompt").innerHTML = "";
+    document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "none";
+    document.getElementById("optionalRadio2").style.display = "none";
+    document.getElementById("optionalRadio3").style.display = "none";
+}
+
+//FUNCTION FOR WHEN WE NEED ONE OF THREE OPTIONS
+function threeButtonQuestionnaire() {
+    blankQuestionnaire.style.display = "block";
+    document.getElementById("prompt").innerHTML = "";
+    document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio2").style.display = "none";
+    document.getElementById("optionalRadio3").style.display = "none";
+}
+
+//FUNCTION FOR WHEN WE NEED ONE OF FOUR OPTIONS
+function fourButtonQuestionnaire() {
+    blankQuestionnaire.style.display = "block";
+    document.getElementById("prompt").innerHTML = "";
+    document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio3").style.display = "none";
+}
+
+//FUNCTION FOR WHEN WE NEED ONE OF FIVE OPTIONS
+function fiveButtonQuestionnaire() {
+    blankQuestionnaire.style.display = "block";
+    document.getElementById("prompt").innerHTML = "";
+    document.getElementById("optionalNote").innerHTML = "";
+}
+
+
+
+
 var firstTask = secondTask = thirdTask = fourthTask = fifthTask = comments = "-----";
 
 function changeColor() {
@@ -106,8 +153,15 @@ function onMaintenance() {
     chosenFirstButton = "Maintenance";
 }
 
+//HIDES IFRAME AND QUESTIONNAIRE FROM PREVIOUS SESSION IF A CONTINUOUS SESSION IS BEING USED
+function hidePreviousInfo() {
+    document.getElementById("resolutionFrame").style.display = "none";
+    document.getElementById("blankQuestionnaire").style.display = "none";
+}
+
 // function if IT in ticket is clicked
 function onIT() {
+    hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
@@ -128,6 +182,7 @@ function onIT() {
 }
 
 function onProduct() {
+    hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
@@ -148,6 +203,7 @@ function onProduct() {
 }
 
 function onAccounting() {
+    hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
@@ -238,7 +294,7 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Comments'].value = document.getElementById("comments").value;
 
     $.ajax({
-        url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",
+        url: "https://api.apispreadsheets.com/data/DKFTbWbHBS9skMdT",
         type: "post",
         data:$("#submitMyForm").serializeArray(),
         success: function() {

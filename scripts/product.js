@@ -85,135 +85,188 @@ function onEventProduct(event) {
     }
 }
 
-function onBenMooreNationalAccountsOrder() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+function onBenMooreNationalAccountsOrder() {
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
+    alert("UNDER CONSTRUCTION");
     firstTask = "National Accounts Order";
 }
 
 function onBenMooreWebSalesOrder() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for a link to the Benjamin Moore vendor playbook to process web sales orders.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    
+    source = "<iframe src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+
     firstTask = "Ben Moore Web Sales Order";
 }
 
 function onChangeProductMinMax() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    showBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("prompt").innerHTML += "Are there over 5 Skus?";
+
+        //OVER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR OVER 5 SKUS ON YES RADIO BUTTON
+        document.getElementById("inlineRadio1").onclick = function() {
+            source = "<iframe src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.4jld8xy4oocb\"></iframe>";
+            document.getElementById("resolutionFrame").innerHTML = source;
+            document.getElementById("resolutionFrame").style.display = "block";
+        }
+    
+    
+        //UNDER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR UNDER 5 SKUS ON NO RADIO BUTTON
+        document.getElementById("inlineRadio2").onclick = function() {
+            source = "<iframe src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.sl8axyivd97z\"></iframe>";
+            document.getElementById("resolutionFrame").innerHTML = source;
+            document.getElementById("resolutionFrame").style.display = "block";
+        }
+
     firstTask = "Change Product Min/Max";
 }
 
 function onPOEDI() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    alert("UNDER CONSTRUCTION");
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "PO EDI";
 }
 
 function onPaintOverMax() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for instructions on how to handle Paint Over Max Orders.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
+    
+    source = "<iframe src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "Paint Over Max";
 }
 
 function onNeedsSKU() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>If you have a min/max request that contains a product in need of a new sku, or if you have a request to have a sku created for a new item(s), please reassign the ticket/request to the person listed <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B16:D16\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> and make the backup person a follower.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B16:D16\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    alert("Please assign the ticket to the person listed.");
+    document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "Needs SKU";
 }
 
 function onUPCNotOnFile() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=C12\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the person to send all UPC Not On File issues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B12:D12\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    alert("Please assign the ticket to the person listed.");
+    document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "UPC Not On File";
 }
 
 function onVendorWebsitePassword() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("radioOne").innerHTML = "Orgill";
+    document.getElementById("radioTwo").innerHTML = "Emery (EJD)";
+    document.getElementById("radioThree").innerHTML = "Benjamin Moore";
+    threeButtonQuestionnaire();
+    document.getElementById("prompt").innerHTML += "What vendor website needs a password reset?";
+    document.getElementById("optionalNote").innerHTML += "Note: if using Orgill, make sure the store has tried the \"Forgot password?\" option.";
+
+
+    //ORGILL RADIO BUTTON
+    document.getElementById("inlineRadio1").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B13:D13\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //EMERY RADIO BUTTON
+    document.getElementById("inlineRadio2").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B13:D13\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //BEN MOORE RADIO BUTTON
+    document.getElementById("inlineRadio3").onclick = function() {
+        alert(`
+    For Benjamin Moore password issues, please have the store contact Evan Conkey at Evan.Conkey@benjaminmoore.com and go from there. We currently have no one in the office who handles these issues.
+        `);
+    }
+
+
     firstTask = "Vendor Website Password";
 }
 
 function onRetailPriceIssueNotMarkdown() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    document.getElementById("radioOne").innerHTML = "Stihl and Husqvarna";
+    document.getElementById("radioTwo").innerHTML = "Honda";
+    document.getElementById("radioThree").innerHTML = "All Other Pricing Issues";
+    threeButtonQuestionnaire();
+    document.getElementById("prompt").innerHTML += "What vendor is this issue for?";
+
+
+    //STIHL AND HUSQVARNA ISSUES
+    document.getElementById("inlineRadio1").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B45:D45\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //HONDA ISSUES
+    document.getElementById("inlineRadio2").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B44:D44\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //ALL OTHER ISSUES
+    document.getElementById("inlineRadio3").onclick = function() {
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B6:D6\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
     firstTask = "Price Issue (Not Markdown)";
 }
 
 function onCostIssue() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B2:D2\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Cost Issues to. After following the link, please click Submit.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B2:D2\"></iframe>";
+    document.getElementById("resolutionFrame").innerHTML = source;
+    alert("Please assign the ticket to the person listed.");
+    document.getElementById("resolutionFrame").style.display = "block";
+
+
     firstTask = "Cost Issue";
 }
 
 function onSmartCycleCounts() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B7:D7\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Smart Cycle Count issues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hideBlankQuestionnaire();
+    hidePreviousInfo();
+    alert("UNDER CONSTRUCTION");
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+
     firstTask = "Smart Cycle Counts";
 }
 
 function onSpecialOrderIssues() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B8:C8\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Special Order issues and inquiries to. After following the link, please click Submit.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    alert("UNDER CONSTRUCTION");
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+
     firstTask = "Special Order Issues";
 }
 
