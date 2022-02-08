@@ -116,6 +116,39 @@ HW 1, Part 2, Author: Wenjin Zhou
     <div id="dropDownMenus" class="text-light text-center"></div>
     -->
 
+<div id="fullResponse">
+    <!-- BLANK QUESTIONNAIRE, SUPPORTS UP TO 5 BUTTONS, DEFAULT IS TWO -->
+    <div id="blankQuestionnaire">
+        <h3 id="prompt"></h3>
+        <h6 id="optionalNote" style="font-style:italic; color:white; text-align:center;"></h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1" id="radioOne"></label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2" id="radioTwo"></label>
+          </div>
+          <div class="form-check form-check-inline" id="optionalRadio1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3" id="radioThree"></label>
+          </div>
+          <div class="form-check form-check-inline" id="optionalRadio2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <label class="form-check-label" for="inlineRadio4" id="radioFour"></label>
+          </div>
+          <div class="form-check form-check-inline" id="optionalRadio3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+            <label class="form-check-label" for="inlineRadio5" id="radioFive"></label>
+          </div>
+    </div>
+
+    <!-- HIDDEN IFRAME FOR DISPLAYING INFO FROM DIFFERENT DOCUMENTS-->
+    <div id="resolutionFrame">
+
+    </div>
+</div>
+
     <div class="container">
         <form id="submitMyForm">
             <input name="Submitted" hidden/>
@@ -136,6 +169,15 @@ HW 1, Part 2, Author: Wenjin Zhou
     <div class="container-fluid bg-dark text-center pb-5">
         <div class="row align-items-center">
             <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="pb-3">
+                        <input id="comments" type="text" name="comments" placeholder="Comments" style="width: 100%; text-align: left" class="InitialButtons text-light bg-secondary text-light form-select-lg\">
+                    </div>
+                </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-2"></div>
             <div class="col-8">
                 <div class="pb-3">
                     <input id="comments" type="text" name="comments" placeholder="Comments" style="width: 100%; text-align: left" class="InitialButtons text-light bg-secondary text-light form-select-lg\">
@@ -151,6 +193,7 @@ HW 1, Part 2, Author: Wenjin Zhou
             <div class="col-2"></div>
         </div>
     </div>
+
 
     <br/><br/><br/><br/>
 

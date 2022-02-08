@@ -12,6 +12,37 @@ HW 1, Part 2, Author: Wenjin Zhou
 
 */
 
+#resolutionFrame {
+  height: 800px;
+  display: none;
+}
+
+#blankQuestionnaire {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 3%;
+  display: none;
+}
+
+h3 {
+  color:white;
+}
+
+.form-check form-check-inline {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+iframe {
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
 a:link {
     color: #fff;
     text-decoration: none;
@@ -229,4 +260,8 @@ a.text-hyperlink-color:active {
 
   .testiframe {
     background-color: black;
+  }
+
+  .form-check-label {
+    color: white;
   }
