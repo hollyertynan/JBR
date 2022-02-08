@@ -238,7 +238,7 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Comments'].value = document.getElementById("comments").value;
 
     $.ajax({
-        url: "https://api.apispreadsheets.com/data/BFvZ9WAvzZdmU9FB/",
+        url: "https://api.apispreadsheets.com/data/DKFTbWbHBS9skMdT/",
         type: "post",
         data:$("#submitMyForm").serializeArray(),
         success: function() {
