@@ -150,8 +150,8 @@ function onPaintOverMax() {
 function onNeedsSKU() {
     hideBlankQuestionnaire();
     hidePreviousInfo();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B16:D16\"></iframe>";
+    
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?gid=907924166&amp;widget=true&amp;headers=false&amp;range=B12:D12\"></iframe>";
     document.getElementById("resolutionFrame").innerHTML = source;
     alert("Please assign the ticket to the person listed.");
     document.getElementById("resolutionFrame").style.display = "block";
