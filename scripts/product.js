@@ -91,6 +91,9 @@ function onBenMooreNationalAccountsOrder() {
     hidePreviousInfo();
     alert("UNDER CONSTRUCTION");
     firstTask = "National Accounts Order";
+
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
 }
 
 function onBenMooreWebSalesOrder() {
@@ -102,6 +105,8 @@ function onBenMooreWebSalesOrder() {
     document.getElementById("resolutionFrame").style.display = "block";
 
 
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Ben Moore Web Sales Order";
 }
 
@@ -126,6 +131,8 @@ function onChangeProductMinMax() {
             document.getElementById("resolutionFrame").style.display = "block";
         }
 
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Change Product Min/Max";
 }
 
@@ -134,12 +141,18 @@ function onPOEDI() {
     hideBlankQuestionnaire();
     alert("UNDER CONSTRUCTION");
 
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
+
     firstTask = "PO EDI";
 }
 
 function onPaintOverMax() {
     hideBlankQuestionnaire();
     hidePreviousInfo();
+
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     
     source = "<iframe src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>";
     document.getElementById("resolutionFrame").innerHTML = source;
@@ -155,6 +168,10 @@ function onNeedsSKU() {
     document.getElementById("resolutionFrame").innerHTML = source;
     document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "Needs SKU";
+
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
 }
 
 function onUPCNotOnFile() {
@@ -166,6 +183,9 @@ function onUPCNotOnFile() {
     alert("Please assign the ticket to the person listed.");
     document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "UPC Not On File";
+
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
 }
 
 function onVendorWebsitePassword() {
@@ -201,7 +221,8 @@ function onVendorWebsitePassword() {
         `);
     }
 
-
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Vendor Website Password";
 }
 
@@ -237,6 +258,8 @@ function onRetailPriceIssueNotMarkdown() {
         document.getElementById("resolutionFrame").style.display = "block";
     }
 
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Price Issue (Not Markdown)";
 }
 
@@ -249,7 +272,8 @@ function onCostIssue() {
     alert("Please assign the ticket to the person listed.");
     document.getElementById("resolutionFrame").style.display = "block";
 
-
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Cost Issue";
 }
 
@@ -258,14 +282,16 @@ function onSmartCycleCounts() {
     hidePreviousInfo();
     alert("UNDER CONSTRUCTION");
 
-
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Smart Cycle Counts";
 }
 
 function onSpecialOrderIssues() {
     alert("UNDER CONSTRUCTION");
 
-
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
     firstTask = "Special Order Issues";
 }
 
