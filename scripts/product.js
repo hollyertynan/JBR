@@ -164,7 +164,7 @@ function onNeedsSKU() {
     hideBlankQuestionnaire();
     hidePreviousInfo();
     
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>";
+    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>";
     document.getElementById("resolutionFrame").innerHTML = source;
     document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "Needs SKU";
