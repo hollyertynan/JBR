@@ -13,7 +13,6 @@ HW 1, Part 2, Author: Wenjin Zhou
 */
 
 #resolutionFrame {
-  height: 800px;
   display: none;
 }
 
@@ -36,8 +35,8 @@ h3 {
 }
 
 iframe {
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: auto;
   display: block;
   margin: auto;
   padding-bottom: 5%;
