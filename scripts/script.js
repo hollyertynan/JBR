@@ -181,6 +181,69 @@ function onIT() {
     chosenDepartment = "IT";
 }
 
+/* 
+
+PRODUCT PIPELINE
+
+*/
+
+const onProductIssues = [
+    "Benjamin Moore National Accounts Order",
+    "Benjamin Moore Web Sales Order",
+    "Change Product Min and / or Max",
+    "PO/EDI Issues",
+    "Paint Over Max Order",
+    "Product Needs a SKU",
+    "UPC Not On File",
+    "Need a Vendor Website Password Reset",
+    "Retail Price Issues (Not Markdown)",
+    "Cost Issues",
+    "Smart Cycle Count Issues",
+    "Special Order Issues",
+    "Store Specific Clearance Pricing",
+    "Store Specific Temporary Pricing",
+    "Customer Pricing Quote",
+    "Honda Orders",
+    "Order More Bad Air Sponges",
+    "Immediate Price Changes",
+    "Store Needs Bloodborne Kit",
+    "Item Packaging Not Correct",
+    "Battery Core Charges",
+    "Minimum Quantity Required to Close a PO",
+    "Item Description Incorrect / Unclear / Missing",
+    "Other"
+]
+
+function onProduct() {
+    var input = "";
+    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onProductIssues.length; i++) {
+        input += "<option value=\"" + onProductIssues[i] + "\">" + onProductIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
+    hidePreviousInfo();
+    document.getElementById("secondForm").innerHTML = "";
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("secondForm").innerHTML = input;
+
+    $("#product").removeClass("btn-info").addClass("btn-success");
+    $("#it").removeClass("btn-success").addClass("btn-info");
+    $("#accounting").removeClass("btn-success").addClass("btn-info");
+    $("#customer").removeClass("btn-success").addClass("btn-info");
+    $("#operations").removeClass("btn-success").addClass("btn-info");
+    $("#marketing").removeClass("btn-success").addClass("btn-info");
+
+    $("#productDropdown").removeClass("bg-success border-success");
+    $("#productDropdown").addClass("bg-info border-info");
+
+    document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
+    chosenDepartment = "Product";
+}
+
+/*
 function onProduct() {
     hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
@@ -201,6 +264,7 @@ function onProduct() {
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Product";
 }
+*/
 
 function onAccounting() {
     hidePreviousInfo();

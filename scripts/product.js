@@ -1,3 +1,55 @@
+let productMap = new Map([
+    ["Benjamin Moore National Accounts Order", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Benjamin Moore Web Sales Order", 
+    "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>"],
+
+    ["Change Product Min and / or Max", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["PO/EDI Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Paint Over Max Order", 
+    "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"],
+
+    ["Product Needs a SKU", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["UPC Not On File", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Need a Vendor Website Password Reset", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Retail Price Issues (Not Markdown)", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Cost Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Smart Cycle Count Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Special Order Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Store Specific Clearance Pricing", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Store Specific Temporary Pricing", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Customer Pricing Quote", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Honda Orders", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Order More Bad Air Sponges", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Immediate Price Changes", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Store Needs Bloodborne Kit", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Item Packaging Not Correct", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Battery Core Charges", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Minimum Quantity Required to Close a PO", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Item Description Incorrect / Unclear / Missing", "<h3>UNDER CONSTRUCTION</h3>"],
+
+    ["Other", "<h3>UNDER CONSTRUCTION</h3>"]
+]);
+
 /*
 
 onEventIT(event)
@@ -7,77 +59,77 @@ passing in value from dropdown menu and continues logically
 
 function onEventProduct(event) {
     switch(event.target.value) {
-        case "1":
-            onBenMooreNationalAccountsOrder();
+        case "Benjamin Moore National Accounts Order":
+            onProductDefault(event.target.value);
             break;
-        case "2":
-            onProductDefault(event.target.value, "Ben Moore Web Sales Order")
+        case "Benjamin Moore Web Sales Order":
+            onProductDefault(event.target.value);
             break;
-        case "3":
-            onChangeProductMinMax();
+        case "Change Product Min and / or Max":
+            onProductDefault(event.target.value);
             break;
-        case "4":
-            onPOEDI();
+        case "PO/EDI Issues":
+            onProductDefault(event.target.value);
             break;
-        case "5":
-            onProductDefault(event.target.value, "Paint Over Max")
+        case "Paint Over Max Order":
+            onProductDefault(event.target.value);
             break;
-        case "6":
-            onNeedsSKU();
+        case "Product Needs a SKU":
+            onProductDefault(event.target.value);
             break;
-        case "7":
-            onUPCNotOnFile();
+        case "UPC Not On File":
+            onProductDefault(event.target.value);
             break; 
-        case "8":
-            onVendorWebsitePassword();
+        case "Need a Vendor Website Password Reset":
+            onProductDefault(event.target.value);
             break; 
-        case "9":
-            onRetailPriceIssueNotMarkdown();
+        case "Retail Price Issues (Not Markdown)":
+            onProductDefault(event.target.value);
             break; 
-        case "10":
-            onCostIssue();
+        case "Cost Issues":
+            onProductDefault(event.target.value);
             break; 
-        case "11":
-            onSmartCycleCounts();
+        case "Smart Cycle Count Issues":
+            onProductDefault(event.target.value);
             break; 
-        case "12":
-            onSpecialOrderIssues();
+        case "Special Order Issues":
+            onProductDefault(event.target.value)
             break; 
-        case "13":
-            onStoreSpecificClearance();
+        case "Store Specific Clearance Pricing":
+            onProductDefault(event.target.value);
             break; 
-        case "14":
-            onStoreSpecificTemporary();
+        case "Store Specific Temporary Pricing":
+            onProductDefault(event.target.value);
             break; 
-        case "15":
-            onCustomerPricingQuote();
+        case "Customer Pricing Quote":
+            onProductDefault(event.target.value);
             break; 
-        case "16":
-            onHonda();
+        case "Honda Orders":
+            onProductDefault(event.target.value);
             break; 
-        case "17":
-            onOrderBadAirSponge();
+        case "Order More Bad Air Sponges":
+            onProductDefault(event.target.value);
             break; 
-        case "18":
-            onImmediatePriceChanges();
+        case "Immediate Price Changes":
+            onProductDefault(event.target.value);
             break; 
-        case "19":
-            onBloodborneKit();
+        case "Store Needs Bloodborne Kit":
+            onProductDefault(event.target.value);
             break;
-        case "20":
-            onItemPackagingNotCorrect();
+        case "Item Packaging Not Correct":
+            onProductDefault(event.target.value);
             break;  
-        case "21":
-            onBatteryCoreCharges();
+        case "Battery Core Charges":
+            onProductDefault(event.target.value);
             break; 
-        case "22":
-            onMinQuantityRequiredClosePO();
+        case "Minimum Quantity Required to Close a PO":
+            onProductDefault(event.target.value);
             break;
-        case "23":
-            onItemDiscriptionIncorrect();
+        case "Item Description Incorrect / Unclear / Missing":
+            onProductDefault(event.target.value);
             break; 
-        case "24":
-            onProductOther();
+        case "Other":
+            onProductDefault(event.target.value);
             break;     
         default: 
             blankProduct();
@@ -85,17 +137,12 @@ function onEventProduct(event) {
     }
 }
 
-let productMap = new Map([
-    ["2", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>"],
-    ["5", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"]
-]);
-
-function onProductDefault(caseNum, taskName) {
+function onProductDefault(taskName) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     
     $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
-    $("#resolutionFrame").html(productMap.get(caseNum));
+    $("#resolutionFrame").html(productMap.get(taskName));
     $("#resolutionFrame").attr('style', 'display:block;')
 
     // leaving for backwards compatability w/ safari and internet explorer
