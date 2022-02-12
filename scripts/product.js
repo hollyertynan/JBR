@@ -100,13 +100,11 @@ function onBenMooreWebSalesOrder() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     
-    source = "<iframe src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
+    document.getElementById("resolutionFrame").innerHTML = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>";
     document.getElementById("resolutionFrame").style.display = "block";
 
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
     firstTask = "Ben Moore Web Sales Order";
 }
 
@@ -166,9 +164,9 @@ function onNeedsSKU() {
     
     source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>";
     document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
     firstTask = "Needs SKU";
 
+    document.getElementById("resolutionFrame").style.display = "block";
     $("#productDropdown").removeClass("bg-info border-info");
     $("#productDropdown").addClass("bg-success border-success");
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
