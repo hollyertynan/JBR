@@ -8,325 +8,431 @@ var allStoreNames = [
     {
         "Store": "003", 
         "Name": "MEREDITH, NH",
-        "Team": ""}, 
+        "Team": "2"}, 
     {
         "Store": "004", 
-        "Name": "GARDNER, MA"}, 
+        "Name": "GARDNER, MA",
+        "Team": "1"}, 
     {
         "Store": "006", 
-        "Name": "MOULTONBORO, NH"}, 
+        "Name": "MOULTONBORO, NH",
+        "Team": "2"}, 
     {
         "Store": "007", 
-        "Name": "TEWKSBURY, MA"}, 
+        "Name": "TEWKSBURY, MA",
+        "Team": "2"}, 
     {
         "Store": "008", 
-        "Name": "CLINTON, MA"}, 
+        "Name": "CLINTON, MA",
+        "Team": "1"}, 
     {
         "Store": "010", 
-        "Name": "PERU, NY"}, 
+        "Name": "PERU, NY",
+        "Team": "3"}, 
     {
         "Store": "016", 
-        "Name": "NORWAY, ME"}, 
+        "Name": "NORWAY, ME",
+        "Team": "2"}, 
     {
         "Store": "017", 
-        "Name": "TURNERS FALLS, MA"}, 
+        "Name": "TURNERS FALLS, MA",
+        "Team": "1"}, 
     {
         "Store": "018", 
-        "Name": "SHELBURNE FALLS, MA"}, 
+        "Name": "SHELBURNE FALLS, MA",
+        "Team": "1"}, 
     {
         "Store": "022", 
-        "Name": "LINCOLN, NH"}, 
+        "Name": "LINCOLN, NH",
+        "Team": "2"}, 
     {
         "Store": "025", 
-        "Name": "SAINT JOHNSBURY, VT"}, 
+        "Name": "SAINT JOHNSBURY, VT",
+        "Team": "2"}, 
     {
         "Store": "032", 
-        "Name": "FRANKLIN, MA 032"}, 
+        "Name": "FRANKLIN, MA 032",
+        "Team": "1"}, 
     {
         "Store": "033", 
-        "Name": "GREAT BARRINGTON, MA"}, 
+        "Name": "GREAT BARRINGTON, MA",
+        "Team": "3"}, 
     {
         "Store": "034", 
-        "Name": "STAFFORD SPRINGS, CT"}, 
+        "Name": "STAFFORD SPRINGS, CT",
+        "Team": "1"}, 
     {
         "Store": "037", 
-        "Name": "WEBSTER, MA"}, 
+        "Name": "WEBSTER, MA",
+        "Team": "1"}, 
     {
         "Store": "039", 
-        "Name": "WINDSOR, VT"}, 
+        "Name": "WINDSOR, VT",
+        "Team": "3"}, 
     {
         "Store": "040", 
-        "Name": "BREWER, ME"}, 
+        "Name": "BREWER, ME",
+        "Team": "2"}, 
     {
         "Store": "042", 
-        "Name": "LUDLOW, VT"}, 
+        "Name": "LUDLOW, VT",
+        "Team": "3"}, 
     {
         "Store": "044", 
-        "Name": "WALPOLE, NH"}, 
+        "Name": "WALPOLE, NH",
+        "Team": "3"}, 
     {
         "Store": "045", 
-        "Name": "MONTPELIER, VT"}, 
+        "Name": "MONTPELIER, VT",
+        "Team": "3"}, 
     {
         "Store": "049", 
-        "Name": "BARRE, VT"}, 
+        "Name": "BARRE, VT",
+        "Team": "3"}, 
     {
         "Store": "051", 
-        "Name": "WATERBURY, VT"}, 
+        "Name": "WATERBURY, VT",
+        "Team": "3"}, 
     {
         "Store": "054", 
-        "Name": "FRANKLIN, NH"}, 
+        "Name": "FRANKLIN, NH",
+        "Team": "2"}, 
     {
         "Store": "055", 
-        "Name": "NEWPORT, NH"}, 
+        "Name": "NEWPORT, NH",
+        "Team": "2"}, 
     {
         "Store": "056", 
-        "Name": "OLD TOWN, ME"}, 
+        "Name": "OLD TOWN, ME",
+        "Team": "2"}, 
     {
         "Store": "057", 
-        "Name": "MORRISVILLE, VT"}, 
+        "Name": "MORRISVILLE, VT",
+        "Team": "2"}, 
     {
         "Store": "060", 
-        "Name": "GOUVERNEUR, NY"}, 
+        "Name": "GOUVERNEUR, NY",
+        "Team": "2"}, 
     {
         "Store": "062", 
-        "Name": "HARDWICK, VT"}, 
+        "Name": "HARDWICK, VT",
+        "Team": "2"}, 
     {
         "Store": "063", 
-        "Name": "MIDDLEBURY, VT"}, 
+        "Name": "MIDDLEBURY, VT",
+        "Team": "2"}, 
     {
         "Store": "064", 
-        "Name": "AUGUSTA, ME"}, 
+        "Name": "AUGUSTA, ME",
+        "Team": "2"}, 
     {
         "Store": "065", 
-        "Name": "LITTLETON, MA"}, 
+        "Name": "LITTLETON, MA",
+        "Team": "2"}, 
     {
         "Store": "069", 
-        "Name": "LUNENBURG, MA"}, 
+        "Name": "LUNENBURG, MA",
+        "Team": "2"}, 
     {
         "Store": "070", 
-        "Name": "PUTNAM, CT"}, 
+        "Name": "PUTNAM, CT",
+        "Team": "2"}, 
     {
         "Store": "072", 
-        "Name": "SAINT ALBANS, VT"}, 
+        "Name": "SAINT ALBANS, VT",
+        "Team": "2"}, 
     {
         "Store": "074", 
-        "Name": "EASTHAMPTON, MA"}, 
+        "Name": "EASTHAMPTON, MA",
+        "Team": "2"}, 
     {
         "Store": "075", 
-        "Name": "ELIZABETHTOWN, NY"}, 
+        "Name": "ELIZABETHTOWN, NY",
+        "Team": "2"}, 
     {
         "Store": "076", 
-        "Name": "SWANTON, VT"}, 
+        "Name": "SWANTON, VT",
+        "Team": "2"}, 
     {
         "Store": "079", 
-        "Name": "FAIR HAVEN, VT"}, 
+        "Name": "FAIR HAVEN, VT",
+        "Team": "2"}, 
     {
         "Store": "080", 
-        "Name": "ALLENSTOWN, NH"}, 
+        "Name": "ALLENSTOWN, NH",
+        "Team": "2"}, 
     {
         "Store": "083", 
-        "Name": "VERGENNES, VT"}, 
+        "Name": "VERGENNES, VT",
+        "Team": "2"}, 
     {
         "Store": "084", 
-        "Name": "TICONDEROGA, NY"}, 
+        "Name": "TICONDEROGA, NY",
+        "Team": "2"}, 
     {
         "Store": "089", 
-        "Name": "WAREHAM, MA"}, 
+        "Name": "WAREHAM, MA",
+        "Team": "2"}, 
     {
         "Store": "090", 
-        "Name": "WELLS, ME"}, 
+        "Name": "WELLS, ME",
+        "Team": "2"}, 
     {
         "Store": "091", 
-        "Name": "MANCHESTER, VT"}, 
+        "Name": "MANCHESTER, VT",
+        "Team": "2"}, 
     {
         "Store": "092", 
-        "Name": "BERLIN, NH"}, 
+        "Name": "BERLIN, NH",
+        "Team": "2"}, 
     {
         "Store": "094", 
-        "Name": "WILLIAMSTOWN, MA"}, 
+        "Name": "WILLIAMSTOWN, MA",
+        "Team": "2"}, 
     {
         "Store": "095", 
-        "Name": "SANFORD, ME"}, 
+        "Name": "SANFORD, ME",
+        "Team": "2"}, 
     {
         "Store": "096", 
-        "Name": "NORTH ADAMS, MA"}, 
+        "Name": "NORTH ADAMS, MA",
+        "Team": "2"}, 
     {
         "Store": "097", 
-        "Name": "LISBON FALLS, ME"}, 
+        "Name": "LISBON FALLS, ME",
+        "Team": "2"}, 
     {
         "Store": "100", 
-        "Name": "MILTON, VT"}, 
+        "Name": "MILTON, VT",
+        "Team": "2"}, 
     {
         "Store": "101", 
-        "Name": "WINCHESTER, NH"}, 
+        "Name": "WINCHESTER, NH",
+        "Team": "2"}, 
     {
         "Store": "103", 
-        "Name": "RUMFORD, ME"}, 
+        "Name": "RUMFORD, ME",
+        "Team": "2"}, 
     {
         "Store": "104", 
-        "Name": "SOUTHBRIDGE, MA"}, 
+        "Name": "SOUTHBRIDGE, MA",
+        "Team": "2"}, 
     {
         "Store": "106", 
-        "Name": "LINCOLN, ME"}, 
+        "Name": "LINCOLN, ME",
+        "Team": "2"}, 
     {
         "Store": "107", 
-        "Name": "NORTH WINDHAM, ME"}, 
+        "Name": "NORTH WINDHAM, ME",
+        "Team": "2"}, 
     {
         "Store": "108", 
-        "Name": "FARMINGTON, ME"}, 
+        "Name": "FARMINGTON, ME",
+        "Team": "2"}, 
     {
         "Store": "109", 
-        "Name": "SARANAC LAKE, NY"}, 
+        "Name": "SARANAC LAKE, NY",
+        "Team": "2"}, 
     {
         "Store": "113", 
-        "Name": "TUPPER LAKE, NY"}, 
+        "Name": "TUPPER LAKE, NY",
+        "Team": "2"}, 
     {
         "Store": "118", 
-        "Name": "GREENFIELD, MA"}, 
+        "Name": "GREENFIELD, MA",
+        "Team": "2"}, 
     {
         "Store": "120", 
-        "Name": "PLATTSBURGH, NY"}, 
+        "Name": "PLATTSBURGH, NY",
+        "Team": "2"}, 
     {
         "Store": "124", 
-        "Name": "NEWPORT, ME"}, 
+        "Name": "NEWPORT, ME",
+        "Team": "2"}, 
     {
         "Store": "132", 
-        "Name": "EASTON, NY"}, 
+        "Name": "EASTON, NY",
+        "Team": "2"}, 
     {
         "Store": "133", 
-        "Name": "WATERVILLE, ME"}, 
+        "Name": "WATERVILLE, ME",
+        "Team": "2"}, 
     {
         "Store": "135", 
-        "Name": "NAPLES, ME"}, 
+        "Name": "NAPLES, ME",
+        "Team": "2"}, 
     {
         "Store": "136", 
-        "Name": "LAKE PLACID, NY"}, 
+        "Name": "LAKE PLACID, NY",
+        "Team": "2"}, 
     {
         "Store": "140", 
-        "Name": "WEST CARTHAGE, NY"}, 
+        "Name": "WEST CARTHAGE, NY",
+        "Team": "2"}, 
     {
         "Store": "141", 
-        "Name": "CONCORD, NH"}, 
+        "Name": "CONCORD, NH",
+        "Team": "2"}, 
     {
         "Store": "144", 
-        "Name": "HAVERHILL, MA"}, 
+        "Name": "HAVERHILL, MA",
+        "Team": "2"}, 
     {
         "Store": "148", 
-        "Name": "AYER, MA"}, 
+        "Name": "AYER, MA",
+        "Team": "2"}, 
     {
         "Store": "151", 
-        "Name": "MIDDLEBORO, MA"}, 
+        "Name": "MIDDLEBORO, MA",
+        "Team": "2"}, 
     {
         "Store": "152", 
-        "Name": "CARVER, MA"}, 
+        "Name": "CARVER, MA",
+        "Team": "2"}, 
     {
         "Store": "153", 
-        "Name": "KINGSTON, MA"}, 
+        "Name": "KINGSTON, MA",
+        "Team": "2"}, 
     {
         "Store": "155", 
-        "Name": "SANDWICH, MA"}, 
+        "Name": "SANDWICH, MA",
+        "Team": "2"}, 
     {
         "Store": "156", 
-        "Name": "SO. SANDWICH, MA"}, 
+        "Name": "SO. SANDWICH, MA",
+        "Team": "2"}, 
     {
         "Store": "158", 
-        "Name": "POCASSET, MA"}, 
+        "Name": "POCASSET, MA",
+        "Team": "2"}, 
     {
         "Store": "159", 
-        "Name": "COTUIT, MA"}, 
+        "Name": "COTUIT, MA",
+        "Team": "2"}, 
     {
         "Store": "161", 
-        "Name": "JEFFERSONVILLE, VT"}, 
+        "Name": "JEFFERSONVILLE, VT",
+        "Team": "2"}, 
     {
         "Store": "163", 
-        "Name": "WARNER, NH"}, 
+        "Name": "WARNER, NH",
+        "Team": "2"}, 
     {
         "Store": "164", 
-        "Name": "BUXTON, ME"}, 
+        "Name": "BUXTON, ME",
+        "Team": "2"}, 
     {
         "Store": "167", 
-        "Name": "ALTON, NH"}, 
+        "Name": "ALTON, NH",
+        "Team": "2"}, 
     {
         "Store": "168", 
-        "Name": "HILLSBORO, NH"},
+        "Name": "HILLSBORO, NH",
+        "Team": "2"},
     {
         "Store": "170",
-        "Name": "WESTMINSTER, MA"},
+        "Name": "WESTMINSTER, MA",
+        "Team": "2"},
     {
         "Store": "171", 
-        "Name": "BELFAST, ME"}, 
+        "Name": "BELFAST, ME",
+        "Team": "2"}, 
     {
         "Store": "172", 
-        "Name": "FALMOUTH, MA"}, 
+        "Name": "FALMOUTH, MA",
+        "Team": "2"}, 
     {
         "Store": "173", 
-        "Name": "SHELBURNE, VT"}, 
+        "Name": "SHELBURNE, VT",
+        "Team": "2"}, 
     {
         "Store": "175", 
-        "Name": "LEE, NH"}, 
+        "Name": "LEE, NH",
+        "Team": "2"}, 
     {
         "Store": "176", 
-        "Name": "NEWMARKET, NH"}, 
+        "Name": "NEWMARKET, NH",
+        "Team": "2"}, 
     {
         "Store": "177", 
-        "Name": "RICHFIELD SPRINGS, NY"}, 
+        "Name": "RICHFIELD SPRINGS, NY",
+        "Team": "2"}, 
     {
         "Store": "178", 
-        "Name": "DOVER, NH"}, 
+        "Name": "DOVER, NH",
+        "Team": "2"}, 
     {
         "Store": "181", 
-        "Name": "PLYMOUTH, MA"}, 
+        "Name": "PLYMOUTH, MA",
+        "Team": "2"}, 
     {
         "Store": "182", 
-        "Name": "COHASSET, MA"}, 
+        "Name": "COHASSET, MA",
+        "Team": "2"}, 
     {
         "Store": "183", 
-        "Name": "HINESBURG, VT"}, 
+        "Name": "HINESBURG, VT",
+        "Team": "2"}, 
     {
         "Store": "187", 
-        "Name": "LANCASTER, NH"}, 
+        "Name": "LANCASTER, NH",
+        "Team": "2"}, 
     {
         "Store": "188", 
-        "Name": "STOW, MA"}, 
+        "Name": "STOW, MA",
+        "Team": "2"}, 
     {
         "Store": "189", 
-        "Name": "OSSIPEE, NH"}, 
+        "Name": "OSSIPEE, NH",
+        "Team": "2"}, 
     {
         "Store": "190", 
-        "Name": "IPSWICH, MA"}, 
+        "Name": "IPSWICH, MA",
+        "Team": "2"}, 
     {
         "Store": "191", 
-        "Name": "BRISTOL, NH"}, 
+        "Name": "BRISTOL, NH",
+        "Team": "2"}, 
     {
         "Store": "192", 
-        "Name": "BEVERLY, MA"}, 
+        "Name": "BEVERLY, MA",
+        "Team": "2"}, 
     {
         "Store": "193", 
-        "Name": "SUDBURY, MA"}, 
+        "Name": "SUDBURY, MA",
+        "Team": "2"}, 
     {
         "Store": "194", 
-        "Name": "MONROE, CT"}, 
+        "Name": "MONROE, CT",
+        "Team": "2"}, 
     {
         "Store": "195", 
-        "Name": "ALEXANDRIA, VA"}, 
+        "Name": "ALEXANDRIA, VA",
+        "Team": "2"}, 
     {
         "Store": "196", 
-        "Name": "BLUE BELL, PA"}, 
+        "Name": "BLUE BELL, PA",
+        "Team": "2"}, 
     {
         "Store": "197", 
-        "Name": "DOYLESTOWN, PA"}, 
+        "Name": "DOYLESTOWN, PA",
+        "Team": "2"}, 
     {
         "Store": "198", 
-        "Name": "LYNDONVILLE, VT"}, 
+        "Name": "LYNDONVILLE, VT",
+        "Team": "2"}, 
     {
         "Store": "199", 
-        "Name": "RICHBORO, PA"}, 
+        "Name": "RICHBORO, PA",
+        "Team": "2"}, 
     {
         "Store": "200", 
-        "Name": "NEW HOPE, PA"},
+        "Name": "NEW HOPE, PA",
+        "Team": "2"},
     {
         "Store": "201",
-        "Name": "SOUTH ROYALTON, VT"},
+        "Name": "SOUTH ROYALTON, VT",
+        "Team": "2"},
     ]
 
 var inputTable = "";
@@ -340,33 +446,3 @@ for(var index in allStoreNames) {
 inputTable += "</datalist>";
 
 document.getElementById("taskInfo").innerHTML += inputTable;
-
-
-
-/* broken validation
-$(document).ready(function() {
-
-    $("#storeTicketForm").validate({
-        rules: {
-            taskInfo: {
-                required: true
-            },
-
-            ticketInfo: {
-                required: true
-            },
-        },
-
-        messages: {
-            tastInfo: {
-                required: "Input Required"
-            },
-
-            ticketInfo: {
-                required: "Input Required"
-            }
-        }
-    });
-
-});
-*/
