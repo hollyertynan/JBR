@@ -11,7 +11,7 @@ function onEventProduct(event) {
             onBenMooreNationalAccountsOrder();
             break;
         case "2":
-            onBenMooreWebSalesOrder();
+            onProductDefault(event.target.value, "Ben Moore Web Sales Order")
             break;
         case "3":
             onChangeProductMinMax();
@@ -20,7 +20,7 @@ function onEventProduct(event) {
             onPOEDI();
             break;
         case "5":
-            onPaintOverMax();
+            onProductDefault(event.target.value, "Paint Over Max")
             break;
         case "6":
             onNeedsSKU();
@@ -85,17 +85,22 @@ function onEventProduct(event) {
     }
 }
 
-function defaultFunction() {
+let productMap = new Map([
+    ["2", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>"],
+    ["5", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"]
+]);
+
+function onProductDefault(caseNum, taskName) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     
     $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
-    $("#resolutionFrame").html("<iframe class=\"vh-100\" src=\"add link here\"></iframe>");
+    $("#resolutionFrame").html(productMap.get(caseNum));
     $("#resolutionFrame").attr('style', 'display:block;')
 
     // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
-    firstTask = "Add Task Here";
+    firstTask = taskName;
 }
 
 function onBenMooreNationalAccountsOrder() {
