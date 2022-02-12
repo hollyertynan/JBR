@@ -85,25 +85,41 @@ function onEventProduct(event) {
     }
 }
 
+function defaultFunction() {
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<iframe class=\"vh-100\" src=\"add link here\"></iframe>");
+    $("#resolutionFrame").attr('style', 'display:block;')
+
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+    firstTask = "Add Task Here";
+}
 
 function onBenMooreNationalAccountsOrder() {
-    hideBlankQuestionnaire();
     hidePreviousInfo();
-    alert("UNDER CONSTRUCTION");
-    firstTask = "National Accounts Order";
+    hideBlankQuestionnaire();
+    
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<h3>UNDER CONSTRUCTION</h3>");
+    $("#resolutionFrame").attr('style', 'display:block;')
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+    firstTask = "Ben Moore National Accounts Order";
 }
 
 function onBenMooreWebSalesOrder() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     
-    document.getElementById("resolutionFrame").innerHTML = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>";
-    document.getElementById("resolutionFrame").style.display = "block";
-
     $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>");
+    $("#resolutionFrame").attr('style', 'display:block;')
+
+    // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
     firstTask = "Ben Moore Web Sales Order";
 }
@@ -137,39 +153,40 @@ function onChangeProductMinMax() {
 function onPOEDI() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
-    alert("UNDER CONSTRUCTION");
+    
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<h3>UNDER CONSTRUCTION</h3>");
+    $("#resolutionFrame").attr('style', 'display:block;')
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
     firstTask = "PO EDI";
 }
 
 function onPaintOverMax() {
-    hideBlankQuestionnaire();
     hidePreviousInfo();
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
+    hideBlankQuestionnaire();
     
-    source = "<iframe src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>");
+    $("#resolutionFrame").attr('style', 'display:block;')
+
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
     firstTask = "Paint Over Max";
 }
 
 function onNeedsSKU() {
-    hideBlankQuestionnaire();
     hidePreviousInfo();
+    hideBlankQuestionnaire();
     
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    firstTask = "Needs SKU";
+    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html("<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>");
+    $("#resolutionFrame").attr('style', 'display:block;')
 
-    document.getElementById("resolutionFrame").style.display = "block";
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
+    // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+    firstTask = "Needs SKU";
 }
 
 function onUPCNotOnFile() {
