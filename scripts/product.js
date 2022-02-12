@@ -29,15 +29,15 @@ let productMap = new Map([
 
     ["Store Specific Temporary Pricing", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B10:D10\"></iframe>"],
 
-    ["Customer Pricing Quote", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Customer Pricing Quote", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B3:D3\"></iframe>"],
 
-    ["Honda Orders", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Honda Orders", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B5:D5\"></iframe>"],
 
-    ["Order More Bad Air Sponges", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Order More Bad Air Sponges", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B30:D30\"></iframe>"],
 
-    ["Immediate Price Changes", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Immediate Price Changes", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.wci5p6vv6cm7\"></iframe>"],
 
-    ["Store Needs Bloodborne Kit", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Store Needs Bloodborne Kit", "<h3>Bloodborne Kits are ordered by the Team Inventory/Operations Manager. Please Take a look at the Gold List to find the Inventory/Operations Manager for a specific store.</h3><iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=43&range=A1\"></iframe>"],
 
     ["Item Packaging Not Correct", "<h3>UNDER CONSTRUCTION</h3>"],
 

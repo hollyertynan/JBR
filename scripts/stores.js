@@ -3,10 +3,12 @@
 var allStoreNames = [
     {
         "Store": "001", 
-        "Name": "FITCHBURG, MA"}, 
+        "Name": "FITCHBURG, MA",
+        "Team": "1"}, 
     {
         "Store": "003", 
-        "Name": "MEREDITH, NH"}, 
+        "Name": "MEREDITH, NH",
+        "Team": ""}, 
     {
         "Store": "004", 
         "Name": "GARDNER, MA"}, 
@@ -338,6 +340,8 @@ for(var index in allStoreNames) {
 inputTable += "</datalist>";
 
 document.getElementById("taskInfo").innerHTML += inputTable;
+
+
 
 /* broken validation
 $(document).ready(function() {
