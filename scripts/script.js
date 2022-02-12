@@ -181,12 +181,53 @@ function onIT() {
     chosenDepartment = "IT";
 }
 
+/* 
+
+PRODUCT PIPELINE
+
+*/
+
+const onProductIssues = [
+    "Benjamin Moore National Accounts Order",
+    "Benjamin Moore Web Sales Order",
+    "Change Product Min and / or Max",
+    "PO/EDI Issues",
+    "Paint Over Max Order",
+    "Product Needs a SKU",
+    "UPC Not On File",
+    "Need a Vendor Website Password Reset",
+    "Retail Price Issues (Not Markdown)",
+    "Cost Issues",
+    "Smart Cycle Count Issues",
+    "Special Order Issues",
+    "Store Specific Clearance Pricing",
+    "Store Specific Temporary Pricing",
+    "Customer Pricing Quote",
+    "Honda Orders",
+    "Order More Bad Air Sponges",
+    "Immediate Price Changes",
+    "Store Needs Bloodborne Kit",
+    "Item Packaging Not Correct",
+    "Battery Core Charges",
+    "Minimum Quantity Required to Close a PO",
+    "Item Description Incorrect / Unclear / Missing",
+    "Other"
+]
+
 function onProduct() {
+    var input = "";
+    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onProductIssues.length; i++) {
+        input += "<option value=\"" + onProductIssues[i] + "\">" + onProductIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
     hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Benjamin Moore National Accounts Order</option><option value=\"2\">Benjamin Moore Web Sales Order</option><option value=\"3\">Change Product Min and / or Max</option><option value=\"4\">PO/EDI Issues</option><option value=\"5\">Paint Over Max Order</option><option value=\"6\">Product Needs a SKU</option><option value=\"7\">UPC Not On File</option><option value=\"8\">Need a Vendor Website Password Reset</option><option value=\"9\">Retail Price Issues (Not Markdown)</option><option value=\"10\">Cost Issues</option><option value=\"11\">Smart Cycle Count Issues</option><option value=\"12\">Special Order Issues</option><option value=\"13\">Store Specific Clearance Pricing</option><option value=\"14\">Store Specific Temporary Pricing</option><option value=\"15\">Customer Pricing Quote</option><option value=\"16\">Honda Orders</option><option value=\"17\">Order More Bad Air Sponges</option><option value=\"18\">Immediate Price Changes</option><option value=\"19\">Store Needs Bloodborne Kit</option><option value=\"20\">Item Packaging Not Correct</option><option value=\"21\">Battery Core Charges</option><option value=\"22\">Minimum Quantity Required to Close a PO</option><option value=\"23\">Item Description Incorrect / Unclear / Missing</option><option value=\"24\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML = input;
 
     $("#product").removeClass("btn-info").addClass("btn-success");
     $("#it").removeClass("btn-success").addClass("btn-info");
@@ -201,6 +242,12 @@ function onProduct() {
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Product";
 }
+
+/*
+
+ACCOUNTING PIPELINE
+
+*/
 
 function onAccounting() {
     hidePreviousInfo();
