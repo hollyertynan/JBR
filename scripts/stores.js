@@ -100,7 +100,7 @@ var allStoreNames = [
     {
         "Store": "055", 
         "Name": "NEWPORT, NH",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "056", 
         "Name": "OLD TOWN, ME",
@@ -108,19 +108,19 @@ var allStoreNames = [
     {
         "Store": "057", 
         "Name": "MORRISVILLE, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "060", 
         "Name": "GOUVERNEUR, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "062", 
         "Name": "HARDWICK, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "063", 
         "Name": "MIDDLEBURY, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "064", 
         "Name": "AUGUSTA, ME",
@@ -132,31 +132,31 @@ var allStoreNames = [
     {
         "Store": "069", 
         "Name": "LUNENBURG, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "070", 
         "Name": "PUTNAM, CT",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "072", 
         "Name": "SAINT ALBANS, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "074", 
         "Name": "EASTHAMPTON, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "075", 
         "Name": "ELIZABETHTOWN, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "076", 
         "Name": "SWANTON, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "079", 
         "Name": "FAIR HAVEN, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "080", 
         "Name": "ALLENSTOWN, NH",
@@ -164,15 +164,15 @@ var allStoreNames = [
     {
         "Store": "083", 
         "Name": "VERGENNES, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "084", 
         "Name": "TICONDEROGA, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "089", 
         "Name": "WAREHAM, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "090", 
         "Name": "WELLS, ME",
@@ -180,7 +180,7 @@ var allStoreNames = [
     {
         "Store": "091", 
         "Name": "MANCHESTER, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "092", 
         "Name": "BERLIN, NH",
@@ -188,7 +188,7 @@ var allStoreNames = [
     {
         "Store": "094", 
         "Name": "WILLIAMSTOWN, MA",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "095", 
         "Name": "SANFORD, ME",
@@ -196,7 +196,7 @@ var allStoreNames = [
     {
         "Store": "096", 
         "Name": "NORTH ADAMS, MA",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "097", 
         "Name": "LISBON FALLS, ME",
@@ -204,11 +204,11 @@ var allStoreNames = [
     {
         "Store": "100", 
         "Name": "MILTON, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "101", 
         "Name": "WINCHESTER, NH",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "103", 
         "Name": "RUMFORD, ME",
@@ -216,7 +216,7 @@ var allStoreNames = [
     {
         "Store": "104", 
         "Name": "SOUTHBRIDGE, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "106", 
         "Name": "LINCOLN, ME",
@@ -232,19 +232,19 @@ var allStoreNames = [
     {
         "Store": "109", 
         "Name": "SARANAC LAKE, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "113", 
         "Name": "TUPPER LAKE, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "118", 
         "Name": "GREENFIELD, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "120", 
         "Name": "PLATTSBURGH, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "124", 
         "Name": "NEWPORT, ME",
@@ -252,7 +252,7 @@ var allStoreNames = [
     {
         "Store": "132", 
         "Name": "EASTON, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "133", 
         "Name": "WATERVILLE, ME",
@@ -264,11 +264,11 @@ var allStoreNames = [
     {
         "Store": "136", 
         "Name": "LAKE PLACID, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "140", 
         "Name": "WEST CARTHAGE, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "141", 
         "Name": "CONCORD, NH",
@@ -280,43 +280,43 @@ var allStoreNames = [
     {
         "Store": "148", 
         "Name": "AYER, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "151", 
         "Name": "MIDDLEBORO, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "152", 
         "Name": "CARVER, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "153", 
         "Name": "KINGSTON, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "155", 
         "Name": "SANDWICH, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "156", 
         "Name": "SO. SANDWICH, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "158", 
         "Name": "POCASSET, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "159", 
         "Name": "COTUIT, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "161", 
         "Name": "JEFFERSONVILLE, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "163", 
         "Name": "WARNER, NH",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "164", 
         "Name": "BUXTON, ME",
@@ -328,11 +328,11 @@ var allStoreNames = [
     {
         "Store": "168", 
         "Name": "HILLSBORO, NH",
-        "Team": "2"},
+        "Team": "3"},
     {
         "Store": "170",
         "Name": "WESTMINSTER, MA",
-        "Team": "2"},
+        "Team": "1"},
     {
         "Store": "171", 
         "Name": "BELFAST, ME",
@@ -340,11 +340,11 @@ var allStoreNames = [
     {
         "Store": "172", 
         "Name": "FALMOUTH, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "173", 
         "Name": "SHELBURNE, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "175", 
         "Name": "LEE, NH",
@@ -356,7 +356,7 @@ var allStoreNames = [
     {
         "Store": "177", 
         "Name": "RICHFIELD SPRINGS, NY",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "178", 
         "Name": "DOVER, NH",
@@ -364,15 +364,15 @@ var allStoreNames = [
     {
         "Store": "181", 
         "Name": "PLYMOUTH, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "182", 
         "Name": "COHASSET, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "183", 
         "Name": "HINESBURG, VT",
-        "Team": "2"}, 
+        "Team": "3"}, 
     {
         "Store": "187", 
         "Name": "LANCASTER, NH",
@@ -388,7 +388,7 @@ var allStoreNames = [
     {
         "Store": "190", 
         "Name": "IPSWICH, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "191", 
         "Name": "BRISTOL, NH",
@@ -396,7 +396,7 @@ var allStoreNames = [
     {
         "Store": "192", 
         "Name": "BEVERLY, MA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "193", 
         "Name": "SUDBURY, MA",
@@ -404,19 +404,19 @@ var allStoreNames = [
     {
         "Store": "194", 
         "Name": "MONROE, CT",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "195", 
         "Name": "ALEXANDRIA, VA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "196", 
         "Name": "BLUE BELL, PA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "197", 
         "Name": "DOYLESTOWN, PA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "198", 
         "Name": "LYNDONVILLE, VT",
@@ -424,15 +424,15 @@ var allStoreNames = [
     {
         "Store": "199", 
         "Name": "RICHBORO, PA",
-        "Team": "2"}, 
+        "Team": "1"}, 
     {
         "Store": "200", 
         "Name": "NEW HOPE, PA",
-        "Team": "2"},
+        "Team": "1"},
     {
         "Store": "201",
         "Name": "SOUTH ROYALTON, VT",
-        "Team": "2"},
+        "Team": "3"},
     ]
 
 var inputTable = "";
