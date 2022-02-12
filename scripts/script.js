@@ -159,13 +159,48 @@ function hidePreviousInfo() {
     document.getElementById("blankQuestionnaire").style.display = "none";
 }
 
-// function if IT in ticket is clicked
+/*
+
+IT PIPELINE
+
+*/
+
+const onITIssues = [
+    "Register",
+    "Payment Terminal",
+    "Back Office (Mi9)",
+    "Email Server / OFFICE-PC",
+    "Printers",
+    "Kiosk / AUBKIOSK",
+    "Chromebook",
+    "iPad",
+    "Paint Computer",
+    "Reports",
+    "Online Orders",
+    "IT Maintenance",
+    "Request for New Phone Line",
+    "VoIP / Phone Issues",
+    "Security System",
+    "WiFi Issues",
+    "V9 Issues",
+    "ELVIS",
+    "Other"
+]
+
 function onIT() {
+    var input = "";
+    input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"itDropdown\" id=\"itDropdown\" onchange=\"onEventIT(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onITIssues.length; i++) {
+        input += "<option value=\"" + onITIssues[i] + "\">" + onITIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
     hidePreviousInfo();
     document.getElementById("secondForm").innerHTML = "";
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"itDropdown\" id=\"itDropdown\" onchange=\"onEventIT(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Register</option><option value=\"2\">Payment Terminal</option><option value=\"3\">Back Office (Mi9)</option><option value=\"4\">Email Server / OFFICE-PC</option><option value=\"5\">Printers</option><option value=\"6\">Kiosk / AUBKIOSK</option><option value=\"7\">Chromebook</option><option value=\"8\">iPad</option><option value=\"9\">Paint Computer</option><option value=\"10\">Reports</option><option value=\"11\">Online Orders</option><option value=\"12\">IT Maintenance</option><option value=\"13\">Request for New Phone Line</option><option value=\"14\">VoIP / Phone Issues</option><option value=\"15\">Security System</option><option value=\"16\">WiFi Issues</option><option value=\"17\">V9 Issues</option><option value=\"18\">ELVIS</option><option value=\"19\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    document.getElementById("secondForm").innerHTML = input;
 
     $("#it").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
@@ -216,7 +251,7 @@ const onProductIssues = [
 
 function onProduct() {
     var input = "";
-    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+    input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
     for (var i = 0; i < onProductIssues.length; i++) {
         input += "<option value=\"" + onProductIssues[i] + "\">" + onProductIssues[i] + "</option>";
