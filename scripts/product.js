@@ -11,23 +11,23 @@ let productMap = new Map([
     ["Paint Over Max Order", 
     "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"],
 
-    ["Product Needs a SKU", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>"],
+    ["Product Needs a SKU", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B16:D16\"></iframe>"],
 
-    ["UPC Not On File", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["UPC Not On File", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>"],
 
-    ["Need a Vendor Website Password Reset", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Need a Vendor Website Password Reset"],
 
-    ["Retail Price Issues (Not Markdown)", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Retail Price Issues (Not Markdown)"],
 
-    ["Cost Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Cost Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B2:D2\"></iframe>"],
 
-    ["Smart Cycle Count Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Smart Cycle Count Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B7:D7\"></iframe>"],
 
-    ["Special Order Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Special Order Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B8:D8\"></iframe>"],
 
-    ["Store Specific Clearance Pricing", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Store Specific Clearance Pricing", "<iframe src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.pufx8h954y10\"></iframe>"],
 
-    ["Store Specific Temporary Pricing", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Store Specific Temporary Pricing", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B10:D10\"></iframe>"],
 
     ["Customer Pricing Quote", "<h3>UNDER CONSTRUCTION</h3>"],
 
@@ -66,7 +66,7 @@ function onEventProduct(event) {
             onProductDefault(event.target.value);
             break;
         case "Change Product Min and / or Max":
-            onProductDefault(event.target.value);
+            onChangeProductMinMax();
             break;
         case "PO/EDI Issues":
             onProductDefault(event.target.value);
@@ -81,10 +81,10 @@ function onEventProduct(event) {
             onProductDefault(event.target.value);
             break; 
         case "Need a Vendor Website Password Reset":
-            onProductDefault(event.target.value);
+            onVendorWebsitePassword();
             break; 
         case "Retail Price Issues (Not Markdown)":
-            onProductDefault(event.target.value);
+            onRetailPriceIssueNotMarkdown();
             break; 
         case "Cost Issues":
             onProductDefault(event.target.value);
@@ -230,14 +230,14 @@ function onVendorWebsitePassword() {
 
     //ORGILL RADIO BUTTON
     document.getElementById("inlineRadio1").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B13:D13\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B13:D13\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
 
     //EMERY RADIO BUTTON
     document.getElementById("inlineRadio2").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B13:D13\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B13:D13\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
@@ -267,21 +267,21 @@ function onRetailPriceIssueNotMarkdown() {
 
     //STIHL AND HUSQVARNA ISSUES
     document.getElementById("inlineRadio1").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B45:D45\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B45:D45\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
 
     //HONDA ISSUES
     document.getElementById("inlineRadio2").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B44:D44\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B44:D44\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
 
     //ALL OTHER ISSUES
     document.getElementById("inlineRadio3").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B6:D6\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B6:D6\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
