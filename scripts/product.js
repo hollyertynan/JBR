@@ -4,9 +4,9 @@ let productMap = new Map([
     ["Benjamin Moore Web Sales Order", 
     "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>"],
 
-    ["Change Product Min and / or Max", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Change Product Min and / or Max"],
 
-    ["PO/EDI Issues", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["PO/EDI Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B25:D25\"></iframe>"],
 
     ["Paint Over Max Order", 
     "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"],
@@ -37,13 +37,13 @@ let productMap = new Map([
 
     ["Immediate Price Changes", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.wci5p6vv6cm7\"></iframe>"],
 
-    ["Store Needs Bloodborne Kit", "<h3>Bloodborne Kits are ordered by the Team Inventory/Operations Manager. Please Take a look at the Gold List to find the Inventory/Operations Manager for a specific store.</h3><iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=43&range=A1\"></iframe>"],
+    ["Store Needs Bloodborne Kit", "<h3>Bloodborne Kits are ordered by the Team Inventory/Operations Manager. Please Take a look at the Gold List to find the Inventory/Operations Manager for a specific store.</h3><iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=43&range=A1\"></iframe>"],
 
-    ["Item Packaging Not Correct", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Item Packaging Not Correct", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B25:D25\"></iframe>"],
 
-    ["Battery Core Charges", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Battery Core Charges", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?single=true&amp;gid=1612994648&amp;widget=true&amp;chrome=false&amp;range=A122:B122\"></iframe>"],
 
-    ["Minimum Quantity Required to Close a PO", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Minimum Quantity Required to Close a PO", "<h3 style=\"float:top\" class=\"p-3 text-center\">Please locate the vendor in the dropdown and send it to the person listed under \"Product Team Person\".</h3> <iframe class=\"vh-100\" src=\"http://aubdata2/Reports/Pages/Report.aspx?ItemPath=%2fAccounting+Reports%2fVendor+Info+%28Mi9%29\"></iframe>"],
 
     ["Item Description Incorrect / Unclear / Missing", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B38:D38\"></iframe>"],
 
@@ -60,7 +60,7 @@ passing in value from dropdown menu and continues logically
 function onEventProduct(event) {
     switch(event.target.value) {
         case "Benjamin Moore National Accounts Order":
-            onProductDefault(event.target.value);
+            onBenMooreNationalAccountsOrder();
             break;
         case "Benjamin Moore Web Sales Order":
             onProductDefault(event.target.value);
@@ -114,7 +114,7 @@ function onEventProduct(event) {
             onProductDefault(event.target.value);
             break; 
         case "Store Needs Bloodborne Kit":
-            onProductDefault(event.target.value);
+            onBloodborneKit();
             break;
         case "Item Packaging Not Correct":
             onProductDefault(event.target.value);
@@ -137,6 +137,7 @@ function onEventProduct(event) {
     }
 }
 
+//DEFAULT PRODUCT FUNCTION
 function onProductDefault(taskName) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
@@ -150,10 +151,59 @@ function onProductDefault(taskName) {
     firstTask = taskName;
 }
 
+
+
+
+//CUSTOM BEN MOORE NATIONAL ACCOUNTS ORDER FORM
 function onBenMooreNationalAccountsOrder() {
     hidePreviousInfo();
-    hideBlankQuestionnaire();
+    fiveButtonQuestionnaire();
+
+    document.getElementById("prompt").innerHTML += "Which step of the process are you completing?"
+    document.getElementById("radioOne").innerHTML = "Check store stock and Confirm or Reject order";
+    document.getElementById("radioTwo").innerHTML = "Notify the customer of availability";
+    document.getElementById("radioThree").innerHTML = "Removing the product from inventory";
+    document.getElementById("radioFour").innerHTML = "Completing the order - customer pickup";
+    document.getElementById("radioFive").innerHTML = "Submitting signed form for credit";
     
+
+    //CHECK STORE STOCK/CONFIRM OR REJECT ORDER
+    document.getElementById("inlineRadio1").onclick = function() {
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/14BPeHu4cadKj3wKrdLXpNsPhba-r39UL-MhWLGYbMwk/edit#bookmark=id.n11v0612bv75\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+    
+    
+    //NOTIFY THE CUSTOMER OF AVAILABILITY
+    document.getElementById("inlineRadio2").onclick = function() {
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/14BPeHu4cadKj3wKrdLXpNsPhba-r39UL-MhWLGYbMwk/edit#bookmark=id.vlt077hcmc7n\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //REMOVING THE PRODUCT FROM INVENTORY
+    document.getElementById("inlineRadio3").onclick = function() {
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/14BPeHu4cadKj3wKrdLXpNsPhba-r39UL-MhWLGYbMwk/edit#bookmark=id.2fcp7dbzgwyx\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //COMPLETING THE ORDER - CUSTOMER PICKUP
+    document.getElementById("inlineRadio4").onclick = function() {
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/14BPeHu4cadKj3wKrdLXpNsPhba-r39UL-MhWLGYbMwk/edit#bookmark=id.3e7b30r1b0r7\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+    //SUBMITTING SIGNED FORM FOR CREDIT
+    document.getElementById("inlineRadio5").onclick = function() {
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/14BPeHu4cadKj3wKrdLXpNsPhba-r39UL-MhWLGYbMwk/edit#bookmark=id.er4asm2ezx8x\"></iframe>";
+        document.getElementById("resolutionFrame").innerHTML = source;
+        document.getElementById("resolutionFrame").style.display = "block";
+    }
+
+
     $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     $("#resolutionFrame").html("<h3>UNDER CONSTRUCTION</h3>");
     $("#resolutionFrame").attr('style', 'display:block;')
@@ -163,15 +213,23 @@ function onBenMooreNationalAccountsOrder() {
     firstTask = "Ben Moore National Accounts Order";
 }
 
-function onChangeProductMinMax() {
-    showBlankQuestionnaire();
-    hidePreviousInfo();
 
-    document.getElementById("prompt").innerHTML += "Are there over 5 Skus?";
+
+
+
+//CHANGE PRODUCT MAX CUSTOM FORM
+function onChangeProductMinMax() {
+    hidePreviousInfo();
+    showBlankQuestionnaire();
+
+    document.getElementById("radioOne").innerHTML = "Over 5 Skus";
+    document.getElementById("radioTwo").innerHTML = "Under 5 Skus";
+
+    document.getElementById("prompt").innerHTML += "How many Skus are there?";
 
         //OVER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR OVER 5 SKUS ON YES RADIO BUTTON
         document.getElementById("inlineRadio1").onclick = function() {
-            source = "<iframe src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.4jld8xy4oocb\"></iframe>";
+            source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.4jld8xy4oocb\"></iframe>";
             document.getElementById("resolutionFrame").innerHTML = source;
             document.getElementById("resolutionFrame").style.display = "block";
         }
@@ -179,7 +237,7 @@ function onChangeProductMinMax() {
     
         //UNDER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR UNDER 5 SKUS ON NO RADIO BUTTON
         document.getElementById("inlineRadio2").onclick = function() {
-            source = "<iframe src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.sl8axyivd97z\"></iframe>";
+            source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.sl8axyivd97z\"></iframe>";
             document.getElementById("resolutionFrame").innerHTML = source;
             document.getElementById("resolutionFrame").style.display = "block";
         }
@@ -189,33 +247,10 @@ function onChangeProductMinMax() {
     firstTask = "Change Product Min/Max";
 }
 
-function onPOEDI() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-    
-    $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
-    $("#resolutionFrame").html("<h3>UNDER CONSTRUCTION</h3>");
-    $("#resolutionFrame").attr('style', 'display:block;')
 
-    // leaving for backwards compatability w/ safari and internet explorer
-    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
-    firstTask = "PO EDI";
-}
 
-function onUPCNotOnFile() {
-    hideBlankQuestionnaire();
-    hidePreviousInfo();
 
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B12:D12\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    alert("Please assign the ticket to the person listed.");
-    document.getElementById("resolutionFrame").style.display = "block";
-    firstTask = "UPC Not On File";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-}
-
+//CUSTOM VENDOR WEBSITE FORM
 function onVendorWebsitePassword() {
     hideBlankQuestionnaire();
     hidePreviousInfo();
@@ -254,6 +289,10 @@ function onVendorWebsitePassword() {
     firstTask = "Vendor Website Password";
 }
 
+
+
+
+//CUSTOM RETAIL PRICE ISSUES FORM
 function onRetailPriceIssueNotMarkdown() {
     hideBlankQuestionnaire();
     hidePreviousInfo();
@@ -291,147 +330,23 @@ function onRetailPriceIssueNotMarkdown() {
     firstTask = "Price Issue (Not Markdown)";
 }
 
-function onCostIssue() {
-    hideBlankQuestionnaire();
-    hidePreviousInfo();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B2:D2\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    alert("Please assign the ticket to the person listed.");
-    document.getElementById("resolutionFrame").style.display = "block";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    firstTask = "Cost Issue";
-}
-
-function onSmartCycleCounts() {
-    hideBlankQuestionnaire();
-    hidePreviousInfo();
-    alert("UNDER CONSTRUCTION");
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    firstTask = "Smart Cycle Counts";
-}
-
-function onSpecialOrderIssues() {
-    alert("UNDER CONSTRUCTION");
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    firstTask = "Special Order Issues";
-}
-
-function onStoreSpecificClearance() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.pufx8h954y10\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for insturctions to process requests for Store Specific Clearance Pricing.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Store Specific Clearance";
-}
-
-function onStoreSpecificTemporary() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B10\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Store Specific Temporary Pricing issues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Store Specific Temporary";
-}
-
-function onCustomerPricingQuote() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B3:D3\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Special Order issues and inquiries to. After following the link, please click Submit.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Customer Pricing Quote";
-}
-
-function onHonda() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B5:D5\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the name of the person to forward all Honda Order issues and inquiries to. After following the link, please click Submit</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Honda";
-}
-
-function onOrderBadAirSponge() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B30:C30\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the person who creates new POs for Bad Air Sponges.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Order Bad Air Sponge";
-}
-
-function onImmediatePriceChanges() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.wci5p6vv6cm7\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for instructions to do Immediate Price Changes.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"><h5>After following the instructions, if you have any problems, please escalate this issue to <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=907924166&range=B31\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a>, provide any information you think may be helpful and click Submit.</h5><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Immediate Price Changes";
-}
-
+//CUSTOM BLOODBORNE KIT FORM
 function onBloodborneKit() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>These tickets should be going to the stores Inventory/Operations manager. Please click <a href=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&range=A21\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for a list of team managers. To determine which team the store is a part of go to the Stores tab, ctrl+f search the store number and look in column c.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    let team = getTeamOfStore();
 
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Bloodborne Kit";
+    if(team == 1) {
+        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A1:D5\"></iframe>";
+    } else if(team == 2) {
+        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A7:D11\"></iframe>";
+    } else if(team == 3) {
+        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A15:D19\"></iframe>";
+    } else {
+        alert("No team.");
+    }
 }
 
-function onItemPackagingNotCorrect() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Only choose this option if you are 100% certain that the item doesn't match the packaging. Call the store and talk with the person who submitted the ticket to confirm. Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=790165298&range=B25\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the person to send these tickets to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Item Packing Not Correct";
-}
-
-function onBatteryCoreCharges() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>We are legally required to charge a core charge when selling the lawnmower batteries. We are also legally required to take the old battery back. When a store inquires about how the battery core charges work when ringing out a customer, click <a href=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A122:B122\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for an explanation from the Product Team.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Battery Core Charges";
-}
-
-function onMinQuantityRequiredClosePO() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1GPHOQxF7bteImiyo-pWVcbZG01d5kVfLHiDy62R087k/edit#gid=0\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for a list of all Product Team responsible people and their vendors, then forward the PO issue to whoever deals with that vendor.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#productDropdown").removeClass("bg-info border-info");
-    $("#productDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Min Quantity To Close PO";
-}
 
 function blankProduct() {
     document.getElementById("thirdForm").innerHTML = "";
