@@ -67,6 +67,7 @@ function threeButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
     document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
     document.getElementById("optionalRadio2").style.display = "none";
     document.getElementById("optionalRadio3").style.display = "none";
 }
@@ -76,6 +77,8 @@ function fourButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
     document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
+    document.getElementById("optionalRadio2").style.display = "inline-flex";
     document.getElementById("optionalRadio3").style.display = "none";
 }
 
@@ -83,7 +86,9 @@ function fourButtonQuestionnaire() {
 function fiveButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
-    document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
+    document.getElementById("optionalRadio2").style.display = "inline-flex";
+    document.getElementById("optionalRadio3").style.display = "inline-flex";
 }
 
 
@@ -387,4 +392,13 @@ function SubForm() {
             alert("There was an error :(");
         }
     });
+}
+
+function getTeamOfStore() {
+    const searchValue = document.getElementById("typeStore").value;
+    const result = allStoreNames.find(obj => {
+        return obj.Store === searchValue;
+    })
+    console.log(result.Team);
+    return result.Team;
 }
