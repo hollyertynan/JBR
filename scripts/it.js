@@ -129,12 +129,14 @@ function onRegister() {
 
 function onHardware() {
     makeRegisterHardwareForm();
+    $("#registerDropdown").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Hardware";
 }
 
 function onSoftware() {
+    makeRegisterSoftwareForm();
     $("#registerDropdown").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});

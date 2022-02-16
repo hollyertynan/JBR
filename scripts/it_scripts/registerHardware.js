@@ -56,50 +56,20 @@ function onEventITRegisterHardware(event) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     switch(event.target.value) {
+        case "Message Displays on Monitor 'No Signal Input'":
+            $("#registerHardwareDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+            document.getElementById("fifthForm").innerHTML += "<h4 style=\"width: 80%;test-align:center;margin-left:10%;margin-right:10%;padding-bottom:2%;\">This message means the monitor is on, but it's not receiving any information from the computer to show an image on the screen. Have the store check to make sure that the computer tower is turned on. The power button should be lit. If it's not, instruct the store to push the power button to turn it on.</h4>";
+            break
         case "Register Frozen / Unresponsive":
             onRegisterFrozen();
             break
-        case "Communication Error / Network Down":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Receipt Printer Stops Printing, Displays Error Code 106 or Flashing 'Remove Document from Slip Printer'":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Hand Scanner Not Working":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Receipt Printer is Hung Up": 
-            defaultRegisterHardware(event.target.value);
-            break
-        case "New Register Setup Has Arrived At Store":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Store needs a new Keyboard, Monitor, Printer, Scanner, etc.":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Receipt Printer Issues, Monitor Reads 'Illegal Bitmap Error'":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Message Displays on Monitor 'No Signal Input'":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Monitor Screen Needs Recalibration":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Monitor Display is Wrong/TouchPOS Looks Weird":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Cash Drawer Doesn't Pop During a Cash Sale":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Register is Stuck in Repair Mode":
-            defaultRegisterHardware(event.target.value);
-            break
-        case "Touch Screen Will not Respond to Input":
-            defaultRegisterHardware(event.target.value);
-            break
         case "Other":
             onOtherRegisterHardware();
+            break
+        default:
+            defaultRegisterHardware(event.target.value);
+            break
+
     }
 }
 
