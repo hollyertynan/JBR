@@ -28,6 +28,10 @@ HW 1, Part 2, Author: Wenjin Zhou
   height: 50vh;
 }
 
+.vh-70 {
+  height: 70vh;
+}
+
 .vh-30 {
   height: 30vh;
 }
