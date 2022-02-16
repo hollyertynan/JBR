@@ -24,6 +24,14 @@ HW 1, Part 2, Author: Wenjin Zhou
   display: none;
 }
 
+.vh-50 {
+  height: 50vh;
+}
+
+.vh-30 {
+  height: 30vh;
+}
+
 h3 {
   color:white;
 }
