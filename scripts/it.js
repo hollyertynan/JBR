@@ -10,7 +10,7 @@ function onEventIT(event) {
         case "1":
             onRegister();
             break;
-        case "2":
+        case "Payment Terminal":
             onPaymentTerminal();
             break;
         case "3":
@@ -124,10 +124,30 @@ onPaymentTerminal() pipeline
 
 */
 
+const paymentTerminalIssues = [
+        "Displays 'None' When Being Inserted",
+        "Stuck On System Information",
+        "Declining All Cards",
+        "Debit Being Declined / Credit Being Stored for Later Processing",
+        "Signature Stuck in Loop",
+        "Screen is blank and white",
+        "Automatically Reads 'Cancelled' when Debit or Credit is selected as tender",
+        "Critical Error: No USB Connection, please check cable",
+        "'Maintenance Required' or 'Enter Password to Login'",
+        "New Payment Terminal to Setup",
+        "Need a new stylus (pen)",
+        "Need a new Payment Terminal",
+        "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
+        "Return Not Processing",
+        "Other",
+]
+
 function onPaymentTerminal() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
     makePaymentTerminalForm();
+    hidePreviousInfo();
+    
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");

@@ -1,67 +1,70 @@
-var paymentTerminalIssues = [
-    "Displays 'None' When Being Inserted",
-    "Stuck On System Information",
-    "Declining All Cards",
-    "Debit Being Declined / Credit Being Stored for Later Processing",
-    "Signature Stuck in Loop",
-    "Screen is blank and white",
-    "Automatically Reads 'Cancelled' when Debit or Credit is selected as tender",
-    "Critical Error: No USB Connection, please check cable",
-    "'Maintenance Required' or 'Enter Password to Login'",
-    "New Payment Terminal to Setup",
-    "Need a new stylus (pen)",
-    "Need a new Payment Terminal",
-    "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
-    "Return Not Processing",
-    "Other",
-]
+let paymentTerminalMap = new Map([
+    ["Displays 'None' When Being Inserted", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A2:B2\"></iframe>"],
+    ["Stuck On System Information", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A14:B14\"></iframe>"],
+    ["Declining All Cards"],
+    ["Debit Being Declined / Credit Being Stored for Later Processing", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A4:B6\"></iframe>"],
+    ["Signature Stuck in Loop", "<iframe class=\"vh-50\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A12:B12\"></iframe>"],
+    ["Screen is blank and white", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A54:B54\"></iframe>"],
+    ["Automatically Reads 'Cancelled' when Debit or Credit is selected as tender", "<iframe class=\"vh-100\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A50:B50\"></iframe>"],
+    ["Critical Error: No USB Connection, please check cable", "<iframe class=\"vh-30\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A46:B46\"></iframe>"],
+    ["'Maintenance Required' or 'Enter Password to Login'", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&ampchrome=true&amp;range=A24:D24\"></iframe>"],
+    ["New Payment Terminal to Setup", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A76:B76\"></iframe>"],
+    ["Need a new stylus (pen)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;range=A20:D20\"></iframe>"],
+    ["Need a new Payment Terminal"],
+    ["Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A14:B14\"></iframe>"],
+    ["Return Not Processing"],
+    ["Other"],
+])
 
 function onEventITPaymentTerminal(event) {
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    document.getElementById("fourthForm").innerHTML = "";
     switch(event.target.value) {
-        case "1":
-            onDisplaysNone();
+        case "Displays 'None' When Being Inserted":
+            defaultPaymentTerminal(event.target.value);
             break;
-        case "2":
-            onStuckOnSystemInfo();
+        case "Stuck On System Information":
+            defaultPaymentTerminal(event.target.value);
             break;
-        case "3":
+        case "Declining All Cards":
             onDeclinesAllCards();
             break;
-        case "4":
-            onDebitBeingDeclined();
+        case "Debit Being Declined / Credit Being Stored for Later Processing":
+            defaultPaymentTerminal(event.target.value);
             break;
-        case "5":
-            onSignatureStuckInLoop();
+        case "Signature Stuck in Loop":
+            defaultPaymentTerminal(event.target.value);
             break;
-        case "6":
-            onScreenIsBlank();
+        case "Screen is blank and white":
+            defaultPaymentTerminal(event.target.value);
             break;
-        case "7":
-            onAutomaticallyCancelled();
+        case "Automatically Reads 'Cancelled' when Debit or Credit is selected as tender":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "8":
-            onCriticalError();
+        case "Critical Error: No USB Connection, please check cable":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "9":
-            onMaintenanceRequired();
+        case "'Maintenance Required' or 'Enter Password to Login'":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "10":
-            onNewPaymentTerminal();
+        case "New Payment Terminal to Setup":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "11":
-            onNeedPen();
+        case "Need a new stylus (pen)":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "12":
+        case "Need a new Payment Terminal":
             onNeedTerminal();
             break; 
-        case "13":
-            onUnableCommunicate();
+        case "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'":
+            defaultPaymentTerminal(event.target.value);
             break; 
-        case "14":
+        case "Return Not Processing":
             onReturnNotProcessing();
             break; 
-        case "15":
-            onOtherPaymentTerminal();
+        case "Other":
+            onOtherPaymentTerminal()
             break;  
         default: 
             blankPaymentTerminal();
@@ -74,10 +77,11 @@ function makePaymentTerminalForm() {
     input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"paymentTerminalDropdown\" id=\"paymentTerminalDropdown\" onchange=\"onEventITPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
     for (var i = 0; i < paymentTerminalIssues.length; i++) {
-        input += "<option value=\"" + (i + 1) + "\">" + paymentTerminalIssues[i] + "</option>";
+        input += "<option value=\"" + paymentTerminalIssues[i] + "\">" + paymentTerminalIssues[i] + "</option>";
     }
 
     input += "</select></div></div><div class=\"col-2\"></div></div></div>";
+    hidePreviousInfo();
     document.getElementById("thirdForm").innerHTML = input;
 }
 
@@ -87,32 +91,26 @@ function blankPaymentTerminal() {
 
 
 
-
-//USE OF SOURCE VARIABLE MAKES IT EASIER TO CHANGE SOURCE IN THE FUTURE IF NEED BE
-
-function onDisplaysNone() {
-    hideBlankQuestionnaire();
+function defaultPaymentTerminal(taskName) {
     hidePreviousInfo();
-    
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A2:B2\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "Displays None";
+    hideBlankQuestionnaire();
+
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html(paymentTerminalMap.get(taskName));
+    $("#resolutionFrame").attr('style', 'display:block;')
+
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+    firstTask = taskName;
 }
 
-function onStuckOnSystemInfo() {
-    hideBlankQuestionnaire();
-    hidePreviousInfo();
 
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A14\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    
-    secondTask = "Stuck on System Information";
-}
 
-//START DECLINE CARD FUNCTIONS
+
+
+//CUSTOM CARD DECLINING FORM
 function onDeclinesAllCards() {
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     hidePreviousInfo();
     document.getElementById("radioOne").innerHTML = "Yes";
     document.getElementById("radioTwo").innerHTML = "No";
@@ -123,7 +121,7 @@ function onDeclinesAllCards() {
 
     //CARDS DECLINE ALL REGISTERS
     document.getElementById("inlineRadio1").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A20:B20\"></iframe>";
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A20:B20\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
@@ -131,100 +129,20 @@ function onDeclinesAllCards() {
 
     //CARDS DECLINE SPECIFIC REGISTER
     document.getElementById("inlineRadio2").onclick = function() {
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A4:B6\"></iframe>";
+        source = "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A4:B6\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
 }
 
 
-function onDebitBeingDeclined() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
 
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A4:B6\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
 
-    secondTask = "Debit Being Declined";
-}
 
-function onSignatureStuckInLoop() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
 
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A12:B12\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-
-    secondTask = "Signature Stuck in Loop";
-}
-
-function onScreenIsBlank() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A54:B54\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-
-    secondTask = "Screen is Blank / White";
-}
-
-function onAutomaticallyCancelled() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A50:B50\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "Automatically Cancelled";
-}
-
-function onCriticalError() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A46:B46\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "Critical Error";
-}
-
-function onMaintenanceRequired() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B24:D24\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    alert("Please assign the ticket to the person listed.");
-    document.getElementById("resolutionFrame").style.display = "block";
-
-    secondTask = "Maintenance Required";
-}
-
-function onNewPaymentTerminal() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A76:B76\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "New Payment Terminal";
-}
-
-function onNeedPen() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
-
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B20:D20\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    alert("Please assign the ticket to the person listed.");
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "Needs Pen";
-}
-
+//CUSTOM NEED TERMINAL FORM
 function onNeedTerminal() {
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     hidePreviousInfo();
     document.getElementById("radioOne").innerHTML = "Yes";
     document.getElementById("radioTwo").innerHTML = "No";
@@ -234,8 +152,8 @@ function onNeedTerminal() {
 
     //POS IS AWARE
     document.getElementById("inlineRadio1").onclick = function() {
-        alert("Please assign the ticket to the person listed.");
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=2113782330&range=B24:D24\"></iframe>";
+        document.getElementById("prompt").innerHTML = "Does the POS Team know you plan to order a new payment terminal?";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;range=A24:D24\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
@@ -243,22 +161,17 @@ function onNeedTerminal() {
 
     //POS IS NOT AWARE
     document.getElementById("inlineRadio2").onclick = function() {
-        alert("Please consult the POS Team before ordering a new payment terminal for the store.");
+        document.getElementById("prompt").innerHTML = "Please consult the POS Team before ordering a new payment terminal for the store.";
     }
     secondTask = "Needs Terminal";
 }
 
-function onUnableCommunicate() {
-    hidePreviousInfo();
-    hideBlankQuestionnaire();
 
-    source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/edit#gid=1612994648&range=A14:B14\"></iframe>";
-    document.getElementById("resolutionFrame").innerHTML = source;
-    document.getElementById("resolutionFrame").style.display = "block";
-    secondTask = "Unable to Communicate";
-}
 
+
+//CUSTOM RETURN NOT PROCESSING FORM
 function onReturnNotProcessing() {
+    $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     hidePreviousInfo();
     document.getElementById("radioOne").innerHTML = "Yes";
     document.getElementById("radioTwo").innerHTML = "No";
@@ -266,19 +179,24 @@ function onReturnNotProcessing() {
 
     document.getElementById("prompt").innerHTML += "Was the return that is being processed purchased from the store processing the return?";
 
-    //POS IS AWARE
+    //RETURN DONE AT STORE
     document.getElementById("inlineRadio1").onclick = function() {
-        alert("The return should work automatically, if not escalate to L2.");
+        document.getElementById("prompt").innerHTML = "The return should work automatically, if not escalate to L2.";
     }
 
 
-    //POS IS NOT AWARE
+    //RETURN NOT DONE AT STORE
     document.getElementById("inlineRadio2").onclick = function() {
-        alert("Since the returned item(s) wasn't purchased at the store that's processing the return, the customer needs to insert their card into the payment terminal to finish the process. If after trying this it still isn't working, escalate to L2.");
+        document.getElementById("prompt").innerHTML = "Since the returned item(s) wasn't purchased at the store that's processing the return, the customer needs to insert their card into the payment terminal to finish the process. If after trying this it still isn't working, escalate to L2.";
     }
     secondTask = "Returns Not Processing";
 }
 
+
+
+
+
+//CUSTOM OTHER FORM
 function onOtherPaymentTerminal() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
