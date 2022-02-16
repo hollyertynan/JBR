@@ -7,7 +7,7 @@ passing in value from dropdown menu and continues logically
 
 function onEventIT(event) {
     switch(event.target.value) {
-        case "1":
+        case "Register":
             onRegister();
             break;
         case "Payment Terminal":
@@ -60,7 +60,6 @@ function onEventIT(event) {
             break; 
         case "18":
             onElvis();
-            
             break; 
         case "19":
             onITOther();
@@ -85,38 +84,67 @@ function blankIT() {
     $("#itDropdown").removeClass("bg-success border-success");
 }
 
+
+
+
+
 /* 
 
 onRegister() pipeline 
 
 */
 
+function hardwareOrSoftware(event) {
+    document.getElementById("fourthForm").innerHTML = "";
+    $("#registerDropdown").removeClass("bg-info border-info");
+    $("#registerDropdown").addClass("bg-success border-success");
+    switch(event.target.value) {
+        case "Hardware":
+            onHardware();
+            break
+        case "Software":
+            onSoftware();
+            break
+    }
+}
+
+
 function onRegister() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-4\"><button id=\"hardware\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onHardware()\"><h4>Hardware</h4></button></div><div class=\"col-4\"><button id=\"software\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onSoftware()\"><h4 >Software</h4></button></div><div class=\"col-2\"></div></div></div>";
+    
+    let registerSoftwareOrHardware = "";
+    registerSoftwareOrHardware += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerDropdown\" id=\"registerDropdown\" onchange=\"hardwareOrSoftware(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"Hardware\">Hardware</option><option value=\"Software\">Software</option></select></div></div><div class=\"col-2\"></div></div></div>"
+
+    hidePreviousInfo();
+
+    document.getElementById("thirdForm").innerHTML = registerSoftwareOrHardware;
+    
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Register";
+    firstTask = "Payment Terminal";
 }
 
 function onHardware() {
-    $("#software").removeClass("btn-success").addClass("btn-info");
-    $("#hardware").removeClass("btn-info").addClass("btn-success");
+    makeRegisterHardwareForm();
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Hardware";
 }
 
 function onSoftware() {
-    $("#hardware").removeClass("btn-success").addClass("btn-info");
-    $("#software").removeClass("btn-info").addClass("btn-success");
+    $("#registerDropdown").removeClass("btn-info").addClass("btn-success");
 
     document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
     secondTask = "Software";
 }
+
+
+
+
+
 
 /* 
 
