@@ -1,17 +1,17 @@
 let paymentTerminalMap = new Map([
-    ["Displays 'None' When Being Inserted", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A2:B2\"></iframe>"],
-    ["Stuck On System Information", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A14:B14\"></iframe>"],
+    ["Displays 'None' When Being Inserted", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A2:B2\"></iframe>"],
+    ["Stuck On System Information", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A14:B14\"></iframe>"],
     ["Declining All Cards"],
-    ["Debit Being Declined / Credit Being Stored for Later Processing", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A4:B6\"></iframe>"],
-    ["Signature Stuck in Loop", "<iframe class=\"vh-50\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A12:B12\"></iframe>"],
-    ["Screen is blank and white", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A54:B54\"></iframe>"],
-    ["Automatically Reads 'Cancelled' when Debit or Credit is selected as tender", "<iframe class=\"vh-100\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A50:B50\"></iframe>"],
-    ["Critical Error: No USB Connection, please check cable", "<iframe class=\"vh-30\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A46:B46\"></iframe>"],
-    ["'Maintenance Required' or 'Enter Password to Login'", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&ampchrome=true&amp;range=A24:D24\"></iframe>"],
-    ["New Payment Terminal to Setup", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A76:B76\"></iframe>"],
-    ["Need a new stylus (pen)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;range=A20:D20\"></iframe>"],
+    ["Debit Being Declined / Credit Being Stored for Later Processing", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:B6\"></iframe>"],
+    ["Signature Stuck in Loop", "<iframe class=\"vh-50\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A12:B12\"></iframe>"],
+    ["Screen is blank and white", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A54:B54\"></iframe>"],
+    ["Automatically Reads 'Cancelled' when Debit or Credit is selected as tender", "<iframe class=\"vh-100\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A50:B50\"></iframe>"],
+    ["Critical Error: No USB Connection, please check cable", "<iframe class=\"vh-30\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A46:B46\"></iframe>"],
+    ["'Maintenance Required' or 'Enter Password to Login'", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&ampchrome=true&amp;single=true&amp;range=A24:D24\"></iframe>"],
+    ["New Payment Terminal to Setup", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A76:B76\"></iframe>"],
+    ["Need a new stylus (pen)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A20:D20\"></iframe>"],
     ["Need a new Payment Terminal"],
-    ["Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A14:B14\"></iframe>"],
+    ["Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A14:B14\"></iframe>"],
     ["Return Not Processing"],
     ["Other"],
 ])
@@ -121,7 +121,7 @@ function onDeclinesAllCards() {
 
     //CARDS DECLINE ALL REGISTERS
     document.getElementById("inlineRadio1").onclick = function() {
-        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A20:B20\"></iframe>";
+        source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A20:B20\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
@@ -129,7 +129,7 @@ function onDeclinesAllCards() {
 
     //CARDS DECLINE SPECIFIC REGISTER
     document.getElementById("inlineRadio2").onclick = function() {
-        source = "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;range=A4:B6\"></iframe>";
+        source = "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:B6\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
@@ -153,7 +153,7 @@ function onNeedTerminal() {
     //POS IS AWARE
     document.getElementById("inlineRadio1").onclick = function() {
         document.getElementById("prompt").innerHTML = "Does the POS Team know you plan to order a new payment terminal?";
-        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;range=A24:D24\"></iframe>";
+        source = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A24:D24\"></iframe>";
         document.getElementById("resolutionFrame").innerHTML = source;
         document.getElementById("resolutionFrame").style.display = "block";
     }
