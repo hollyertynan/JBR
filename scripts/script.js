@@ -308,9 +308,29 @@ ACCOUNTING PIPELINE
 
 */
 
-function onAccounting() {
-    input = "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">PO / EDI Issues</option><option value=\"2\">Missing / Voided Transactions</option><option value=\"3\">Changing Canadian Conversion Rate</option><option value=\"4\">Setting Up a New Home Heating Customer Account</option><option value=\"5\">Defective Items / Credits</option><option value=\"6\">Store Has a Customer That Was Double Charged</option><option value=\"7\">Issues With Updates to In-House Accounts</option><option value=\"8\">Sales Audit / Daybook Issues</option><option value=\"9\">Store is Processing a Return and it's Being Declined</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+const onAccountingIssues = [
+   "PO / EDI Issues",
+   "Missing / Voided Transactions",
+   "Changing Canadian Conversion Rate",
+   "Setting Up a New Home Heating Customer Account",
+   "Defective Items / Credits",
+   "Store Has a Customer That Was Double Charged",
+   "Issues With Updates to In-House Accounts",
+   "Sales Audit / Daybook Issues",
+   "Store is Processing a Return and it's Being Declined",
+   "Other"
+]
 
+function onAccounting() {
+    var input = "";
+    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onAccountingIssues.length; i++) {
+        input += "<option value=\"" + onAccountingIssues[i] + "\">" + onAccountingIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
+    
     clearPastFirstForm()
     $("#secondForm").html(input);
 
