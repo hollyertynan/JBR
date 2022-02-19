@@ -402,3 +402,58 @@ function getTeamOfStore() {
     console.log(result.Team);
     return result.Team;
 }
+
+$(document).ready(function() {
+    $("#storeTicketForm").validate({
+        rules: {
+            typeStore: {
+                required: true
+            },
+            tikcal: {
+                required: true
+            }
+        },
+        messages: {
+            typeStore: {
+                required: ""
+            },
+            tikcal: {
+                required: ""
+            }
+        },
+    })
+
+    
+    $("#ticket").click(function() {
+        $("#storeTicketForm").valid();
+        if($("#storeTicketForm").valid()) {
+            $("#typeStore").removeClass("bg-danger").addClass("bg-dark");
+            $("#ticketinfo").removeClass("bg-danger").addClass("bg-dark");
+        } else {
+            $("#typeStore").removeClass("bg-dark").addClass("bg-danger");
+            $("#ticketinfo").removeClass("bg-dark").addClass("bg-danger");
+        }
+    })
+
+    $("#phone").click(function() {
+        if($("#storeTicketForm").valid()) {
+            $("#typeStore").removeClass("bg-danger").addClass("bg-dark");
+            $("#ticketinfo").removeClass("bg-danger").addClass("bg-dark");
+        } else {
+            $("#typeStore").removeClass("bg-dark").addClass("bg-danger");
+            $("#ticketinfo").removeClass("bg-dark").addClass("bg-danger");
+        }
+    })
+
+    $("#maintenance").click(function() {
+        $("#storeTicketForm").valid();
+        if($("#storeTicketForm").valid()) {
+            $("#typeStore").removeClass("bg-danger").addClass("bg-dark");
+            $("#ticketinfo").removeClass("bg-danger").addClass("bg-dark");
+        } else {
+            $("#typeStore").removeClass("bg-dark").addClass("bg-danger");
+            $("#ticketinfo").removeClass("bg-dark").addClass("bg-danger");
+        }
+    })
+})
+
