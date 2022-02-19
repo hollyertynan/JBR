@@ -101,7 +101,7 @@ function defaultPaymentTerminal(taskName) {
 
     // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
-    firstTask = taskName;
+    secondTask = taskName;
 }
 
 
@@ -147,7 +147,6 @@ function onNeedTerminal(taskName) {
     document.getElementById("radioOne").innerHTML = "Yes";
     document.getElementById("radioTwo").innerHTML = "No";
     showBlankQuestionnaire();
-    firstTask = taskName;
 
     document.getElementById("prompt").innerHTML += "Does the POS Team know you plan to order a new payment terminal?";
 
