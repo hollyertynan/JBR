@@ -28,7 +28,7 @@ function onEventITPaymentTerminal(event) {
             defaultPaymentTerminal(event.target.value);
             break;
         case "Declining All Cards":
-            onDeclinesAllCards();
+            onDeclinesAllCards(event.target.value);
             break;
         case "Debit Being Declined / Credit Being Stored for Later Processing":
             defaultPaymentTerminal(event.target.value);
@@ -109,7 +109,7 @@ function defaultPaymentTerminal(taskName) {
 
 
 //CUSTOM CARD DECLINING FORM
-function onDeclinesAllCards() {
+function onDeclinesAllCards(taskName) {
     $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     hidePreviousInfo();
     document.getElementById("radioOne").innerHTML = "Yes";
@@ -117,7 +117,7 @@ function onDeclinesAllCards() {
     showBlankQuestionnaire();
 
     document.getElementById("prompt").innerHTML += "Is this happening on all registers?";
-    secondTask = "Declines all Cards";
+    secondTask = taskName;
 
     //CARDS DECLINE ALL REGISTERS
     document.getElementById("inlineRadio1").onclick = function() {
@@ -163,7 +163,7 @@ function onNeedTerminal(taskName) {
     document.getElementById("inlineRadio2").onclick = function() {
         document.getElementById("prompt").innerHTML = "Please consult the POS Team before ordering a new payment terminal for the store.";
     }
-    secondTask = "Needs Terminal";
+    secondTask = taskName;
 }
 
 
