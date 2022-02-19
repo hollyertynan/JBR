@@ -110,13 +110,28 @@ function changeColor() {
     }
 }
 
+function clearAllForms() {
+    $("#firstForm").html("");
+    $("#secondForm").html("");
+    $("#thirdForm").html("");
+    $("#fourthForm").html("");
+    $("#fifthForm").html("");
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+}
+
+function onTicketPhoneClick() {
+    return "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
+}
+
+function onMaintenanceClick() {
+    return "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"maintenanceTasks\" id=\"maintenanceTasks\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\"><option selected>Select One:</option><option value=\"1\">Benjamin Moore National Accounts Order</option><option value=\"2\">Live Sales Not Showing</option><option value=\"3\">Canadian Conversion Rate Change</option><option value=\"4\">Canceling Orgill Zeroed Customer BOSS Orders</option><option value=\"5\">Checking Capital One Trade Credit (BlueTarp) Authorized Signers</option><option value=\"6\">Re-Download Capital One Trade Credit (BlueTarp) Signers</option><option value=\"7\">Updating Store Hours</option><option value=\"8\">Running EOD for a Store</option><option value=\"9\">Attaching a File to a Ticket</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+}
+
 // function if ticket is clicked
 function onTicket() {
-    document.getElementById("firstForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
+    clearAllForms();
+    $("#firstForm").html(onTicketPhoneClick());
 
     $("#ticket").removeClass("btn-info").addClass("btn-success");
     $("#phone").removeClass("btn-success").addClass("btn-info");
@@ -128,11 +143,8 @@ function onTicket() {
 
 // function if phone is clicked
 function onPhone() {
-    document.getElementById("firstForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"><button id=\"product\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onProduct(); return false;\"><i class=\"bi bi-tag\"></i><h4 class=\"d-none d-md-block\">Product Team</h4></button></div><div class=\"col-2\"><button id=\"it\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onIT(); return false;\"><i class=\"bi bi-display\"></i><h4 class=\"d-none d-md-block\">IT</h4></button></div><div class=\"col-2\"><button id=\"accounting\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onAccounting(); return false;\"><i class=\"bi bi-paperclip\"></i><h4 class=\"d-none d-md-block\">Accounting</h4></button></div><div class=\"col-2\"><button id=\"customer\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onCustomer(); return false;\"><i class=\"bi bi-file-earmark-person\"></i><h4 class=\"d-none d-md-block\">Customer Accounts</h4></button></div><div class=\"col-2\"><button id=\"operations\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onOperations(); return false;\"><i class=\"bi bi-tools\"></i><h4 class=\"d-none d-md-block\">Operations</h4></button></div><div class=\"col-2\"><button id=\"marketing\" type=\"button\" class=\"btn btn-info text-light InitialButtons h-100\" onclick=\"onMarketing(); return false;\"><i class=\"bi bi-wallet2\"></i><h4 class=\"d-none d-md-block\">Marketing / HR</h4></button></div></div></div>";
+    clearAllForms();
+    $("#firstForm").html(onTicketPhoneClick());
 
     $("#phone").removeClass("btn-info").addClass("btn-success");
     $("#maintenance").removeClass("btn-success").addClass("btn-info");
@@ -144,11 +156,8 @@ function onPhone() {
 
 // function if maintenance is clicked
 function onMaintenance() {
-    document.getElementById("firstForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("firstForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"maintenanceTasks\" id=\"maintenanceTasks\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\"><option selected>Select One:</option><option value=\"1\">Benjamin Moore National Accounts Order</option><option value=\"2\">Live Sales Not Showing</option><option value=\"3\">Canadian Conversion Rate Change</option><option value=\"4\">Canceling Orgill Zeroed Customer BOSS Orders</option><option value=\"5\">Checking Capital One Trade Credit (BlueTarp) Authorized Signers</option><option value=\"6\">Re-Download Capital One Trade Credit (BlueTarp) Signers</option><option value=\"7\">Updating Store Hours</option><option value=\"8\">Running EOD for a Store</option><option value=\"9\">Attaching a File to a Ticket</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    clearAllForms();
+    $("#firstForm").html(onMaintenanceClick);
 
     $("#maintenance").removeClass("btn-info").addClass("btn-success");
     $("#phone").removeClass("btn-success").addClass("btn-info");
@@ -163,6 +172,17 @@ function hidePreviousInfo() {
     document.getElementById("resolutionFrame").style.display = "none";
     document.getElementById("blankQuestionnaire").style.display = "none";
 }
+
+function clearPastFirstForm() {
+    $("#secondForm").html("");
+    $("#thirdForm").html("");
+    $("#fourthForm").html("");
+    $("#fifthForm").html("");
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+}
+
+
 
 /*
 
@@ -201,11 +221,9 @@ function onIT() {
     }
 
     input += "</select></div></div><div class=\"col-2\"></div></div></div>";
-    hidePreviousInfo();
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML = input;
+
+    clearPastFirstForm()
+    $("#secondForm").html(input);
 
     $("#it").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
@@ -263,11 +281,10 @@ function onProduct() {
     }
 
     input += "</select></div></div><div class=\"col-2\"></div></div></div>";
-    hidePreviousInfo();
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML = input;
+
+
+    clearPastFirstForm()
+    $("#secondForm").html(input);
 
     $("#product").removeClass("btn-info").addClass("btn-success");
     $("#it").removeClass("btn-success").addClass("btn-info");
@@ -283,6 +300,8 @@ function onProduct() {
     chosenDepartment = "Product";
 }
 
+
+
 /*
 
 ACCOUNTING PIPELINE
@@ -290,11 +309,10 @@ ACCOUNTING PIPELINE
 */
 
 function onAccounting() {
-    hidePreviousInfo();
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">PO / EDI Issues</option><option value=\"2\">Missing / Voided Transactions</option><option value=\"3\">Changing Canadian Conversion Rate</option><option value=\"4\">Setting Up a New Home Heating Customer Account</option><option value=\"5\">Defective Items / Credits</option><option value=\"6\">Store Has a Customer That Was Double Charged</option><option value=\"7\">Issues With Updates to In-House Accounts</option><option value=\"8\">Sales Audit / Daybook Issues</option><option value=\"9\">Store is Processing a Return and it's Being Declined</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    input = "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">PO / EDI Issues</option><option value=\"2\">Missing / Voided Transactions</option><option value=\"3\">Changing Canadian Conversion Rate</option><option value=\"4\">Setting Up a New Home Heating Customer Account</option><option value=\"5\">Defective Items / Credits</option><option value=\"6\">Store Has a Customer That Was Double Charged</option><option value=\"7\">Issues With Updates to In-House Accounts</option><option value=\"8\">Sales Audit / Daybook Issues</option><option value=\"9\">Store is Processing a Return and it's Being Declined</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+
+    clearPastFirstForm()
+    $("#secondForm").html(input);
 
     $("#accounting").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
@@ -308,10 +326,8 @@ function onAccounting() {
 }
 
 function onCustomer() {
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    clearPastFirstForm()
+    $("#secondForm").html("<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>");
 
     $("#customer").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
@@ -325,10 +341,8 @@ function onCustomer() {
 }
 
 function onOperations() {
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    clearPastFirstForm()
+    $("#secondForm").html("<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>");
 
     $("#operations").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
@@ -342,10 +356,10 @@ function onOperations() {
 }
 
 function onMarketing() {
-    document.getElementById("secondForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("secondForm").innerHTML += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"marketingDropdown\" id=\"marketingDropdown\" onchange=\"onEventMarketing(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Chamber of Commerce Dues</option><option value=\"2\">Problems with Kronos / Timeclock</option><option value=\"3\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    input = "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"marketingDropdown\" id=\"marketingDropdown\" onchange=\"onEventMarketing(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Chamber of Commerce Dues</option><option value=\"2\">Problems with Kronos / Timeclock</option><option value=\"3\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>"
+
+    clearPastFirstForm()
+    $("#secondForm").html(input);
 
     $("#marketing").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
