@@ -55,7 +55,7 @@ function onEventITPaymentTerminal(event) {
             defaultPaymentTerminal(event.target.value);
             break; 
         case "Need a new Payment Terminal":
-            onNeedTerminal();
+            onNeedTerminal(event.target.value);
             break; 
         case "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'":
             defaultPaymentTerminal(event.target.value);
@@ -141,12 +141,13 @@ function onDeclinesAllCards() {
 
 
 //CUSTOM NEED TERMINAL FORM
-function onNeedTerminal() {
+function onNeedTerminal(taskName) {
     $("#paymentTerminalDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     hidePreviousInfo();
     document.getElementById("radioOne").innerHTML = "Yes";
     document.getElementById("radioTwo").innerHTML = "No";
     showBlankQuestionnaire();
+    firstTask = taskName;
 
     document.getElementById("prompt").innerHTML += "Does the POS Team know you plan to order a new payment terminal?";
 

@@ -15,6 +15,17 @@ function onEventMarketing(event) {
     }
 }
 
+function defaultMarketingHR() {
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=642263605&range=B13\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for who to forward Chamber of Commerce Dues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Chamber of Commerce";
+}
+
 function onChamberOfCommerce() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
