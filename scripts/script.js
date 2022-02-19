@@ -389,6 +389,15 @@ function SubForm() {
     });
 }
 
+function getTeamOfStore() {
+    const searchValue = document.getElementById("typeStore").value;
+    const result = allStoreNames.find(obj => {
+        return obj.Store === searchValue;
+    })
+    console.log(result.Team);
+    return result.Team;
+}
+
 $(document).ready(function() {
     $("#storeTicketForm").validate({
         rules: {
