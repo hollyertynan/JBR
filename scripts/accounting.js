@@ -11,11 +11,12 @@ let accountingMap = new Map([
     ["Defective Items / Credits", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B8:D8\"></iframe>"],
 
     // this one is acting weird - Tynan 2/19/2022
-    ["Store Has a Customer That Was Double Charged", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B18:D18\"></iframe>"], 
+    // changing it to A18-C18 fixed it, although it's got the blank A column space, but whatever.
+    ["Store Has a Customer That Was Double Charged", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=A18:D18\"></iframe>"], 
 
     ["Issues With Updates to In-House Accounts", "<h3>UNDER CONSTRUCTION</h3>"],
 
-    // this one doesn't have anything in old JBR either - Tynan 2/19/2022
+    // this one doesn't have anything in old JBR - Tynan 2/19/2022
     ["Sales Audit / Daybook Issues", "<h3>UNDER CONSTRUCTION</h3>"],
 
     ["Store is Processing a Return and it's Being Declined", "<h3>UNDER CONSTRUCTION</h3>"],
