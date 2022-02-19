@@ -129,6 +129,19 @@ i {
    color: white;
 }
 
+textarea::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+}
+
 .video-fluid {
     width: 100%;
     height: auto;
