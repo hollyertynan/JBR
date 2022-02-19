@@ -67,6 +67,7 @@ function threeButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
     document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
     document.getElementById("optionalRadio2").style.display = "none";
     document.getElementById("optionalRadio3").style.display = "none";
 }
@@ -76,6 +77,8 @@ function fourButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
     document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
+    document.getElementById("optionalRadio2").style.display = "inline-flex";
     document.getElementById("optionalRadio3").style.display = "none";
 }
 
@@ -83,7 +86,9 @@ function fourButtonQuestionnaire() {
 function fiveButtonQuestionnaire() {
     blankQuestionnaire.style.display = "block";
     document.getElementById("prompt").innerHTML = "";
-    document.getElementById("optionalNote").innerHTML = "";
+    document.getElementById("optionalRadio1").style.display = "inline-flex";
+    document.getElementById("optionalRadio2").style.display = "inline-flex";
+    document.getElementById("optionalRadio3").style.display = "inline-flex";
 }
 
 
@@ -451,3 +456,4 @@ $(document).ready(function() {
         }
     })
 })
+
