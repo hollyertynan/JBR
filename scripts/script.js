@@ -400,7 +400,7 @@ function onOperations() {
 }
 
 function onMarketing() {
-    input = "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"marketingDropdown\" id=\"marketingDropdown\" onchange=\"onEventMarketing(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Chamber of Commerce Dues</option><option value=\"2\">Problems with Kronos / Timeclock</option><option value=\"3\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>"
+    input = "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"marketingDropdown\" id=\"marketingDropdown\" onchange=\"onEventMarketing(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"1\">Chamber of Commerce Dues</option><option value=\"2\">Problems with Kronos / Timeclock</option><option value=\"3\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>"
 
     clearPastFirstForm()
     $("#secondForm").html(input);
@@ -442,8 +442,8 @@ function SubForm() {
         url: "https://api.apispreadsheets.com/data/DKFTbWbHBS9skMdT/",
         type: "post",
         data:$("#submitMyForm").serializeArray(),
+        
         success: function() {
-            alert("Form Data Submitted :)");
             location.reload();
         },
         error: function() {
@@ -460,6 +460,13 @@ function getTeamOfStore() {
     console.log(result.Team);
     return result.Team;
 }
+
+$(document).ready(function() {
+    $("#myModal").hide();
+    $("#submit").click(function(){
+        $("#myModal").modal('show');
+    })
+})
 
 $(document).ready(function() {
     $("#storeTicketForm").validate({
