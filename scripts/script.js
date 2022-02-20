@@ -345,9 +345,33 @@ function onAccounting() {
     chosenDepartment = "Accounting";
 }
 
+const onCustomerIssues = [
+    "New Military Discount Form",
+    "New Pro Discount Form",
+    "Merge Customer Accounts",
+    "Special Pricing / Price Quote",
+    "New Tax Exempt Form",
+    "Add Points Request",
+    "Customer Rewards Issue",
+    "Store has Customer that was Double Charged",
+    "Request to Delete Customer Account",
+    "Customer / Store Unable to Register Customer for Online Account",
+    "Ordering More Member Sign-Up Sheets",
+    "Other"
+ ]
+
 function onCustomer() {
+    var input = "";
+    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"customerDropdown\" id=\"customerDropdown\" onchange=\"onEventCustomer(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onCustomerIssues.length; i++) {
+        input += "<option value=\"" + onCustomerIssues[i] + "\">" + onCustomerIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
+    
     clearPastFirstForm()
-    $("#secondForm").html("<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>");
+    $("#secondForm").html(input);
 
     $("#customer").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
