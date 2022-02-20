@@ -10,7 +10,7 @@ let customerMap = new Map([
     ["Special Pricing / Price Quote", 
     "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=56243274&amp;widget=true&amp;range=B10:D10\"></iframe>"],
 
-    ["New Tax Exempt Form", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=56243274&amp;widget=true&amp;range=B5:D5"],
+    ["New Tax Exempt Form", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=56243274&amp;widget=true&amp;range=B6:D6\"></iframe>"],
 
     ["Add Points Request", "<h3>UNDER CONSTRUCTION</h3>"],
 
