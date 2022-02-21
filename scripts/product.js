@@ -62,77 +62,24 @@ function onEventProduct(event) {
         case "Benjamin Moore National Accounts Order":
             onBenMooreNationalAccountsOrder();
             break;
-        case "Benjamin Moore Web Sales Order":
-            onProductDefault(event.target.value);
-            break;
         case "Change Product Min and / or Max":
             onChangeProductMinMax();
             break;
-        case "PO/EDI Issues":
-            onProductDefault(event.target.value);
             break;
-        case "Paint Over Max Order":
-            onProductDefault(event.target.value);
-            break;
-        case "Product Needs a SKU":
-            onProductDefault(event.target.value);
-            break;
-        case "UPC Not On File":
-            onProductDefault(event.target.value);
-            break; 
         case "Need a Vendor Website Password Reset":
             onVendorWebsitePassword();
             break; 
         case "Retail Price Issues (Not Markdown)":
             onRetailPriceIssueNotMarkdown();
             break; 
-        case "Cost Issues":
-            onProductDefault(event.target.value);
-            break; 
-        case "Smart Cycle Count Issues":
-            onProductDefault(event.target.value);
-            break; 
-        case "Special Order Issues":
-            onProductDefault(event.target.value)
-            break; 
-        case "Store Specific Clearance Pricing":
-            onProductDefault(event.target.value);
-            break; 
-        case "Store Specific Temporary Pricing":
-            onProductDefault(event.target.value);
-            break; 
-        case "Customer Pricing Quote":
-            onProductDefault(event.target.value);
-            break; 
-        case "Honda Orders":
-            onProductDefault(event.target.value);
-            break; 
-        case "Order More Bad Air Sponges":
-            onProductDefault(event.target.value);
-            break; 
-        case "Immediate Price Changes":
-            onProductDefault(event.target.value);
-            break; 
         case "Store Needs Bloodborne Kit":
             onBloodborneKit();
             break;
-        case "Item Packaging Not Correct":
-            onProductDefault(event.target.value);
-            break;  
-        case "Battery Core Charges":
-            onProductDefault(event.target.value);
-            break; 
-        case "Minimum Quantity Required to Close a PO":
-            onProductDefault(event.target.value);
-            break;
-        case "Item Description Incorrect / Unclear / Missing":
-            onProductDefault(event.target.value);
-            break; 
         case "Other":
             onProductDefault(event.target.value);
             break;     
         default: 
-            blankProduct();
+            onProductDefault(event.target.value);
             break;
     }
 }

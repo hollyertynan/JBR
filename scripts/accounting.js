@@ -46,28 +46,6 @@ function onAccountingDefault(taskName) {
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
     secondTask = taskName;
 }
-
-function onPOEDIIssuesAccounting() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#accountingDropdown").removeClass("bg-info border-info");
-    $("#accountingDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Accounting PO EDI Issues";
-}
- 
-function onHomeHeatingCustomer() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#accountingDropdown").removeClass("bg-info border-info");
-    $("#accountingDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Home Heating Customer";
-}
  
 function onInHouseUpdates() {
     document.getElementById("thirdForm").innerHTML = "";
@@ -78,28 +56,6 @@ function onInHouseUpdates() {
     $("#accountingDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "In House Updates";
-}
- 
-function onSalesAuditDaybook() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#accountingDropdown").removeClass("bg-info border-info");
-    $("#accountingDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Sales Audit Daybook";
-}
- 
-function onReturnBeingDeclined() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#accountingDropdown").removeClass("bg-info border-info");
-    $("#accountingDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Returns Being Declined";
 }
  
 function blankAccounting() {
