@@ -282,7 +282,7 @@ function onBloodborneKit(taskName) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     let team = getTeamOfStore();
-
+    document.getElementById("fourthForm").innerHTML = "<h3>Request for Bloodborne Kits go to the Team Operations Manager for a store.</h3>";
     
 
     if(team == 1) {
