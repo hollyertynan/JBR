@@ -125,7 +125,7 @@ function onTicketPhoneClick() {
 }
 
 function onMaintenanceClick() {
-    return "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"maintenanceTasks\" id=\"maintenanceTasks\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\"><option selected>Select One:</option><option value=\"1\">Benjamin Moore National Accounts Order</option><option value=\"2\">Live Sales Not Showing</option><option value=\"3\">Canadian Conversion Rate Change</option><option value=\"4\">Canceling Orgill Zeroed Customer BOSS Orders</option><option value=\"5\">Checking Capital One Trade Credit (BlueTarp) Authorized Signers</option><option value=\"6\">Re-Download Capital One Trade Credit (BlueTarp) Signers</option><option value=\"7\">Updating Store Hours</option><option value=\"8\">Running EOD for a Store</option><option value=\"9\">Attaching a File to a Ticket</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
+    return "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"maintenanceTasks\" id=\"maintenanceTasks\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\"><option selected>Select One:</option><option value=\"1\">Benjamin Moore National Accounts Order</option><option value=\"2\">Live Sales Not Showing</option><option value=\"3\">Canadian Conversion Rate Change</option><option value=\"4\">Canceling Orgill Zeroed Customer BOSS Orders</option><option value=\"5\">Checking Capital One Trade Credit (BlueTarp) Authorized Signers</option><option value=\"6\">Re-Download Capital One Trade Credit (BlueTarp) Signers</option><option value=\"7\">Updating Store Hours</option><option value=\"8\">Running EOD for a Store</option><option value=\"9\">Attaching a File to a Ticket</option><option value=\"10\">Other</option></select></div></div><div class=\"col-2\"></div></div></div>";
 }
 
 // function if ticket is clicked
@@ -323,7 +323,7 @@ const onAccountingIssues = [
 
 function onAccounting() {
     var input = "";
-    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+    input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
     for (var i = 0; i < onAccountingIssues.length; i++) {
         input += "<option value=\"" + onAccountingIssues[i] + "\">" + onAccountingIssues[i] + "</option>";
@@ -368,7 +368,7 @@ const onCustomerIssues = [
 
 function onCustomer() {
     var input = "";
-    input += "<div class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"customerDropdown\" id=\"customerDropdown\" onchange=\"onEventCustomer(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+    input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"customerDropdown\" id=\"customerDropdown\" onchange=\"onEventCustomer(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
     for (var i = 0; i < onCustomerIssues.length; i++) {
         input += "<option value=\"" + onCustomerIssues[i] + "\">" + onCustomerIssues[i] + "</option>";
@@ -396,9 +396,36 @@ OPERATIONS PIPELINE
 
 */
 
+const onOperationsIssues = [
+    "Need Orange Shelf Tape",
+    "Need New Equipment",
+    "Forklift Maintenance",
+    "Sequencing",
+    "Card Swipe Cleaning Cards",
+    "Rubbish / Property Maintenance",
+    "Store Use Safety Masks",
+    "New Glass and / or Plexi Cutter",
+    "New Integrity Cleaner Shirt Needed for Porter",
+    "Business Cards",
+    "New Brush / Cutwheel for the Key Machine",
+    "Need Materials for Screen Repair",
+    "Ordering More Member Sign-Up Sheets",
+    "Setting Up Register Numbers for a New Employee",
+    "Other"
+]
+
 function onOperations() {
+    var input = "";
+    input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"operationsDropdown\" id=\"operationsDropdown\" onchange=\"onEventOperations(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
+
+    for (var i = 0; i < onOperationsIssues.length; i++) {
+        input += "<option value=\"" + onOperationsIssues[i] + "\">" + onOperationsIssues[i] + "</option>";
+    }
+
+    input += "</select></div></div><div class=\"col-2\"></div></div></div>";
+    
     clearPastFirstForm()
-    $("#secondForm").html("<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>");
+    $("#secondForm").html(input);
 
     $("#operations").removeClass("btn-info").addClass("btn-success");
     $("#product").removeClass("btn-success").addClass("btn-info");
