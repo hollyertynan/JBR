@@ -22,44 +22,11 @@ function onEventITPaymentTerminal(event) {
     hideBlankQuestionnaire();
     document.getElementById("fourthForm").innerHTML = "";
     switch(event.target.value) {
-        case "Displays 'None' When Being Inserted":
-            defaultPaymentTerminal(event.target.value);
-            break;
-        case "Stuck On System Information":
-            defaultPaymentTerminal(event.target.value);
-            break;
         case "Declining All Cards":
             onDeclinesAllCards(event.target.value);
             break;
-        case "Debit Being Declined / Credit Being Stored for Later Processing":
-            defaultPaymentTerminal(event.target.value);
-            break;
-        case "Signature Stuck in Loop":
-            defaultPaymentTerminal(event.target.value);
-            break;
-        case "Screen is blank and white":
-            defaultPaymentTerminal(event.target.value);
-            break;
-        case "Automatically Reads 'Cancelled' when Debit or Credit is selected as tender":
-            defaultPaymentTerminal(event.target.value);
-            break; 
-        case "Critical Error: No USB Connection, please check cable":
-            defaultPaymentTerminal(event.target.value);
-            break; 
-        case "'Maintenance Required' or 'Enter Password to Login'":
-            defaultPaymentTerminal(event.target.value);
-            break; 
-        case "New Payment Terminal to Setup":
-            defaultPaymentTerminal(event.target.value);
-            break; 
-        case "Need a new stylus (pen)":
-            defaultPaymentTerminal(event.target.value);
-            break; 
         case "Need a new Payment Terminal":
             onNeedTerminal(event.target.value);
-            break; 
-        case "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'":
-            defaultPaymentTerminal(event.target.value);
             break; 
         case "Return Not Processing":
             onReturnNotProcessing();
@@ -68,7 +35,7 @@ function onEventITPaymentTerminal(event) {
             onOtherPaymentTerminal()
             break;  
         default: 
-            blankPaymentTerminal();
+            defaultPaymentTerminal(event.target.value);
             break;
     }
 }

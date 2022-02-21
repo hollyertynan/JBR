@@ -345,6 +345,12 @@ function onAccounting() {
     chosenDepartment = "Accounting";
 }
 
+/*
+
+CUSTOMER PIPELINE
+
+*/
+
 const onCustomerIssues = [
     "New Military Discount Form",
     "New Pro Discount Form",
@@ -383,6 +389,12 @@ function onCustomer() {
     document.getElementById("secondForm").scrollIntoView({behavior: "smooth"});
     chosenDepartment = "Customer";
 }
+
+/*
+
+OPERATIONS PIPELINE
+
+*/
 
 function onOperations() {
     clearPastFirstForm()
