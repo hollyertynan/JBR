@@ -1,31 +1,31 @@
 let operationsMap = new Map([
-    ["Need Orange Shelf Tape", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Need Orange Shelf Tape", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B4:D4\"</iframe>"],
 
-    ["Need New Equipment", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Need New Equipment", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B14:C14\"</iframe>"],
 
-    ["Forklift Maintenance", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Forklift Maintenance", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A12:D12\"</iframe>"],
 
     ["Sequencing", "<h3>UNDER CONSTRUCTION</h3>"],
 
-    ["Card Swipe Cleaning Cards", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Card Swipe Cleaning Cards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A18:C18\"</iframe>"],
 
-    ["Rubbish / Property Maintenance", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Rubbish / Property Maintenance", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A13:E13\"</iframe>"],
 
     ["Store Use Safety Masks", "<h3>UNDER CONSTRUCTION</h3>"],
 
-    ["New Glass and / or Plexi Cutter", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["New Glass and / or Plexi Cutter", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A20:D20\"</iframe>"],
 
-    ["New Integrity Cleaner Shirt Needed for Porter", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["New Integrity Cleaner Shirt Needed for Porter", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A21:D21\"</iframe>"],
 
-    ["Business Cards", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Business Cards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B13:C13\"</iframe>"],
 
-    ["New Brush / Cutwheel for the Key Machine", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["New Brush / Cutwheel for the Key Machine", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A126:B126\"</iframe>"],
 
-    ["Need Materials for Screen Repair", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Need Materials for Screen Repair", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A128:B128\"</iframe>"],
 
-    ["Ordering More Member Sign-Up Sheets", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Ordering More Member Sign-Up Sheets", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A136:B136\"</iframe>"],
 
-    ["Setting Up Register Numbers for a New Employee", "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Setting Up Register Numbers for a New Employee", "<h3 class=\"text-center pb-3\">Please send this issue to the POS Team</h3>"],
 
     ["Other", "<h3 class=\"text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br/>"]
 
@@ -45,7 +45,7 @@ function onOperationsDefault(taskName) {
     hideBlankQuestionnaire();
     
     $("#operationsDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
-    $("#resolutionFrame").html(accountingMap.get(taskName));
+    $("#resolutionFrame").html(operationsMap.get(taskName));
     $("#resolutionFrame").attr('style', 'display:block;')
 
     // leaving for backwards compatability w/ safari and internet explorer
