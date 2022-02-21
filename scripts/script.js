@@ -496,8 +496,12 @@ function getTeamOfStore() {
     const result = allStoreNames.find(obj => {
         return obj.Store === searchValue;
     })
-    console.log(result.Team);
-    return result.Team;
+
+    if (result == null) {
+        return "No Store Added"
+    } else {
+        return result.Team;
+    }   
 }
 
 $(document).ready(function() {

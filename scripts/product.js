@@ -73,7 +73,7 @@ function onEventProduct(event) {
             onRetailPriceIssueNotMarkdown();
             break; 
         case "Store Needs Bloodborne Kit":
-            onBloodborneKit();
+            onBloodborneKit(event.target.value);
             break;
         case "Other":
             onProductDefault(event.target.value);
@@ -91,7 +91,7 @@ function onProductDefault(taskName) {
     
     $("#productDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     $("#resolutionFrame").html(productMap.get(taskName));
-    $("#resolutionFrame").attr('style', 'display:block;')
+    $("#resolutionFrame").attr('style', 'display:block;');
 
     // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
@@ -278,20 +278,30 @@ function onRetailPriceIssueNotMarkdown() {
 }
 
 //CUSTOM BLOODBORNE KIT FORM
-function onBloodborneKit() {
+function onBloodborneKit(taskName) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     let team = getTeamOfStore();
 
+    
+
     if(team == 1) {
-        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A1:D5\"></iframe>";
+        $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A1:D5\"></iframe>");
+        $("#resolutionFrame").attr('style', 'display:block;');
     } else if(team == 2) {
-        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A7:D11\"></iframe>";
+        $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A7:D11\"></iframe>");
+        $("#resolutionFrame").attr('style', 'display:block;');
     } else if(team == 3) {
-        document.getElementById("resolutionFrame").innerHTML += "<iframe src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/edit#gid=221&amp;chrome=false&amp;widget=true&amp;range=A15:D19\"></iframe>";
+        $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A15:D19\"></iframe>");
+        $("#resolutionFrame").attr('style', 'display:block;');
     } else {
         alert("No team.");
     }
+
+    $("#productDropdown").removeClass("bg-info border-info");
+    $("#productDropdown").addClass("bg-success border-success");
+
+    firstTask = taskName;
 }
 
 
