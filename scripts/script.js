@@ -400,7 +400,6 @@ const onOperationsIssues = [
     "Need Orange Shelf Tape",
     "Need New Equipment",
     "Forklift Maintenance",
-    "Sequencing",
     "Card Swipe Cleaning Cards",
     "Rubbish / Property Maintenance",
     "Store Use Safety Masks",
