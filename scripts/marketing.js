@@ -1,71 +1,40 @@
+const marketingIssues = [
+    "Chamber of Commerce Dues",
+    "Problems with Kronos/Time Clock"
+]
+
+const marketingMap = new Map([
+    ["Chamber of Commerce Dues", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=642263605&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A13:D13\"></iframe>"],
+    ["Problems with Kronos/Time Clock", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=1095304468&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A5:D5\"></iframe>"]
+])
+
+
 function onEventMarketing(event) {
     switch(event.target.value) {
-        case "1":
-            onChamberOfCommerce();
-            break;
-        case "2":
-            onKronos();
-            break;
-        case "3":
-            onMarketingOther();
-            break; 
         default: 
-            blankMarketing();
+            onMarketingDefault(event.target.value);
             break;
     }
 }
 
-function defaultMarketingHR() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=642263605&range=B13\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for who to forward Chamber of Commerce Dues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
+function onMarketingDefault(taskName) {
+    hidePreviousInfo();
+    hideBlankQuestionnaire();
+    
+    $("#marketingDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
+    $("#resolutionFrame").html(marketingMap.get(taskName));
+    $("#resolutionFrame").attr('style', 'display:block;')
 
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Chamber of Commerce";
-}
-
-function onChamberOfCommerce() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=642263605&range=B13\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for who to forward Chamber of Commerce Dues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Chamber of Commerce";
-}
-
-function onKronos() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please click <a href=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/edit#gid=1095304468&range=B5:D5\" target=\"_blank\" class=\"text-hyperlink-color\">HERE</a> for the person to forward all Kronos / Timeclock issues to.</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\"></div></div><div class=\"col-2\"></div></div></div>";
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "V9";
-}
-
-function onMarketingOther() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("fifthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>";
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "V9";
+    // leaving for backwards compatability w/ safari and internet explorer
+    document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+    secondTask = taskName;
 }
 
 function blankMarketing() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br><br>";
 
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Marketing Other";
+    $("#accountingDropdown").addClass("bg-info border-info");
+    $("#accountingDropdown").removeClass("bg-success border-success");
 }
+
