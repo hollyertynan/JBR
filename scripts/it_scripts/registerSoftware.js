@@ -21,7 +21,6 @@ const registerSoftwareIssues = [
     "Scanning Paint Causes Register to Freeze, or Doesn't Display All Colors",
     "Taskbar is in the Wrong Spot",
     "Other"
-
 ]
 
 const registerSoftwareMap = new Map([
@@ -113,13 +112,13 @@ function onReturnNotProcessingSoftware() {
 
     //RETURN DONE AT STORE
     document.getElementById("inlineRadio1").onclick = function() {
-        document.getElementById("prompt").innerHTML = "The return should work automatically, if not escalate to L2.";
+        document.getElementById("fifthForm").innerHTML = "The return should work automatically, if not escalate to L2.";
     }
 
 
     //RETURN NOT DONE AT STORE
     document.getElementById("inlineRadio2").onclick = function() {
-        document.getElementById("prompt").innerHTML = "Since the returned item(s) wasn't purchased at the store that's processing the return, the customer needs to insert their card into the payment terminal to finish the process. If after trying this it still isn't working, escalate to L2.";
+        document.getElementById("fifthForm").innerHTML = "Since the returned item(s) wasn't purchased at the store that's processing the return, the customer needs to insert their card into the payment terminal to finish the process. If after trying this it still isn't working, escalate to L2.";
     }
     secondTask = "Returns Not Processing";
 }
@@ -130,6 +129,8 @@ function onReturnNotProcessingSoftware() {
 
 //DEFAULT REGISTER SOFTWARE FORM
 function defaultRegisterSoftware(taskName) {
+    document.getElementById("fourthForm").innerHTML = "";
+    document.getElementById("fifthForm").innerHTML = "";
     hidePreviousInfo();
     hideBlankQuestionnaire();
 
@@ -212,7 +213,7 @@ function onNoNetworkConnection() {
 function onOtherRegisterSoftware() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
-    document.getElementById("fifthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\">";
+    document.getElementById("fifthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>";
 
     $("#registerSoftwareDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     document.getElementById("fifthForm").scrollIntoView({behavior: "smooth"});

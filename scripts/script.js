@@ -169,6 +169,7 @@ function onMaintenance() {
 
 //HIDES IFRAME AND QUESTIONNAIRE FROM PREVIOUS SESSION IF A CONTINUOUS SESSION IS BEING USED
 function hidePreviousInfo() {
+    document.getElementById("fifthForm").innerhtml = "";
     document.getElementById("resolutionFrame").style.display = "none";
     document.getElementById("blankQuestionnaire").style.display = "none";
 }
