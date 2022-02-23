@@ -121,7 +121,7 @@ function onRegisterFrozen() {
 function onOtherRegisterHardware() {
     hidePreviousInfo();
     hideBlankQuestionnaire();
-    document.getElementById("fifthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><div class=\"container-fluid  text-center whitePlaceholder pt-5 pb-5\"><div class=\"row align-items-center\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\"pb-3\"><input id=\"comments\" type=\"text\" name=\"comments\" placeholder=\"Comments\" style=\"width: 100%; text-align: left\" class=\"InitialButtons text-light bg-secondary text-light form-select-lg\">";
+    document.getElementById("fifthForm").innerHTML = "<h3>Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>";
 
     $("#registerHardwareDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     document.getElementById("fifthForm").scrollIntoView({behavior: "smooth"});
