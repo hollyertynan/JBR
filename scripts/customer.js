@@ -14,6 +14,9 @@ let customerMap = new Map([
 
     ["Add Points Request", "<h3 style=\"text-align:center;\">Please fill out the information in the spreadsheet below.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1W8soXxGHCZeujW2d8V3NTDEhiD3QzQieCAej_Z9HbBI/edit#gid=1988892003\"></iframe>"],
 
+    // we missed this one somewhere along the line
+    ["Customer Rewards Issue", "<h3 class=\"text-center\">UNDER MAINTENANCE</h3>"]
+    
     ["Store has Customer that was Double Charged", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=A18:D18\"></iframe>"],
 
     ["Request to Delete Customer Account", "<h3>Please make sure the store has a valid reason for wanting an account deleted. Employee accounts (PAST OR PRESENT) are NOT to be deleted.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.h6e40akfu4us\"></iframe>"],

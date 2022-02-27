@@ -359,6 +359,7 @@ const onCustomerIssues = [
     "Special Pricing / Price Quote",
     "New Tax Exempt Form",
     "Add Points Request",
+    "Customer Rewards Issue",
     "Store has Customer that was Double Charged",
     "Request to Delete Customer Account",
     "Customer / Store Unable to Register Customer for Online Account",
