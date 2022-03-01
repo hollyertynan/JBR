@@ -13,7 +13,7 @@ function onEventIT(event) {
         case "Payment Terminal":
             onPaymentTerminal();
             break;
-        case "3":
+        case "Back Office (Mi9)":
             onBackOfficeMi9();
             break;
         case "4":
@@ -194,7 +194,7 @@ onBackOfficeMi9() pipeline
 function onBackOfficeMi9() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeBackOfficeForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
