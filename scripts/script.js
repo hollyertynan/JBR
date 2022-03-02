@@ -167,9 +167,13 @@ function onMaintenance() {
     chosenFirstButton = "Maintenance";
 }
 
+function hideRegisterNumber() {
+    document.getElementById("registerInquiry").style.display = "none";
+    registerNumber = "-----"
+}
+
 //HIDES IFRAME AND QUESTIONNAIRE FROM PREVIOUS SESSION IF A CONTINUOUS SESSION IS BEING USED
 function hidePreviousInfo() {
-    document.getElementById("fifthForm").innerhtml = "";
     document.getElementById("resolutionFrame").style.display = "none";
     document.getElementById("blankQuestionnaire").style.display = "none";
 }
@@ -274,6 +278,7 @@ const onProductIssues = [
 ]
 
 function onProduct() {
+    hideRegisterNumber();
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"productDropdown\" id=\"productDropdown\" onchange=\"onEventProduct(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
@@ -323,6 +328,7 @@ const onAccountingIssues = [
 ]
 
 function onAccounting() {
+    hideRegisterNumber();
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"accountingDropdown\" id=\"accountingDropdown\" onchange=\"onEventAccounting(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
@@ -369,6 +375,7 @@ const onCustomerIssues = [
  ]
 
 function onCustomer() {
+    hideRegisterNumber();
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"customerDropdown\" id=\"customerDropdown\" onchange=\"onEventCustomer(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
@@ -416,6 +423,7 @@ const onOperationsIssues = [
 ]
 
 function onOperations() {
+    hideRegisterNumber();
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"operationsDropdown\" id=\"operationsDropdown\" onchange=\"onEventOperations(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
@@ -440,6 +448,7 @@ function onOperations() {
 }
 
 function onMarketing() {
+    hideRegisterNumber();
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"marketingDropdown\" id=\"marketingDropdown\" onchange=\"onEventMarketing(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 

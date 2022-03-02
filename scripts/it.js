@@ -14,57 +14,75 @@ function onEventIT(event) {
             onPaymentTerminal();
             break;
         case "Back Office (Mi9)":
+            hideRegisterNumber();
             onBackOfficeMi9();
             break;
-        case "4":
+        case "Email Server / OFFICE-PC":
+            hideRegisterNumber();
             onEmailServer();
             break;
         case "5":
+            hideRegisterNumber();
             onPrinters();
             break;
         case "6":
+            hideRegisterNumber();
             onKiosk();
             break;
         case "7":
+            hideRegisterNumber();
             onChromebook();
             break; 
         case "8":
+            hideRegisterNumber();
             onIpad();
             break; 
         case "9":
+            hideRegisterNumber();
             onPaintComputer();
             break; 
         case "10":
+            hideRegisterNumber();
             onReports();
             break; 
         case "11":
+            hideRegisterNumber();
             onOnlineOrder();
             break; 
         case "12":
+            hideRegisterNumber();
             onItMaintenance();
             break; 
         case "13":
+            hideRegisterNumber();
             onRequestNewPhone();
             break; 
         case "14":
+            hideRegisterNumber();
             onVOIP();
             break; 
         case "15":
+            hideRegisterNumber();
             onSecurity();
             break; 
         case "16":
+            hideRegisterNumber();
             onWifi();
             break; 
         case "17":
+            hideRegisterNumber();
             onV9();
             break; 
         case "18":
+            hideRegisterNumber();
             onElvis();
             break; 
         case "Other":
+            hideRegisterNumber();
             onITOther();
             break; 
-        default: 
+        default:
+            hideRegisterNumber(); 
             blankIT();
             break;
     }
@@ -96,6 +114,58 @@ onRegister() pipeline
 
 */
 
+
+function onRegister() {
+    //document.getElementById("resolutionFrame").style.display = "none";
+    //document.getElementById("blankQuestionnaire").style.display = "none";
+    document.getElementById("fourthForm").innerHTML = "";
+    
+
+    registerInquiry();
+    
+    
+
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Register";
+}
+
+function registerInquiry() {
+    var input = "";
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumber(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+
+    document.getElementById("registerInquiry").innerHTML = input;
+    document.getElementById("registerInquiry").style.display = "block";
+
+}
+
+let registerNumber = "-----";
+
+function onEventRegisterNumber(event) {
+    registerNumber = event.target.value;
+    switch(event.target.value) {
+        case "-----":
+            break;
+        case "Register Number":
+            break;
+        default:
+            fifthTask = "Register " + registerNumber;
+            registerSoftwareOrHardware();
+            break;
+    }
+}
+
+function registerSoftwareOrHardware() {
+    $("#registerNumberDropdown").removeClass("bg-info border-info");
+    $("#registerNumberDropdown").addClass("bg-success border-success");
+    let registerSoftwareOrHardware = "";
+    registerSoftwareOrHardware += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerDropdown\" id=\"registerDropdown\" onchange=\"hardwareOrSoftware(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"Hardware\">Hardware</option><option value=\"Software\">Software</option></select></div></div><div class=\"col-2\"></div></div></div>"
+
+    document.getElementById("thirdForm").innerHTML = registerSoftwareOrHardware;
+
+}
+
 function hardwareOrSoftware(event) {
     document.getElementById("fourthForm").innerHTML = "";
     $("#registerDropdown").removeClass("bg-info border-info");
@@ -108,25 +178,6 @@ function hardwareOrSoftware(event) {
             onSoftware();
             break
     }
-}
-
-
-function onRegister() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    
-    let registerSoftwareOrHardware = "";
-    registerSoftwareOrHardware += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerDropdown\" id=\"registerDropdown\" onchange=\"hardwareOrSoftware(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"Hardware\">Hardware</option><option value=\"Software\">Software</option></select></div></div><div class=\"col-2\"></div></div></div>"
-
-    hidePreviousInfo();
-
-    document.getElementById("thirdForm").innerHTML = registerSoftwareOrHardware;
-    
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "Payment Terminal";
 }
 
 function onHardware() {
@@ -174,11 +225,34 @@ const paymentTerminalIssues = [
         "Other",
 ]
 
+function registerInquiryPaymentTerminal() {
+    var input = "";
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumberPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+
+    document.getElementById("registerInquiry").innerHTML = input;
+
+}
+
+function onEventRegisterNumberPaymentTerminal(event) {
+    registerNumber = event.target.value;
+    switch(event.target.value) {
+        case "-----":
+            break;
+        case "Register Number":
+            break;
+        default:
+            fifthTask = "Register " + registerNumber;
+            makePaymentTerminalForm();
+            break;
+    }
+}
+
 function onPaymentTerminal() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    makePaymentTerminalForm();
+    registerInquiryPaymentTerminal();
     hidePreviousInfo();
+    document.getElementById("registerInquiry").style.display = "block";
     
 
     $("#itDropdown").removeClass("bg-info border-info");
@@ -213,7 +287,7 @@ onEmailServer() pipeline
 function onEmailServer() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeEmailServerForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
