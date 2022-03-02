@@ -169,6 +169,7 @@ const purchaseOrderMap = new Map([
 
 
 function makePOEDIForm() {
+    hideRegisterNumber()
     $("#accountingDropdown").removeClass("bg-info border-info").addClass("bg-success border-success");
     var input = "";
     input += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"POEDIDropdown\" id=\"POEDIDropdown\" onchange=\"onEventPOEDIIssues(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
