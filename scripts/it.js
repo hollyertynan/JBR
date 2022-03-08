@@ -21,7 +21,7 @@ function onEventIT(event) {
             hideRegisterNumber();
             onEmailServer();
             break;
-        case "5":
+        case "Printers":
             hideRegisterNumber();
             onPrinters();
             break;
@@ -118,7 +118,6 @@ onRegister() pipeline
 function onRegister() {
     //document.getElementById("resolutionFrame").style.display = "none";
     //document.getElementById("blankQuestionnaire").style.display = "none";
-    document.getElementById("fourthForm").innerHTML = "";
     
 
     registerInquiry();
@@ -137,6 +136,8 @@ function registerInquiry() {
 
     document.getElementById("registerInquiry").innerHTML = input;
     document.getElementById("registerInquiry").style.display = "block";
+    document.getElementById("thirdForm").innerHTML = "";
+    document.getElementById("fourthForm").innerHTML = "";
 
 }
 
@@ -302,14 +303,38 @@ onPrinters() pipeline
 */
 
 function onPrinters() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    printerWithError();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Printers";
+}
+
+function printerWithError() {
+    let printerTypeDrop = "";
+    printerTypeDrop += "<div class=\"container-fluid text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"printerTypeDropdown\" id=\"printerTypeDropdown\" onchange=\"printerTypeEvent(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option><option value=\"Office\">Office/Kiosk/Rental Printer</option><option value=\"PriceTicket\">Price Ticket Printer</option><option value=\"PaintLabel\">Paint Label Printer</option></select></div></div><div class=\"col-2\"></div></div></div>"
+
+    document.getElementById("thirdForm").innerHTML = printerTypeDrop;
+}
+
+function printerTypeEvent(event) {
+    document.getElementById("fourthForm").scrollIntoView({behavior: "smooth"});
+    $("#printerTypeDropdown").removeClass("bg-info border-info");
+    $("#printerTypeDropdown").addClass("bg-success border-success");
+    switch(event.target.value) {
+        case "Office":
+            makeOfficePrinterForm();
+            break;
+        case "PriceTicket":
+            makePriceTicketForm();
+            break;
+        case "PaintLabel":
+            makePaintLabelForm();
+            break;
+        default:
+            break;
+    }
 }
 
 /*
