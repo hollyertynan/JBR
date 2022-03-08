@@ -25,7 +25,7 @@ function onEventIT(event) {
             hideRegisterNumber();
             onPrinters();
             break;
-        case "6":
+        case "Kiosk / AUBKIOSK":
             hideRegisterNumber();
             onKiosk();
             break;
@@ -346,7 +346,7 @@ onKiosk() pipeline
 function onKiosk() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeKioskForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
