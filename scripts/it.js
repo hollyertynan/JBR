@@ -29,7 +29,7 @@ function onEventIT(event) {
             hideRegisterNumber();
             onKiosk();
             break;
-        case "7":
+        case "Chromebook":
             hideRegisterNumber();
             onChromebook();
             break; 
@@ -361,7 +361,7 @@ onChromebook() pipeline
 function onChromebook() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeChromebookForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
