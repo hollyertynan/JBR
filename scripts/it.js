@@ -33,11 +33,11 @@ function onEventIT(event) {
             hideRegisterNumber();
             onChromebook();
             break; 
-        case "8":
+        case "iPad":
             hideRegisterNumber();
             onIpad();
             break; 
-        case "9":
+        case "Paint Computer":
             hideRegisterNumber();
             onPaintComputer();
             break; 
@@ -378,9 +378,8 @@ onIpad() pipeline
 */
 
 function onIpad() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    document.getElementById("resolutionFrame").innerHTML += "<h3 style=\"text-align:center;\">If the store is looking for their iPad password, it'll be 'StrXXX', with the XXX being their three digit store number. Any other iPad issues should be escalated to the POS Team.</h3>";
+    document.getElementById("resolutionFrame").style.display = "block";
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -397,7 +396,8 @@ onPaintComputer() pipeline
 function onPaintComputer() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    
+    makePaintMachineForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
