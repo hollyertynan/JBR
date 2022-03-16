@@ -41,11 +41,11 @@ function onEventIT(event) {
             hideRegisterNumber();
             onPaintComputer();
             break; 
-        case "10":
+        case "Reports":
             hideRegisterNumber();
             onReports();
             break; 
-        case "11":
+        case "Online Orders":
             hideRegisterNumber();
             onOnlineOrder();
             break; 
@@ -412,7 +412,7 @@ onReports() pipeline
 function onReports() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeReportsForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -429,7 +429,7 @@ onOnlineOrder() pipeline
 function onOnlineOrder() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeOnlineOrderForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");

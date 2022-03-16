@@ -87,6 +87,8 @@ function newChromebookRequest(taskName) {
         $("#resolutionFrame").attr('style', 'display:block;');
     }
 
+    fifthTask = "Chromebook";
+
     $("#chromebookDropdown").removeClass("bg-info border-info");
     $("#chromebookDropdown").addClass("bg-success border-success");
 
@@ -101,6 +103,7 @@ function onChromebookOther() {
 
     $("#chromebookDropdown").removeClass("bg-info border-info");
     $("#chromebookDropdown").addClass("bg-success border-success");
+    fifthTask = "Chromebook";
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "Chromebook Other";
 }
