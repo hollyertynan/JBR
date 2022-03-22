@@ -55,15 +55,15 @@ function onEventIT(event) {
             hideRegisterNumber();
             onItMaintenance();
             break; 
-        case "13":
+        case "Request for New Phone Line":
             hideRegisterNumber();
             onRequestNewPhone();
             break; 
-        case "14":
+        case "VoIP / Phone Issues":
             hideRegisterNumber();
             onVOIP();
             break; 
-        case "15":
+        case "Security System":
             hideRegisterNumber();
             onSecurity();
             break; 
@@ -465,7 +465,7 @@ onRequestNewPhone() pipeline
 function onRequestNewPhone() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeNewPhoneLineForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -482,7 +482,7 @@ onVOIP() pipeline
 function onVOIP() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeVoIPForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -499,7 +499,8 @@ onSecurity() pipeline
 function onSecurity() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    document.getElementById("resolutionFrame").style.display = "block";
+    document.getElementById("resolutionFrame").innerHTML = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B11:D11\"></iframe>";
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
