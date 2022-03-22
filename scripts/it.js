@@ -49,7 +49,9 @@ function onEventIT(event) {
             hideRegisterNumber();
             onOnlineOrder();
             break; 
-        case "12":
+        case "IT Maintenance":
+            $("#itDropdown").removeClass("bg-info border-info");
+            $("#itDropdown").addClass("bg-success border-success");
             hideRegisterNumber();
             onItMaintenance();
             break; 
@@ -448,7 +450,7 @@ onItMaintenance() pipeline
 function onItMaintenance() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeITMaintenanceForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");

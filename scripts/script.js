@@ -157,7 +157,7 @@ function onPhone() {
 // function if maintenance is clicked
 function onMaintenance() {
     clearAllForms();
-    $("#firstForm").html(onMaintenanceClick);
+    makeITMaintenanceForm();
 
     $("#maintenance").removeClass("btn-info").addClass("btn-success");
     $("#phone").removeClass("btn-success").addClass("btn-info");
