@@ -6,6 +6,7 @@ passing in value from dropdown menu and continues logically
 */
 
 function onEventIT(event) {
+    document.getElementById("fifthForm").innerHTML = "";
     switch(event.target.value) {
         case "Register":
             onRegister();
@@ -67,15 +68,11 @@ function onEventIT(event) {
             hideRegisterNumber();
             onSecurity();
             break; 
-        case "16":
+        case "WiFi Issues":
             hideRegisterNumber();
             onWifi();
             break; 
-        case "17":
-            hideRegisterNumber();
-            onV9();
-            break; 
-        case "18":
+        case "ELVIS":
             hideRegisterNumber();
             onElvis();
             break; 
@@ -517,7 +514,7 @@ onWifi() pipeline
 function onWifi() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeWiFiForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -525,22 +522,7 @@ function onWifi() {
     firstTask = "WiFi";
 }
 
-/*
 
-onV9() pipeline
-
-*/
-
-function onV9() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "V9";
-}
 
 /*
 
@@ -569,7 +551,7 @@ onElvis() pipeline
 function onElvis() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeElvisForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
