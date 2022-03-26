@@ -212,7 +212,6 @@ const onITIssues = [
     "VoIP / Phone Issues",
     "Security System",
     "WiFi Issues",
-    "V9 Issues",
     "ELVIS",
     "Other"
 ]
