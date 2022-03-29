@@ -222,6 +222,7 @@ const paymentTerminalIssues = [
         "Need a new Payment Terminal",
         "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
         "Return Not Processing",
+        "triPOS Get Stuck Trying To Start or Stop the Service, Could Also Say 'Failed to Start/Stop triPOS.NET",
         "Other",
 ]
 

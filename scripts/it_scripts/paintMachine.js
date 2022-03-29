@@ -1,12 +1,14 @@
 const paintMachineIssues = [
     "Spectrometer Not Calibrating",
     "Tinter not Responding to Commands in ColoRx; No Error Messages",
+    "Paint Machine Gives Error Message 'Eprinterx: Printer Selected Not Valid'",
     "Other"
 ]
 
 const paintMachineMap = new Map([
     ["Spectrometer Not Calibrating", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B16:D16\"></iframe>"],
     ["Tinter not Responding to Commands in ColoRx; No Error Messages", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A104:B104\"></iframe>"],
+    ["Paint Machine Gives Error Message 'Eprinterx: Printer Selected Not Valid'", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A174:B174\"></iframe>"],
     ["Other"]
 ])
 

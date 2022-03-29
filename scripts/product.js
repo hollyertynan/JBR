@@ -10,6 +10,8 @@ let productMap = new Map([
     ["Change Product Min and / or Max",
     "<h3>UNDER CONSTRUCTION</h3>"],
 
+    ["Changing Min/Max on a Suspended Product", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.2ckvp4ekk3u8\"></iframe>"],
+
     ["PO/EDI Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B25:D25\"></iframe>"],
 
     ["Paint Over Max Order", 
