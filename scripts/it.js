@@ -208,6 +208,7 @@ onPaymentTerminal() pipeline
 const paymentTerminalIssues = [
         "Displays 'None' When Being Inserted",
         "Stuck On System Information",
+        "Stuck on Synchronizing With XPI App",
         "Declining All Cards",
         "Debit Being Declined / Credit Being Stored for Later Processing",
         "Signature Stuck in Loop",
