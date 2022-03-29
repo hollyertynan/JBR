@@ -87,6 +87,8 @@ function onEventIT(event) {
     }
 }
 
+// ADD "TYPE OF SALE ISSUES" when we update this to the new system
+
 /*
 
 default pipeline
