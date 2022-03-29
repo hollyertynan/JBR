@@ -5,17 +5,25 @@ const itMaintenanceTasks = [
     "Updating Store Hours",
     "Running EOD For a Store",
     "Attaching a File to a Ticket",
+    "Paint Over Max Order",
     "Other"
 ]
 
 
 const itMaintenanceMap = new Map([
     ["Live Sales Not Loading", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A8:B8\"></iframe>"],
+
     ["Canadian Conversion Rate Change", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1ufv0T_8oO5gP0NJDdmSrUx9pE_bvV8wjEQ69pyIaxS8/edit\"></iframe>"],
     ["Canceling Orgill Zeroed Customer BOSS Orders"],
+
     ["Updating Store Hours", "<h3 style=\"text-align:center\">Do NOT do store hour changes unless you've been instructed to do so by the POS Team.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1Z-W6tQayH4jNlQNqtFKw31KUpTgSMVMoNSoDvPC2vVI/edit#\"></iframe>"],
+
     ["Running EOD For a Store", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.4lu14criokzi\"></iframe>"],
+
     ["Attaching a File to a Ticket", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A152:B152\"></iframe>"],
+
+    ["Paint Over Max Order", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"],
+    
     ["Other"]
 ])
 

@@ -21,6 +21,12 @@ let accountingMap = new Map([
 
     ["Store is Processing a Return and it's Being Declined"],
 
+    ["Requests to Add/Remove Authorized Signers on BlueTarp Accounts", "<h3 style=\"text-align:center;\">The customer should be able to change authorized signers on their account themselves, if they're the ones who maintain it. If not, then please send to the person listed below: </h3><iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A6:D6\"></iframe>"],
+
+    ["Store Needs to Cancel a Transfer", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A184:B184\"></iframe>"],
+
+    ["Store Ordering Bank Deposit Slips", "<h3 style=\"text-align:center;\">Someone at the store can either fax a copy of their bank slips to 1stChecks, they can e-mail them to sales@1stchecks.com, or they can call the number listed on the deposit slips themselves.</h3>"],
+
     ["Other"]
 
 ]);
