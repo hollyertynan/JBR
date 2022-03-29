@@ -1,14 +1,20 @@
 const elvisIssues = [
     "Store's Inventory on Their Devices Shows Store 170",
     "Issues with Mi9 Merchant/Cycle Counts/Zero Audits",
+    "Setting up Capture App on the Elvis Devices",
     "Issues With Capture/Khoros App",
     "Other"
 ]
 
 const elvisMap = new Map([
     ["Store's Inventory on Their Devices Shows Store 170", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A154:B154\"></iframe>"],
+
     ["Issues with Mi9 Merchant/Cycle Counts/Zero Audits", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B50:D50\"></iframe>"],
+    
     ["Issues With Capture/Khoros App", "<h3 style=\"text-align:center;\">For the time being, send these issues to Ben Aubuchon until we have someone working with Khoros for the long term.</h3>"],
+
+    ["Setting up Capture App on the Elvis Devices", "<h3>Please use the instructions below. If these do not work, please forward the issue to Ben Aubuchon for the time being.</h3><iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A168:C168\"></iframe>"],
+
     ["Other", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B46:D46\"></iframe>"]
 ])
 

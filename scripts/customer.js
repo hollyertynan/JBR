@@ -24,6 +24,8 @@ let customerMap = new Map([
 
     ["Customer Lost Year End Rewards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A16:D16\"</iframe>"],
 
+    ["Customer Quote Issues (Not Pricing Quotes)", "<h3 style=\"text-align:center;\">Send these up to Jay Ferrera.</h3>"],
+
     ["Other", "<h3 class=\"p-3 text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>"]
 ]);
 
