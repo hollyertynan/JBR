@@ -254,6 +254,7 @@ const onProductIssues = [
     "Sending E-Mail to Store for Ben Moore National Accounts Order",
     "Benjamin Moore Web Sales Order",
     "Change Product Min and / or Max",
+    "Changing Min/Max on a Suspended Product",
     "PO/EDI Issues",
     "Paint Over Max Order",
     "Product Needs a SKU",
