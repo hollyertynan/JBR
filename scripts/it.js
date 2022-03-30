@@ -131,7 +131,7 @@ function onRegister() {
 
 function registerInquiry() {
     var input = "";
-    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumber(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumber(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"All\">All Registers</option>"
 
     document.getElementById("registerInquiry").innerHTML = input;
     document.getElementById("registerInquiry").style.display = "block";
@@ -229,7 +229,7 @@ const paymentTerminalIssues = [
 
 function registerInquiryPaymentTerminal() {
     var input = "";
-    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumberPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumberPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"All\">All Registers</option>"
 
     document.getElementById("registerInquiry").innerHTML = input;
 
