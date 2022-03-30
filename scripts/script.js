@@ -533,6 +533,7 @@ function getTeamOfStore() {
 
 $(document).ready(function() {
     $("#myModal").hide();
+    $("$searchResults").hide();
     $("#submit").click(function(){
         $("#myModal").modal('show');
     })

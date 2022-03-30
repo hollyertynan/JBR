@@ -33,11 +33,16 @@ HW 1, Part 2, Author: Wenjin Zhou
     <div class="container-fluid bg-dark fixTextLight">
         <div class="row">
             <div class="col-2 pt-4">
-                <div class="bg-dark align-middle align-items-center">
+                <div class="bg-dark align-middle align-items-center" style="display:inline-flex;padding-bottom:1%;">
                     <label id="switch" class="switch">
                         <input type="checkbox" onchange="changeColor()" id="slider">
                         <span class="slider round"></span>
                     </label>
+                    
+                        <div class="input-group" style="padding-left:1.5em;">
+                            <input type="search" id="searchBox" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-info text-light" onclick="searchSite(searchStr)">Search</button>
+                          </div>
                 </div>
             </div>
             <div class="col-8">
@@ -226,6 +231,21 @@ HW 1, Part 2, Author: Wenjin Zhou
         </div>
     </div>
 
+    <div class="modal" tabindex="-1" id="searchResults">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Search Results:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="searchDisplay"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <br/><br/><br/><br/>
 
     <!-- FOOTER -->
@@ -269,6 +289,7 @@ HW 1, Part 2, Author: Wenjin Zhou
     <script src="scripts/accounting.js"></script>
     <script src="scripts/operations.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/search.js"></script>
     <script src="scripts/it_scripts/paymentTerminal.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
