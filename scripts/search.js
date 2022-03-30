@@ -114,6 +114,7 @@ function getCategory(arrayAssignment) {
 
 function searchSite(searchStr) {
     searchStr = document.getElementById("searchBox").value.toLowerCase();
+    document.getElementById("searchDisplay").innerHTML = "";
 
     let currentSearch
 
@@ -124,10 +125,9 @@ function searchSite(searchStr) {
         for(i = 0; i < arrayArg.length; i++) {
             getCategory(arrayArg);
             if(arrayArg[i].toLowerCase().search(searchStr) > -1) {
-                searchResults.push(arrayArg[i] + " - " + category)
+                document.getElementById("searchDisplay").innerHTML += arrayArg[i] + " - " + category + "<br><br><br>"
+                $("#searchResults").modal('show');
             }
         }
     })
-
-    alert(searchResults)
 }
