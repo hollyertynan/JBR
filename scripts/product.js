@@ -2,15 +2,11 @@ let productMap = new Map([
     ["Benjamin Moore National Accounts Order",
     "<h3>UNDER CONSTRUCTION</h3>"],
 
-    ["Sending E-Mail to Store for Ben Moore National Accounts Order", "<iframe src=\"https://docs.google.com/spreadsheets/d/1EHxtSvRCfrIEy3LK_fLgnRu5Ov7N6EdMVj2cmKu-Jfo/htmlembed?gid=0&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=C30:D30\"></iframe>"],
-
     ["Benjamin Moore Web Sales Order", 
     "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1zDKyGV8MNtJrN7q_e-5evyLEmWLJbb-DG5uLIPC9t64/edit\"></iframe>"],
 
     ["Change Product Min and / or Max",
     "<h3>UNDER CONSTRUCTION</h3>"],
-
-    ["Changing Min/Max on a Suspended Product", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.2ckvp4ekk3u8\"></iframe>"],
 
     ["PO/EDI Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=790165298&amp;widget=true&amp;range=B25:D25\"></iframe>"],
 
@@ -54,8 +50,6 @@ let productMap = new Map([
     ["Minimum Quantity Required to Close a PO", "<h3 style=\"float:top\" class=\"p-3 text-center\">Please locate the vendor in the dropdown and send it to the person listed under \"Product Team Person\".</h3> <iframe class=\"vh-100\" src=\"http://aubdata2/Reports/Pages/Report.aspx?ItemPath=%2fAccounting+Reports%2fVendor+Info+%28Mi9%29\"></iframe>"],
 
     ["Item Description Incorrect / Unclear / Missing", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B38:D38\"></iframe>"],
-
-    ["Store Needs to Cancel a Transfer", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A184:B184\"></iframe>"],
 
     ["Other", "<h3 class=\"p-3 text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>"]
 ]);
@@ -185,7 +179,7 @@ function onChangeProductMinMax() {
 
         //OVER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR OVER 5 SKUS ON YES RADIO BUTTON
         document.getElementById("inlineRadio1").onclick = function() {
-            source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JtgVi2ALWczpixndeokMI7jT_YV20EKIYXDgI9Y-gWg/edit"></iframe>";
+            source = "<iframe class=\"vh-100\" src=\"https://drive.google.com/u/0/open?id=1JtgVi2ALWczpixndeokMI7jT_YV20EKIYXDgI9Y-gWg\"></iframe>";
             document.getElementById("resolutionFrame").innerHTML = source;
             document.getElementById("resolutionFrame").style.display = "block";
         }
