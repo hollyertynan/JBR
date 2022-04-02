@@ -179,7 +179,7 @@ function onChangeProductMinMax() {
 
         //OVER 5 SKUS, ONLICK DISPLAY INSTRUCTIONS FOR OVER 5 SKUS ON YES RADIO BUTTON
         document.getElementById("inlineRadio1").onclick = function() {
-            source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1mFusBLuX-9x6au519f7vxTo-QVzDbCIfJl4v-RJS_dY/edit#bookmark=id.4jld8xy4oocb\"></iframe>";
+            source = "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JtgVi2ALWczpixndeokMI7jT_YV20EKIYXDgI9Y-gWg/edit"></iframe>";
             document.getElementById("resolutionFrame").innerHTML = source;
             document.getElementById("resolutionFrame").style.display = "block";
         }
