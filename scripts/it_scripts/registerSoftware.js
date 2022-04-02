@@ -20,31 +20,57 @@ const registerSoftwareIssues = [
     "Installing Splashtop",
     "Scanning Paint Causes Register to Freeze, or Doesn't Display All Colors",
     "Taskbar is in the Wrong Spot",
+    "Loyalty Points Loading Slow/Receipts Not Processing When Scanned",
+    "'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers",
     "Other"
 ]
 
 const registerSoftwareMap = new Map([
     ["TouchPOS Program Frozen"],
+
     ["'Unable to Access Credit' Message on Screen", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A32:B32\"></iframe>"],
+
     ["No Network Connection"],
     ["Communications Issues with Customer Account Lookup, but Store Has Network", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A74:B74\"></iframe>"],
+
     ["Monitor Loops the Message 'Unable to Read Signature - Retry?'", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A12:B12\"></iframe>"],
+
     ["'Illegal Bitmap Operation' Error", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A44:B44\"></iframe>"],
+
     ["'Call for Referral Code' Message on Monitor", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A50:B50\"></iframe>"],
+
     ["Register Screen is Stuck as the Windows Start menu", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A86:B86\"></iframe>"],
+
     ["Register is in Training Mode", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A88:B88\"></iframe>"],
+
     ["'Gift Card System Down' Message When Using or Selling a Gift Card", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A90:B90\"></iframe>"],
+
     ["Data Entry Field (Sku Field, Employee Number Field, etc.) is Filled with the Same Repeating Character", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A166:B166\"></iframe>"],
+
     ["Exception Occured: Data Error (Cyclical Redundancy Check)", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A92:B92\"></iframe>"],
+
     ["Return Not Processing"],
+
     ["Freeing Up Phantom Port in Use", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A130:C130\"></iframe>"],
+
     ["Setting Up Register Numbers for a New Employee"],
+
     ["Registers are Opened Without Being Issued in the Back Office", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A142:B142\"></iframe>"],
+
     ["Inhouse Charges Not Working", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A146:B146\"></iframe>"],
+
     ["'No Boot Device Found'", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A100:B100\"></iframe>"],
+
     ["Installing Splashtop", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1X2P25yZ_hH-DzA1QYk7grD0xnzVuiL9n/edit#heading=h.gjdgxs\"></iframe>"],
+
     ["Scanning Paint Causes Register to Freeze, or Doesn't Display All Colors", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A160:B160\"></iframe>"],
+
     ["Taskbar is in the Wrong Spot", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A158:B158\"></iframe>"],
+
+    ["Loyalty Points Loading Slow/Receipts Not Processing When Scanned", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A74:B74\"></iframe>"],
+
+    ["'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A182:B182\"></iframe>"],
+
     ["Other"]
 ])
 

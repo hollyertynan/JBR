@@ -13,24 +13,41 @@ const backOfficeIssues = [
     "Registers Are Opened Without Being Issued in the Back Office",
     "Back Office Needs to be Rebooted",
     "Cash Up Instructions Add/Change Requests",
+    "Power Outage at Store and Now Their Cabinet Will Not Boot Back Up",
     "Other"
 ]
 
 const backOfficeMap = new Map([
     ["Red Flags in 1-1 Screen"],
+
     ["Transactions Not Going Through to the Back Office", "<h3 style=\"text-align:center;\">Please escalate this issue to the POS Team.</h3>"],
+
     ["EOD Hung Up from the Previous Night"],
+
     ["No Network Connection", "<iframe class=\"vh-70\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A64:C65\"></iframe>"],
+
     ["Cash Up Issue", "<h3 style=\"text-align:center;\">Please write a brief description in the sheet below and escalate the issue to the POS Team.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1IBCM87V3JkCNcfpq6LVnwdltXhkP-Il1_ILHcgSSmrU/edit#gid=0\"></iframe>"],
+
     ["'Load Amount Exceeds Cash in Safe' Message When Issuing Drawers", "<h3 style=\"text-align:center;\">Please follow the instructions below and immediately notify the POS Team.</h3><iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A84:B84\"></iframe>"],
+
     ["Keyoard/Mouse Works on Email Computer, but not Mi9 Computer", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A98:B98\"></iframe>"],
+
     ["Issue with Poll File", "<h3 style=\"text-align:center;\">Please escalate this issue to the POS Team and hit \"Submit\".</h3>"],
+
     ["'Last Transaction Counter - None' Displays When Trying to Close a Drawer", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A106:B106\"></iframe>"],
+
     ["Black Screen, Won't Respond to Input", "<h3 style=\"text-align:center;\">Double check that the monitor cable is plugged in to both the computer and the monitor. If that doesn't work then give the computer a hard reboot, aka hold the power button until the PC shuts off and then turn it back on.</h3>"],
+
     ["'No Boot Device Found'", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A100:C100\"></iframe>"],
+
     ["Registers Are Opened Without Being Issued in the Back Office", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A142:B142\"></iframe>"],
+
     ["Back Office Needs to be Rebooted", "<iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;single=true&amp;range=A140:B140\"></iframe>"],
+
     ["Cash Up Instructions Add/Change Requests", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B48:D48\"></iframe>"],
+
+    ["Power Outage at Store and Now Their Cabinet Will Not Boot Back Up", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A178:B178\"></iframe>"],
+    
     ["Other"]
 ])
 

@@ -25,6 +25,14 @@ let operationsMap = new Map([
 
     ["Setting Up Register Numbers for a New Employee", "<h3 class=\"text-center pb-3\">Please send this issue to the POS Team</h3>"],
 
+    ["Store Asking for New Aisle Header Signs"],
+
+    ["Store Asking for New Now Hiring Signs"],
+
+    ["Store Asking For Touchpoint Stickers", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A27:D27\"></iframe>"],
+
+    ["Need 'Journey IQ' Password Reset"],
+
     ["Other", "<h3 class=\"text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br/>"]
 
 ]);
@@ -33,11 +41,20 @@ let operationsMap = new Map([
 function onEventOperations(event) {
     document.getElementById("fourthForm").innerHTML = "";
     switch(event.target.value) {
+        case "Need 'Journey IQ' Password Reset":
+            alternativeDefaultOperations(event.target.value, "Requests for Journey IQ password resets", "Team Operations Manager");
+            break;
         case "Need New Equipment":
-            alternativeDefaultOperations(event.target.value, "Requests for new in store equipment");
+            alternativeDefaultOperations(event.target.value, "Requests for new in store equipment", "Team Operations Manager");
             break;
         case "Forklift Maintenance":
-            alternativeDefaultOperations(event.target.value, "Requests regarding forklift maintenance");
+            alternativeDefaultOperations(event.target.value, "Requests regarding forklift maintenance", "Team Operations Manager");
+            break;
+        case "Store Asking for New Aisle Header Signs":
+            alternativeDefaultOperations(event.target.value, "Requests for new Aisle Headers", "Team Merchandising Manager");
+            break;
+        case "Store Asking for New Now Hiring Signs":
+            alternativeDefaultOperations(event.target.value, "Requests for new Now Hiring signs", "Team HR Manager");
             break;
         default: 
             onOperationsDefault(event.target.value);
@@ -58,11 +75,11 @@ function onOperationsDefault(taskName) {
     secondTask = taskName;
 }
 
-function alternativeDefaultOperations(taskName, request) {
+function alternativeDefaultOperations(taskName, request, handler) {
     hidePreviousInfo();
     hideBlankQuestionnaire();
     let team = getTeamOfStore();
-    document.getElementById("fourthForm").innerHTML = "<h3>" + request + " go to the Team Operations Manager for a store.</h3>";
+    document.getElementById("fourthForm").innerHTML = "<h3>" + request + " go to the " + handler + " for a store.</h3>";
     
 
     if(team == 1) {
@@ -84,3 +101,4 @@ function alternativeDefaultOperations(taskName, request) {
 
     firstTask = taskName;
 }
+

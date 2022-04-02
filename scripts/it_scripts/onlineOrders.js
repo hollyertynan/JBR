@@ -1,12 +1,20 @@
 const onlineOrderIssues = [
     "Kiosk Will Not Let Store Pick Products to Fill an Online Order",
     "Online Order: Blinky Does Not Blink and No Print Out",
+    "Store Having Issues Canceling an Online Order",
+    "Uncanceling a Line on an Online Order",
     "Other"
 ]
 
 const onlineOrderMap = new Map([
     ["Kiosk Will Not Let Store Pick Products to Fill an Online Order", "<h3 style=\"text-align:center;\">Make sure the store is using Google Chrome. If they are using Internet Explorer instead of Chrome, set the kiosk to use Chrome by default and they should be able to pick the order.</h3>"],
+
     ["Online Order: Blinky Does Not Blink and No Print Out", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A16:B16\"></iframe>"],
+
+    ["Store Having Issues Canceling an Online Order", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A180:B180\"></iframe>"],
+
+    ["Uncanceling a Line on an Online Order", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A170:B170\"></iframe>"],
+
     ["Other"]
 ])
 

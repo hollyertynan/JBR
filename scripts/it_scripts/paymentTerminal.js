@@ -1,20 +1,38 @@
 let paymentTerminalMap = new Map([
     ["Displays 'None' When Being Inserted", 
     "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets/itAssets/payment_terminal/cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6\"><video class=\"video-fluid\" controls><source src=\"assets/itAssets/payment_terminal/cardreader_startup.mp4\" type=\"video/mp4\"/></video></div></div></div><br/><iframe src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A2:B2\"></iframe>"],
+
     ["Stuck On System Information", "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets/itAssets/payment_terminal/cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6\"><video class=\"video-fluid\" controls><source src=\"assets/itAssets/payment_terminal/cardreader_startup.mp4\" type=\"video/mp4\"/></video></div></div></div><br/><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A14:B14\"></iframe>"],
+
+    ["Stuck on Synchronizing With XPI App", "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets/itAssets/payment_terminal/cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6\"><video class=\"video-fluid\" controls><source src=\"assets/itAssets/payment_terminal/cardreader_startup.mp4\" type=\"video/mp4\"/></video></div></div></div><br/><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:B6\"></iframe>"],
+
     ["Declining All Cards"],
+
     ["Debit Being Declined / Credit Being Stored for Later Processing", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:B6\"></iframe>"],
+
     ["Signature Stuck in Loop", "<iframe class=\"vh-50\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A12:B12\"></iframe>"],
+
     ["Screen is blank and white", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A54:B54\"></iframe>"],
+
     ["Automatically Reads 'Cancelled' when Debit or Credit is selected as tender", "<iframe class=\"vh-100\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A50:B50\"></iframe>"],
+
     ["Critical Error: No USB Connection, please check cable", "<iframe class=\"vh-30\"src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A46:B46\"></iframe>"],
+
     ["'Maintenance Required' or 'Enter Password to Login'", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&ampchrome=true&amp;single=true&amp;range=A24:D24\"></iframe>"],
+
     ["New Payment Terminal to Setup", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A76:B76\"></iframe>"],
+
     ["Need a new stylus (pen)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A20:D20\"></iframe>"],
+
     ["Need a new Payment Terminal"],
+
     ["Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'", "<iframe class=\"vh-100\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A14:B14\"></iframe>"],
+
     ["Return Not Processing"],
-    ["Other"],
+
+    ["triPOS Get Stuck Trying To Start or Stop the Service, Could Also Say 'Failed to Start/Stop triPOS.NET", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A116:B116\"></iframe>"],
+
+    ["Other"]
 ])
 
 function onEventITPaymentTerminal(event) {

@@ -6,6 +6,7 @@ passing in value from dropdown menu and continues logically
 */
 
 function onEventIT(event) {
+    document.getElementById("fifthForm").innerHTML = "";
     switch(event.target.value) {
         case "Register":
             onRegister();
@@ -49,31 +50,29 @@ function onEventIT(event) {
             hideRegisterNumber();
             onOnlineOrder();
             break; 
-        case "12":
+        case "IT Maintenance":
+            $("#itDropdown").removeClass("bg-info border-info");
+            $("#itDropdown").addClass("bg-success border-success");
             hideRegisterNumber();
             onItMaintenance();
             break; 
-        case "13":
+        case "Request for New Phone Line":
             hideRegisterNumber();
             onRequestNewPhone();
             break; 
-        case "14":
+        case "VoIP / Phone Issues":
             hideRegisterNumber();
             onVOIP();
             break; 
-        case "15":
+        case "Security System":
             hideRegisterNumber();
             onSecurity();
             break; 
-        case "16":
+        case "WiFi Issues":
             hideRegisterNumber();
             onWifi();
             break; 
-        case "17":
-            hideRegisterNumber();
-            onV9();
-            break; 
-        case "18":
+        case "ELVIS":
             hideRegisterNumber();
             onElvis();
             break; 
@@ -132,7 +131,7 @@ function onRegister() {
 
 function registerInquiry() {
     var input = "";
-    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumber(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumber(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"All\">All Registers</option>"
 
     document.getElementById("registerInquiry").innerHTML = input;
     document.getElementById("registerInquiry").style.display = "block";
@@ -211,6 +210,7 @@ onPaymentTerminal() pipeline
 const paymentTerminalIssues = [
         "Displays 'None' When Being Inserted",
         "Stuck On System Information",
+        "Stuck on Synchronizing With XPI App",
         "Declining All Cards",
         "Debit Being Declined / Credit Being Stored for Later Processing",
         "Signature Stuck in Loop",
@@ -223,12 +223,13 @@ const paymentTerminalIssues = [
         "Need a new Payment Terminal",
         "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
         "Return Not Processing",
+        "triPOS Get Stuck Trying To Start or Stop the Service, Could Also Say 'Failed to Start/Stop triPOS.NET",
         "Other",
 ]
 
 function registerInquiryPaymentTerminal() {
     var input = "";
-    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumberPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option>"
+    input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerNumberDropdown\" id=\"registerNumberDropdown\" onchange=\"onEventRegisterNumberPaymentTerminal(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Register Number</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"All\">All Registers</option>"
 
     document.getElementById("registerInquiry").innerHTML = input;
 
@@ -448,7 +449,7 @@ onItMaintenance() pipeline
 function onItMaintenance() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeITMaintenanceForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -465,7 +466,7 @@ onRequestNewPhone() pipeline
 function onRequestNewPhone() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeNewPhoneLineForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -482,7 +483,7 @@ onVOIP() pipeline
 function onVOIP() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeVoIPForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -499,7 +500,8 @@ onSecurity() pipeline
 function onSecurity() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    document.getElementById("resolutionFrame").style.display = "block";
+    document.getElementById("resolutionFrame").innerHTML = "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=2113782330&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B11:D11\"></iframe>";
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -516,7 +518,7 @@ onWifi() pipeline
 function onWifi() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeWiFiForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");
@@ -524,22 +526,7 @@ function onWifi() {
     firstTask = "WiFi";
 }
 
-/*
 
-onV9() pipeline
-
-*/
-
-function onV9() {
-    document.getElementById("thirdForm").innerHTML = "";
-    document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
-
-    $("#itDropdown").removeClass("bg-info border-info");
-    $("#itDropdown").addClass("bg-success border-success");
-    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
-    firstTask = "V9";
-}
 
 /*
 
@@ -568,7 +555,7 @@ onElvis() pipeline
 function onElvis() {
     document.getElementById("thirdForm").innerHTML = "";
     document.getElementById("fourthForm").innerHTML = "";
-    document.getElementById("thirdForm").innerHTML += "<h3 class=\"text-danger\">UNDER CONSTRUCTION</h3><br><br>";
+    makeElvisForm();
 
     $("#itDropdown").removeClass("bg-info border-info");
     $("#itDropdown").addClass("bg-success border-success");

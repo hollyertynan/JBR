@@ -157,7 +157,7 @@ function onPhone() {
 // function if maintenance is clicked
 function onMaintenance() {
     clearAllForms();
-    $("#firstForm").html(onMaintenanceClick);
+    makeITMaintenanceForm();
 
     $("#maintenance").removeClass("btn-info").addClass("btn-success");
     $("#phone").removeClass("btn-success").addClass("btn-info");
@@ -212,7 +212,6 @@ const onITIssues = [
     "VoIP / Phone Issues",
     "Security System",
     "WiFi Issues",
-    "V9 Issues",
     "ELVIS",
     "Other"
 ]
@@ -252,8 +251,10 @@ PRODUCT PIPELINE
 
 const onProductIssues = [
     "Benjamin Moore National Accounts Order",
+    "Sending E-Mail to Store for Ben Moore National Accounts Order",
     "Benjamin Moore Web Sales Order",
     "Change Product Min and / or Max",
+    "Changing Min/Max on a Suspended Product",
     "PO/EDI Issues",
     "Paint Over Max Order",
     "Product Needs a SKU",
@@ -274,6 +275,7 @@ const onProductIssues = [
     "Battery Core Charges",
     "Minimum Quantity Required to Close a PO",
     "Item Description Incorrect / Unclear / Missing",
+    "Store Needs to Cancel a Transfer",
     "Other"
 ]
 
@@ -324,6 +326,9 @@ const onAccountingIssues = [
    "Issues With Updates to In-House Accounts",
    "Sales Audit / Daybook Issues",
    "Store is Processing a Return and it's Being Declined",
+   "Requests to Add/Remove Authorized Signers on BlueTarp Accounts",
+   "Store Needs to Cancel a Transfer",
+   "Store Ordering Bank Deposit Slips",
    "Other"
 ]
 
@@ -371,6 +376,7 @@ const onCustomerIssues = [
     "Customer / Store Unable to Register Customer for Online Account",
     "Ordering More Member Sign-Up Sheets",
     "Customer Lost Year End Rewards",
+    "Customer Quote Issues",
     "Other"
  ]
 
@@ -419,6 +425,10 @@ const onOperationsIssues = [
     "Need Materials for Screen Repair",
     "Ordering More Member Sign-Up Sheets",
     "Setting Up Register Numbers for a New Employee",
+    "Store Asking for New Aisle Header Signs",
+    "Store Asking for New Now Hiring Signs",
+    "Store Asking For Touchpoint Stickers",
+    "Need 'Journey IQ' Password Reset",
     "Other"
 ]
 
@@ -523,6 +533,7 @@ function getTeamOfStore() {
 
 $(document).ready(function() {
     $("#myModal").hide();
+    $("$searchResults").hide();
     $("#submit").click(function(){
         $("#myModal").modal('show');
     })

@@ -6,6 +6,7 @@ const kioskIssues = [
     "Other Online Order Issues",
     "Connection Issues",
     "No Link to Edit Weekly Comments",
+    "Customer Quote Issues (Not Pricing Quotes)",
     "Other"
 ]
 
@@ -23,6 +24,8 @@ const kioskMap = new Map([
     ["Connection Issues", "<h3 style=\"text-align:center;\">Please escalate this issue to the POS Team.</h3>"],
 
     ["No Link to Edit Weekly Comments", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A112:B112\"></iframe>"],
+
+    ["Customer Quote Issues (Not Pricing Quotes)", "<h3 style=\"text-align:center;\">Send these up to Jay Ferrera.</h3>"],
 
     ["Other"]
 ])
