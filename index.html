@@ -32,29 +32,26 @@ HW 1, Part 2, Author: Wenjin Zhou
     <!-- NAV BAR -->
     <div class="container-fluid bg-dark fixTextLight">
         <div class="row">
-            <div class="col-2 pt-4">
-                <div class="bg-dark align-middle align-items-center" style="display:inline-flex;padding-bottom:1%;">
+            <div class="col-4 my-auto">
+                <div class="bg-dark">
                     <label id="switch" class="switch">
                         <input type="checkbox" onchange="changeColor()" id="slider">
                         <span class="slider round"></span>
                     </label>
-                    
-                        <div class="input-group" style="padding-left:1.5em;">
-                            <input type="search" id="searchBox" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                            <button type="button" class="btn btn-info text-light" onclick="searchSite(searchStr)">Search</button>
-                          </div>
                 </div>
             </div>
-            <div class="col-8">
-                <h1 class="text-center p-3 m-0">JBR 2.0</h1>
+            <div class="col-4">
+                <h1 class="text-center p-3 m-0">JBR 2.0</h1>         
             </div>
-            <div class="col-2 py-3">
+            <div class="col-4 py-3 my-auto">
                 <div class="align-middle align-items-center">
-                    <a href="results.html"><button id="RESULTS" type="button" class="btn btn-info text-light InitialButtons align-self-center"><i class="bi bi-arrow-right-circle" style="font-size: 1.5rem;"></i></button></a>
+                    <div class="input-group">
+                        <input type="search" id="searchBox" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-info text-light" onclick="searchSite(searchStr)">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </div>
 
     <!--
@@ -255,7 +252,7 @@ HW 1, Part 2, Author: Wenjin Zhou
             <button type="button" class="btn btn-dark"><a href="https://www.facebook.com/aubuchonhardware/" target="_blank"><i class="bi bi-facebook p-3" style="font-size: 25px;"></i></a></button>
             <button type="button" class="btn btn-dark"><a href="https://twitter.com/aubuchonhrdware?lang=en" target="_blank"><i class="bi bi-twitter p-3" style="font-size: 25px;"></i></a></button>
             <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/user/aubuchonhardware" target="_blank"><i class="bi bi-youtube p-3" style="font-size: 25px;"></i></a></button>
-            <p>&copy Copyright 2022 <a class="btn-dark" target="_blank" href="https://www.hardwarestore.com/">Aubuchon Hardware</a> | <a class="btn-dark" target="_blank" href="changelog.html">Changelog</a></p>
+            <p>&copy Copyright 2022 <a class="btn-dark" target="_blank" href="https://www.hardwarestore.com/">Aubuchon Hardware</a> | <a class="btn-dark" target="_blank" href="changelog.html">Changelog</a> | <a href="results.html" class="btn-dark">Results</a></p>
         </footer>
     </div>
 
