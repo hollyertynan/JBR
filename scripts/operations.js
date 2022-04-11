@@ -33,6 +33,8 @@ let operationsMap = new Map([
 
     ["Need 'Journey IQ' Password Reset"],
 
+    ["Store Needs Rental Contracts", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A28:D28\"></iframe>"],
+
     ["Other", "<h3 class=\"text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br/>"]
 
 ]);
