@@ -1,7 +1,7 @@
 let operationsMap = new Map([
     ["Need Orange Shelf Tape", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B4:D4\"</iframe>"],
 
-    ["Need New Equipment", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B14:C14\"</iframe>"],
+    ["Need New Equipment (Red Hook Locks, Paint Keys, etc)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B14:C14\"</iframe>"],
 
     ["Forklift Maintenance", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A12:D12\"</iframe>"],
 

@@ -413,7 +413,7 @@ OPERATIONS PIPELINE
 
 const onOperationsIssues = [
     "Need Orange Shelf Tape",
-    "Need New Equipment",
+    "Need New Equipment (Red Hook Locks, Paint Keys, etc)",
     "Forklift Maintenance",
     "Card Swipe Cleaning Cards",
     "Rubbish / Property Maintenance",
