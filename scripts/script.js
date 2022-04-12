@@ -430,6 +430,7 @@ const onOperationsIssues = [
     "Store Asking For Touchpoint Stickers",
     "Need 'Journey IQ' Password Reset",
     "Store Needs Rental Contracts",
+    "Store Needs Lanyards",
     "Other"
 ]
 
