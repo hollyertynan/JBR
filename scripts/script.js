@@ -329,6 +329,7 @@ const onAccountingIssues = [
    "Requests to Add/Remove Authorized Signers on BlueTarp Accounts",
    "Store Needs to Cancel a Transfer",
    "Store Ordering Bank Deposit Slips",
+   "BlueTarp (Capital One Trade Credit) Applications",
    "Other"
 ]
 

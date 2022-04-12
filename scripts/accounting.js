@@ -27,6 +27,8 @@ let accountingMap = new Map([
 
     ["Store Ordering Bank Deposit Slips", "<h3 style=\"text-align:center;\">Someone at the store can either fax a copy of their bank slips to 1stChecks, they can e-mail them to sales@1stchecks.com, or they can call the number listed on the deposit slips themselves.</h3>"],
 
+    ["BlueTarp (Capital One Trade Credit) Applications", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A6:D6\"></iframe>"],
+
     ["Other"]
 
 ]);
