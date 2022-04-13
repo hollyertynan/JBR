@@ -331,6 +331,7 @@ const onAccountingIssues = [
    "Store Ordering Bank Deposit Slips",
    "BlueTarp (Capital One Trade Credit) Applications",
    "Store is Asking for Invoice to be Paid",
+   "Store Asking for Gift Cards",
    "Other"
 ]
 
@@ -433,6 +434,7 @@ const onOperationsIssues = [
     "Need 'Journey IQ' Password Reset",
     "Store Needs Rental Contracts",
     "Store Needs Lanyards",
+    "Store Asking for Gift Cards",
     "Other"
 ]
 

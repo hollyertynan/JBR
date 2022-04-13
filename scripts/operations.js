@@ -37,6 +37,8 @@ let operationsMap = new Map([
 
     ["Store Needs Lanyards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=1442970144&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A10:D10\"></iframe>"],
 
+    ["Store Asking for Gift Cards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A15:D15\"></iframe>"],
+
     ["Other", "<h3 class=\"text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3><br/>"]
 
 ]);

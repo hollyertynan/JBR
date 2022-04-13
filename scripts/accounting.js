@@ -31,6 +31,8 @@ let accountingMap = new Map([
 
     ["Store is Asking for Invoice to be Paid", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A29:D29\"></iframe>"],
 
+    ["Store Asking for Gift Cards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A15:D15\"></iframe>"],
+
     ["Other"]
 
 ]);
