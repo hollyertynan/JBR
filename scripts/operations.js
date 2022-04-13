@@ -1,5 +1,5 @@
 let operationsMap = new Map([
-    ["Need Orange Shelf Tape", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B4:D4\"</iframe>"],
+    ["Need Orange Shelf Tape"],
 
     ["Need New Equipment (Red Hook Locks, Paint Keys, etc)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B14:C14\"</iframe>"],
 
@@ -47,6 +47,9 @@ let operationsMap = new Map([
 function onEventOperations(event) {
     document.getElementById("fourthForm").innerHTML = "";
     switch(event.target.value) {
+        case "Need New Equipment (Red Hook Locks, Paint Keys, etc)":
+            alternativeDefaultOperations(event.target.value, "Requests for New In-Store Equipment", "Team Operations Manager");
+            break;
         case "Need 'Journey IQ' Password Reset":
             alternativeDefaultOperations(event.target.value, "Requests for Journey IQ password resets", "Team Operations Manager");
             break;
@@ -95,10 +98,10 @@ function alternativeDefaultOperations(taskName, request, handler) {
         $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A7:D11\"></iframe>");
         $("#resolutionFrame").attr('style', 'display:block;');
     } else if(team == 3) {
-        $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A15:D19\"></iframe>");
+        $("#resolutionFrame").html("<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A16:D20\"></iframe>");
         $("#resolutionFrame").attr('style', 'display:block;');
     } else {
-        $("#resolutionFrame").html("<h3 class=\"text-center\">If you put in a store number next time, this will show the correct team right away.</h3><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A1:D19\"></iframe>");
+        $("#resolutionFrame").html("<h3 class=\"text-center\">If you put in a store number next time, this will show the correct team right away.</h3><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1YcfBW3r3amEy2YHrdHQf1WlJ881D1x3gsnHE4rroB-o/htmlembed?gid=221&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A1:D20\"></iframe>");
         $("#resolutionFrame").attr('style', 'display:block;');
     }
 
