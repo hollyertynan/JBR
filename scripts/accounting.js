@@ -29,6 +29,8 @@ let accountingMap = new Map([
 
     ["BlueTarp (Capital One Trade Credit) Applications", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A6:D6\"></iframe>"],
 
+    ["Store is Asking for Invoice to be Paid", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A29:D29\"></iframe>"],
+
     ["Other"]
 
 ]);

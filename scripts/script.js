@@ -330,6 +330,7 @@ const onAccountingIssues = [
    "Store Needs to Cancel a Transfer",
    "Store Ordering Bank Deposit Slips",
    "BlueTarp (Capital One Trade Credit) Applications",
+   "Store is Asking for Invoice to be Paid",
    "Other"
 ]
 
