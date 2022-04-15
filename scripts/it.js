@@ -76,6 +76,10 @@ function onEventIT(event) {
             hideRegisterNumber();
             onElvis();
             break; 
+        case "Theatro":
+            hideRegisterNumber();
+            onTheatro();
+            break;
         case "Other":
             hideRegisterNumber();
             onITOther();
@@ -524,6 +528,26 @@ function onWifi() {
     $("#itDropdown").addClass("bg-success border-success");
     document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
     firstTask = "WiFi";
+}
+
+
+
+
+/*
+
+onTheatro() pipeline
+
+*/
+
+function onTheatro() {
+    document.getElementById("thirdForm").innerHTML = "<h3 style=\"text-align:center;padding-left:2%;padding-right:2%;\">All issues with Theatro at store level should be sent to the Theatro Tech Support first. If their devices are working, all they need to do is hold the talk button and say 'Message Tech Support'. If none of their devices are working they can either call Theatro at 1-844-843-2876, or they can email them at support@theatro.com.</h3>";
+    document.getElementById("fourthForm").innerHTML = "";
+    
+
+    $("#itDropdown").removeClass("bg-info border-info");
+    $("#itDropdown").addClass("bg-success border-success");
+    document.getElementById("thirdForm").scrollIntoView({behavior: "smooth"});
+    firstTask = "Theatro";
 }
 
 
