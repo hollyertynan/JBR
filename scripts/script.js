@@ -213,6 +213,7 @@ const onITIssues = [
     "Security System",
     "WiFi Issues",
     "ELVIS",
+    "Theatro",
     "Other"
 ]
 
