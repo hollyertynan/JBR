@@ -51,6 +51,8 @@ let productMap = new Map([
 
     ["Item Description Incorrect / Unclear / Missing", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B38:D38\"></iframe>"],
 
+    ["Store Needs Propane Barcodes", "<h3 style=\"text-align:center\">Provide the store <a href=\"#Foo\" onclick=\"copyToClipboard('http://10.10.1.141/web/CreateAsign/Signmain.asp')\"><u>this</u></a> link and let them know they propane codes are on the bottom of the page.</h3>"],
+
     ["Other", "<h3 class=\"p-3 text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>"]
 ]);
 
