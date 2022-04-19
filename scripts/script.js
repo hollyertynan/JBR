@@ -277,6 +277,7 @@ const onProductIssues = [
     "Minimum Quantity Required to Close a PO",
     "Item Description Incorrect / Unclear / Missing",
     "Store Needs to Cancel a Transfer",
+    "Store Needs Propane Barcodes",
     "Other"
 ]
 
@@ -545,6 +546,12 @@ $(document).ready(function() {
         $("#myModal").modal('show');
     })
 })
+
+function copyToClipboard(link) {
+    /* Copy text into clipboard */
+    navigator.clipboard.writeText(link);
+    alert("Copied to clipboard.")
+}
 
 $(document).ready(function() {
     $("#storeTicketForm").validate({
