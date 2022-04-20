@@ -22,6 +22,7 @@ const registerSoftwareIssues = [
     "Taskbar is in the Wrong Spot",
     "Loyalty Points Loading Slow/Receipts Not Processing When Scanned",
     "'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers",
+    "BlueTarp Transaction On Special Orders",
     "Other"
 ]
 
@@ -70,6 +71,8 @@ const registerSoftwareMap = new Map([
     ["Loyalty Points Loading Slow/Receipts Not Processing When Scanned", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A74:B74\"></iframe>"],
 
     ["'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A182:B182\"></iframe>"],
+
+    ["BlueTarp Transaction On Special Orders", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A188:B188\"></iframe>"],
 
     ["Other"]
 ])
