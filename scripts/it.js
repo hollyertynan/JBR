@@ -228,6 +228,7 @@ const paymentTerminalIssues = [
         "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
         "Return Not Processing",
         "triPOS Get Stuck Trying To Start or Stop the Service, Could Also Say 'Failed to Start/Stop triPOS.NET",
+        "Error When Trying to Restart triPOS - 'Side-by-Side Configuration is Incorrect",
         "Other",
 ]
 
