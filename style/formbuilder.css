@@ -1,5 +1,5 @@
 html {
-    background-color:#e4ddc3;
+    background-color:#243133;
 } 
 h1 {
     text-align: center;
@@ -7,6 +7,8 @@ h1 {
 }
 td {
     font-family: 'Trebuchet MS', sans-serif;
+    padding-bottom: 1.5%;
+    color: white;
 }
 
 .hovertext {
