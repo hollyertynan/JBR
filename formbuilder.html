@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link href="style/style.css" rel="stylesheet">
+        <div class="header">
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="google-signin-client_id" content="1062888571715-c5b4ov5oa762vpla8rg71mp526md49v2.apps.googleusercontent.com">
+            <title>Formbuilder</title>
+            <link rel="icon" type="image/png" href="assets/LOGO_NEW.png">
+                <!-- NAV BAR -->
+    <div class="container-fluid bg-dark fixTextLight">
+        <div class="row">
+            <div class="col-4 my-auto">
+                <div class="bg-dark">
+                    </label>
+                </div>
+            </div>
+            <div class="col-4">
+                <h1 class="text-center p-3 m-0">Formbuilder</h1>         
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </head>
+     
+    <body class="bg-dark">
+
+        <br><br><br><br>
+
+
+        <form class="style">
+            <table class="">
+                <tr>
+                    <td><label>Link to resolution/responsible person:</label></td>
+                    <td><input type="textbox" placeholder="Insert Link Here" id="link" onchange="fillLink(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><label>Name of issue:</label></td>
+                    <td><input type="textbox" placeholder="Insert Issue Name Here" id="name"></td>
+                </tr>
+
+                <tr>
+                    <td><label class="hovertext" data-hover="Determines the size of the iframe for resolutions. Ignored if Google Docs is selected."><u>Length of resolution:</u></label></td>
+                    <td><input name="length" type="radio" id="short" onchange="getResolutionLength('Short')">Short</td>
+                    <td><input name="length" type="radio" id="medium" onchange="getResolutionLength('Medium')">Medium</td>
+                    <td><input name="length" type="radio" id="long" onchange="getResolutionLength('Long')">Long</td>
+                </tr>
+
+                <tr>
+                    <td><label class="hovertext" data-hover="Source where the data comes from. Changes how info is presented on JBR."><u>Data source:</u></label></td>
+                    <td><input name="source" type="radio" id="sourceSheets" onchange="listenForSheets(true)">Google Sheets</td>
+                    <td><input name="source" type="radio" id="sourceOther" onchange="listenForSheets(false)">Google Docs/Other</td>
+                </tr>
+
+                <tr>
+                    <td><label class="hovertext" data-hover="Where the resolution can be found."><u>Main section:</u></label></td>
+                    <td><select name="mainSection" onchange="getSection(this.value)">
+                        <option value="Select">Select one:</option>
+                        <option value="Product">Product Team</option>
+                        <option value="IT">IT</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Customer">Customer Accounts</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Marketing">Marketing/HR</option>
+                    </select></td>
+                </tr>
+
+                <tr>
+                    <td><button id="submitBuiltForm" onclick="saveFile()">Build Form</button></td>
+                    <td><u>Once finished, please send file to Damian Oakes.</u></td>
+                </tr>
+
+                
+
+
+        </table>
+    </form>
+
+        <link rel="stylesheet" href="style/formbuilder.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="scripts/formbuilder.js"></script>
+    </body>
+</html>
