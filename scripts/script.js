@@ -498,6 +498,9 @@ function ticketValidation() {
 	}
 }
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
+
 function SubForm() {
     document.forms['submitMyForm'].elements['Submitted'].value = date;
     document.forms['submitMyForm'].elements['Person'].value = user;
@@ -512,16 +515,24 @@ function SubForm() {
     document.forms['submitMyForm'].elements['Fifth Task'].value = fifthTask;
     document.forms['submitMyForm'].elements['Comments'].value = document.getElementById("comments").value;
 
+    document.getElementById("submittext").innerHTML = "";
+    $("#submittext").addClass("spinner-border text-light");
+    $("#submitcheck").removeClass("bi bi-check-circle");
+    document.getElementById("submit").disabled = true;
+
     $.ajax({
         url: "https://api.apispreadsheets.com/data/DKFTbWbHBS9skMdT/",
         type: "post",
         data:$("#submitMyForm").serializeArray(),
         
-        success: function() {
+        success: async function() {
+            await delay(1500);
             location.reload();
+            
         },
-        error: function() {
-            alert("There was an error :(");
+        error: async function() {
+            await delay(1500);
+            location.reload();
         }
     });
 }
