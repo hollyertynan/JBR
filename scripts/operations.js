@@ -1,3 +1,27 @@
+const onOperationsIssues = [
+    "Need Orange Shelf Tape",
+    "Need New Equipment (Red Hook Locks, Paint Keys, etc)",
+    "Forklift Maintenance",
+    "Card Swipe Cleaning Cards",
+    "Rubbish / Property Maintenance",
+    "Store Use Safety Masks",
+    "New Glass and / or Plexi Cutter",
+    "New Integrity Cleaner Shirt Needed for Porter",
+    "Business Cards",
+    "New Brush / Cutwheel for the Key Machine",
+    "Need Materials for Screen Repair",
+    "Ordering More Member Sign-Up Sheets",
+    "Setting Up Register Numbers for a New Employee",
+    "Store Asking for New Aisle Header Signs",
+    "Store Asking for New Now Hiring Signs",
+    "Store Asking For Touchpoint Stickers",
+    "Need 'Journey IQ' Password Reset",
+    "Store Needs Rental Contracts",
+    "Store Needs Lanyards",
+    "Store Asking for Gift Cards",
+    "Other"
+]
+
 let operationsMap = new Map([
     ["Need Orange Shelf Tape"],
 

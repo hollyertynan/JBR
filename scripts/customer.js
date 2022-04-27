@@ -1,3 +1,20 @@
+const onCustomerIssues = [
+    "New Military Discount Form",
+    "New Pro Discount Form",
+    "Merge Customer Accounts",
+    "Special Pricing / Price Quote",
+    "New Tax Exempt Form",
+    "Add Points Request",
+    "Customer Rewards Issue",
+    "Store has Customer that was Double Charged",
+    "Request to Delete Customer Account",
+    "Customer / Store Unable to Register Customer for Online Account",
+    "Ordering More Member Sign-Up Sheets",
+    "Customer Lost Year End Rewards",
+    "Customer Quote Issues",
+    "Other"
+ ]
+
 let customerMap = new Map([
     ["New Military Discount Form",
     "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.2v2hsqvh4a2u\"></iframe>"],
