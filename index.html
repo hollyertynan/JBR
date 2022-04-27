@@ -179,8 +179,8 @@ HW 1, Part 2, Author: Wenjin Zhou
     </div> -->
 
     <div class="container">
-        <form id="submitMyForm">
-            <input name="Submitted" hidden/>
+        <form id="submitMyForm" class="gform" method="POST" data-email="damian.oakes@aubuchon.com" action="https://script.google.com/macros/s/AKfycbzGVTxi-cCNTm9qimm96pTL0e8HZtOnDt-fHbfK__jBI9MwHInu2HQpoK_p9_O-lJXJ/exec">
+            <!-- <input name="Submitted" hidden/> -->
             <input name="Person" hidden/>
             <input name="Ticket# / Caller" hidden/>
             <input name="Store" hidden/>
@@ -289,5 +289,6 @@ HW 1, Part 2, Author: Wenjin Zhou
     <script src="scripts/search.js"></script>
     <script src="scripts/it_scripts/paymentTerminal.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 </html>
