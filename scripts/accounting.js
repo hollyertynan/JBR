@@ -33,6 +33,8 @@ let accountingMap = new Map([
 
     ["Store Asking for Gift Cards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A15:D15\"></iframe>"],
 
+    ["Fishing Licenses", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A31:C31\"></iframe>"],
+
     ["Other"]
 
 ]);
