@@ -481,6 +481,19 @@ function copyToClipboard(link) {
     alert("Copied to clipboard.")
 }
 
+$(document).ready(function() {    
+    var Modal = document.getElementById('oneTimeModal'); 
+    var key = 'hadModal',
+    hadModal = localStorage.getItem(key);
+    
+    if (!hadModal) {
+        $("#oneTimeModal").modal('show');
+        localStorage.setItem(key, true);
+    }
+    
+});  
+
+
 $(document).ready(function() {
     $("#storeTicketForm").validate({
         rules: {
