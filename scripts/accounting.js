@@ -1,3 +1,23 @@
+const onAccountingIssues = [
+    "PO / EDI Issues",
+    "Missing / Voided Transactions",
+    "Changing Canadian Conversion Rate",
+    "Setting Up a New Home Heating Customer Account",
+    "Defective Items / Credits",
+    "Store Has a Customer That Was Double Charged",
+    "Issues With Updates to In-House Accounts",
+    "Sales Audit / Daybook Issues",
+    "Store is Processing a Return and it's Being Declined",
+    "Requests to Add/Remove Authorized Signers on BlueTarp Accounts",
+    "Store Needs to Cancel a Transfer",
+    "Store Ordering Bank Deposit Slips",
+    "BlueTarp (Capital One Trade Credit) Applications",
+    "Store is Asking for Invoice to be Paid",
+    "Store Asking for Gift Cards",
+    "Fishing Licenses",
+    "Other"
+ ]
+
 let accountingMap = new Map([
     ["PO / EDI Issues", "<h3>UNDER CONSTRUCTION</h3>"],
 

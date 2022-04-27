@@ -250,36 +250,7 @@ PRODUCT PIPELINE
 
 */
 
-const onProductIssues = [
-    "Benjamin Moore National Accounts Order",
-    "Sending E-Mail to Store for Ben Moore National Accounts Order",
-    "Benjamin Moore Web Sales Order",
-    "Change Product Min and / or Max",
-    "Changing Min/Max on a Suspended Product",
-    "PO/EDI Issues",
-    "Paint Over Max Order",
-    "Product Needs a SKU",
-    "UPC Not On File",
-    "Need a Vendor Website Password Reset",
-    "Retail Price Issues (Not Markdown)",
-    "Cost Issues",
-    "Smart Cycle Count Issues",
-    "Special Order Issues",
-    "Store Specific Clearance Pricing",
-    "Store Specific Temporary Pricing",
-    "Customer Pricing Quote",
-    "Honda Orders",
-    "Order More Bad Air Sponges",
-    "Immediate Price Changes",
-    "Store Needs Bloodborne Kit",
-    "Item Packaging Not Correct",
-    "Battery Core Charges",
-    "Minimum Quantity Required to Close a PO",
-    "Item Description Incorrect / Unclear / Missing",
-    "Store Needs to Cancel a Transfer",
-    "Store Needs Propane Barcodes",
-    "Other"
-]
+
 
 function onProduct() {
     hideRegisterNumber();
@@ -318,25 +289,7 @@ ACCOUNTING PIPELINE
 
 */
 
-const onAccountingIssues = [
-   "PO / EDI Issues",
-   "Missing / Voided Transactions",
-   "Changing Canadian Conversion Rate",
-   "Setting Up a New Home Heating Customer Account",
-   "Defective Items / Credits",
-   "Store Has a Customer That Was Double Charged",
-   "Issues With Updates to In-House Accounts",
-   "Sales Audit / Daybook Issues",
-   "Store is Processing a Return and it's Being Declined",
-   "Requests to Add/Remove Authorized Signers on BlueTarp Accounts",
-   "Store Needs to Cancel a Transfer",
-   "Store Ordering Bank Deposit Slips",
-   "BlueTarp (Capital One Trade Credit) Applications",
-   "Store is Asking for Invoice to be Paid",
-   "Store Asking for Gift Cards",
-   "Fishing Licenses",
-   "Other"
-]
+
 
 function onAccounting() {
     hideRegisterNumber();
@@ -369,22 +322,7 @@ CUSTOMER PIPELINE
 
 */
 
-const onCustomerIssues = [
-    "New Military Discount Form",
-    "New Pro Discount Form",
-    "Merge Customer Accounts",
-    "Special Pricing / Price Quote",
-    "New Tax Exempt Form",
-    "Add Points Request",
-    "Customer Rewards Issue",
-    "Store has Customer that was Double Charged",
-    "Request to Delete Customer Account",
-    "Customer / Store Unable to Register Customer for Online Account",
-    "Ordering More Member Sign-Up Sheets",
-    "Customer Lost Year End Rewards",
-    "Customer Quote Issues",
-    "Other"
- ]
+
 
 function onCustomer() {
     hideRegisterNumber();
@@ -417,29 +355,7 @@ OPERATIONS PIPELINE
 
 */
 
-const onOperationsIssues = [
-    "Need Orange Shelf Tape",
-    "Need New Equipment (Red Hook Locks, Paint Keys, etc)",
-    "Forklift Maintenance",
-    "Card Swipe Cleaning Cards",
-    "Rubbish / Property Maintenance",
-    "Store Use Safety Masks",
-    "New Glass and / or Plexi Cutter",
-    "New Integrity Cleaner Shirt Needed for Porter",
-    "Business Cards",
-    "New Brush / Cutwheel for the Key Machine",
-    "Need Materials for Screen Repair",
-    "Ordering More Member Sign-Up Sheets",
-    "Setting Up Register Numbers for a New Employee",
-    "Store Asking for New Aisle Header Signs",
-    "Store Asking for New Now Hiring Signs",
-    "Store Asking For Touchpoint Stickers",
-    "Need 'Journey IQ' Password Reset",
-    "Store Needs Rental Contracts",
-    "Store Needs Lanyards",
-    "Store Asking for Gift Cards",
-    "Other"
-]
+
 
 function onOperations() {
     hideRegisterNumber();

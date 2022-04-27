@@ -211,26 +211,7 @@ onPaymentTerminal() pipeline
 
 */
 
-const paymentTerminalIssues = [
-        "Displays 'None' When Being Inserted",
-        "Stuck On System Information",
-        "Stuck on Synchronizing With XPI App",
-        "Declining All Cards",
-        "Debit Being Declined / Credit Being Stored for Later Processing",
-        "Signature Stuck in Loop",
-        "Screen is blank and white",
-        "Automatically Reads 'Cancelled' when Debit or Credit is selected as tender",
-        "Critical Error: No USB Connection, please check cable",
-        "'Maintenance Required' or 'Enter Password to Login'",
-        "New Payment Terminal to Setup",
-        "Need a new stylus (pen)",
-        "Need a new Payment Terminal",
-        "Shows Message: 'WARNING: UNABLE TO COMMUNICATE WITH triPOS'",
-        "Return Not Processing",
-        "triPOS Get Stuck Trying To Start or Stop the Service, Could Also Say 'Failed to Start/Stop triPOS.NET",
-        "Error When Trying to Restart triPOS - 'Side-by-Side Configuration is Incorrect",
-        "Other",
-]
+
 
 function registerInquiryPaymentTerminal() {
     var input = "";
