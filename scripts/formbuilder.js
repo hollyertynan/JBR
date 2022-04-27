@@ -48,13 +48,13 @@ function getSection(currentSection) {
 function getResolutionLength(input) {
     switch(input) {
         case "Short":
-            resolutionLength = "class=\"vh-30\"";
+            resolutionLength = "class=\\\"vh-30\\\"";
             break;
         case "Medium":
-            resolutionLength = "class=\"vh-50\"";
+            resolutionLength = "class=\\\"vh-50\\\"";
             break;
         case "Long":
-            resolutionLength = "class=\"vh-100\"";
+            resolutionLength = "class=\\\"vh-100\\\"";
             break;
         default:
             alert("This is not working.")
@@ -71,11 +71,11 @@ function listenForSheets(sheetsFlag) {
         return;
     } else if (resolutionLength != "" && sheetsFlag == false) {
         sheets = false;
-        resolutionLength = "vh-100";
+        resolutionLength = "\"vh-100\"";
         return;
     } else if (resolutionLength == "" && sheetsFlag == false) { 
         sheets = false;
-        resolutionLength = "vh-100"
+        resolutionLength = "\"vh-100\""
         return;
     } else {
         sheets = true;
@@ -98,9 +98,12 @@ function spliceLinkSheets() {
         return;
     } else if(sheets == true) {
         let tempLink = formLink.split("&");
-        finishedLink = "<iframe src=\"" + tempLink[0] + framePiece + tempLink[1] + "\"></iframe>";
+        finishedLink = "\"<iframe src=\\\"" + tempLink[0] + framePiece + tempLink[1] + "\\\"></iframe>\"";
         finishedLink = finishedLink.split(" ");
-        finishedLink = finishedLink[0] + " " + resolutionLength + " " + finishedLink[1]
+        finishedLink = finishedLink[0] + " " + resolutionLength + " " + finishedLink[1];
+        finishedLink = finishedLink.split("edit#");
+        finishedLink = finishedLink[0] + "htmlembed?" + finishedLink[1];
+
     } else if(sheets == false) {
         finishedLink = "<iframe class=\"vh-100\" src=\"" + formLink + "\"></iframe>";
     }

@@ -334,6 +334,7 @@ const onAccountingIssues = [
    "BlueTarp (Capital One Trade Credit) Applications",
    "Store is Asking for Invoice to be Paid",
    "Store Asking for Gift Cards",
+   "Fishing Licenses",
    "Other"
 ]
 
