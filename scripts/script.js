@@ -419,7 +419,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 
 
 function SubForm() {
-    document.forms['submitMyForm'].elements['Submitted'].value = date;
+    // document.forms['submitMyForm'].elements['Submitted'].value = date;
     document.forms['submitMyForm'].elements['Person'].value = user;
     document.forms['submitMyForm'].elements['T/P/M'].value = chosenFirstButton;
     document.forms['submitMyForm'].elements['Ticket# / Caller'].value = document.getElementById("ticketinfo").value;
@@ -438,7 +438,7 @@ function SubForm() {
     document.getElementById("submit").disabled = true;
 
     $.ajax({
-        url: "https://api.apispreadsheets.com/data/DKFTbWbHBS9skMdT/",
+        url: "https://script.google.com/macros/s/AKfycbzGVTxi-cCNTm9qimm96pTL0e8HZtOnDt-fHbfK__jBI9MwHInu2HQpoK_p9_O-lJXJ/exec",
         type: "post",
         data:$("#submitMyForm").serializeArray(),
         
