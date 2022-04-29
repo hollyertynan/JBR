@@ -485,8 +485,18 @@ $(document).ready(function() {
     var Modal = document.getElementById('oneTimeModal'); 
     var key = 'hadModal',
     hadModal = localStorage.getItem(key);
+
+    var poKey = 'poMessage',
+    poMessage = localStorage.getItem(poKey);
+
+    if (!poMessage) {
+        document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
+        $("#oneTimeModal").modal('show');
+        localStorage.setItem(poKey, true);
+    }
     
     if (!hadModal) {
+        document.getElementById("noticeModalContent").innerHTML += "Directions in Home Team Hero and Home Team Pro requests have changed.";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(key, true);
     }
