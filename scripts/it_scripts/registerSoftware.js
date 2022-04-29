@@ -23,6 +23,7 @@ const registerSoftwareIssues = [
     "Loyalty Points Loading Slow/Receipts Not Processing When Scanned",
     "'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers",
     "BlueTarp Transaction On Special Orders",
+    "'Associate Record Not Found'",
     "Other"
 ]
 
@@ -73,6 +74,8 @@ const registerSoftwareMap = new Map([
     ["'File is Missing', or Mi9 Closes Out When Trying to Start Mi9 at the Registers", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A182:B182\"></iframe>"],
 
     ["BlueTarp Transaction On Special Orders", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A188:B188\"></iframe>"],
+
+    ["'Associate Record Not Found'", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A192:B192\"></iframe>"],
 
     ["Other"]
 ])
@@ -158,7 +161,6 @@ function onReturnNotProcessingSoftware() {
 
 //DEFAULT REGISTER SOFTWARE FORM
 function defaultRegisterSoftware(taskName) {
-    document.getElementById("fourthForm").innerHTML = "";
     document.getElementById("fifthForm").innerHTML = "";
     hidePreviousInfo();
     hideBlankQuestionnaire();
