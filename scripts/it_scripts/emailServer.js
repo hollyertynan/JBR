@@ -7,6 +7,7 @@ const emailServerIssues = [
     "Phish Hook Button in Email Not Working",
     "'Ajax Error 0' in Mi9 Merchant",
     "Store Needs Help With Various Tasks in Mi9 (Creating POs/Doing Stock Adjustments/Transfers/etc.)",
+    "'An Error Has Occurred' When Trying to Receive In a PO",
     "Other"
 ]
 
@@ -26,6 +27,8 @@ const emailServerMap = new Map([
     ["'Ajax Error 0' in Mi9 Merchant", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A186:B186\"></iframe>"],
 
     ["Store Needs Help With Various Tasks in Mi9 (Creating POs/Doing Stock Adjustments/Transfers/etc.)", "<h3 style=\"text-align:center;\">The sheet below was made by Lindsey to help with stores using the Mi9 Store Portal, and contains a lot of valuable information about anything the Portal does. If you've searched through this sheet and can't figure out how to help the store, please escalate to the POS Team.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JP1j86-Z6GIljpIsxLxH7uV6ErmLmcyXXC9YMm3r7sA/edit\"></iframe>"],
+
+    ["'An Error Has Occurred' When Trying to Receive In a PO", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A194:B194\"></iframe>"],
 
     ["Other"]
 ])
