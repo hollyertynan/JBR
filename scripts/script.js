@@ -489,8 +489,8 @@ $(document).ready(function() {
     var poKey = 'poMessage',
     poMessage = localStorage.getItem(poKey);
 
-    var PTO = 'PTO',
-    PTO = localStorage.getItem(PTO);
+    var PTO = 'PTOWeek',
+    PTOWeek= localStorage.getItem(PTO);
 
     if (!poMessage) {
         document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
@@ -498,7 +498,7 @@ $(document).ready(function() {
         localStorage.setItem(poKey, true);
     }
 
-    if (!PTO) {
+    if (!PTOWeek) {
         document.getElementById("noticeModalContent").innerHTML += "Jared Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(PTO, true);
