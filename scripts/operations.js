@@ -23,7 +23,7 @@ const onOperationsIssues = [
 ]
 
 let operationsMap = new Map([
-    ["Need Orange Shelf Tape"],
+    ["Need Orange Shelf Tape", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:D4\"></iframe>"],
 
     ["Need New Equipment (Red Hook Locks, Paint Keys, etc)", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=56243274&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=B14:C14\"</iframe>"],
 
