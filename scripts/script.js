@@ -489,16 +489,23 @@ $(document).ready(function() {
     var poKey = 'poMessage',
     poMessage = localStorage.getItem(poKey);
 
+    var PTO = 'PTO',
+    PTO = localStorage.getItem('PTO');
+
     if (!poMessage) {
         document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(poKey, true);
     }
-    
-    if (!hadModal) {
-        document.getElementById("noticeModalContent").innerHTML += "Directions in Home Team Hero and Home Team Pro requests have changed.";
+
+    if (!PTO) {
+        document.getElementById("noticeModalContent").innerHTML += "Jare Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.";
         $("#oneTimeModal").modal('show');
-        localStorage.setItem(key, true);
+        localStorage.setItem(PTO, true);
+    }
+    
+    if (hadModal) {
+        localStorage.removeItem(key)
     }
     
 });  
