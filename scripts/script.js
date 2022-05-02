@@ -492,6 +492,9 @@ $(document).ready(function() {
     var PTO = 'PTOWeek',
     PTOWeek= localStorage.getItem(PTO);
 
+    var tcbIssue = 'newTCBEmployee',
+    newTCBEmployee = localStorage.getItem(tcbIssue);
+
     if (!poMessage) {
         document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
         $("#oneTimeModal").modal('show');
@@ -502,6 +505,12 @@ $(document).ready(function() {
         document.getElementById("noticeModalContent").innerHTML += "Jared Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(PTO, true);
+    }
+
+    if (!newTCBEmployee) {
+        document.getElementById("noticeModalContent").innerHTML += "Directions for \"TCB App Showing Wrong Info From New Employee\" added to IT > Elvis.";
+        $("#oneTimeModal").modal('show');
+        localStorage.setItem(tcbIssue, true);
     }
     
     if (hadModal) {
