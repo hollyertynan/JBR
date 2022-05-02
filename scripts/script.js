@@ -490,7 +490,7 @@ $(document).ready(function() {
     poMessage = localStorage.getItem(poKey);
 
     var PTO = 'PTO',
-    PTO = localStorage.getItem('PTO');
+    PTO = localStorage.getItem(PTO);
 
     if (!poMessage) {
         document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
