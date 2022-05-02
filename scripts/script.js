@@ -499,7 +499,7 @@ $(document).ready(function() {
     }
 
     if (!PTO) {
-        document.getElementById("noticeModalContent").innerHTML += "Jare Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.";
+        document.getElementById("noticeModalContent").innerHTML += "Jared Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(PTO, true);
     }
