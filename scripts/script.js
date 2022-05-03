@@ -490,10 +490,13 @@ $(document).ready(function() {
     poMessage = localStorage.getItem(poKey);
 
     var PTO = 'PTOWeek',
-    PTOWeek= localStorage.getItem(PTO);
+    PTOWeek = localStorage.getItem(PTO);
 
     var tcbIssue = 'newTCBEmployee',
     newTCBEmployee = localStorage.getItem(tcbIssue);
+
+    var overMax = 'overMaxDirections',
+    overMaxDirections = localStorage.getItem(overMax);
 
     if (!poMessage) {
         document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
@@ -508,9 +511,15 @@ $(document).ready(function() {
     }
 
     if (!newTCBEmployee) {
-        document.getElementById("noticeModalContent").innerHTML += "Directions for \"TCB App Showing Wrong Info From New Employee\" added to IT > Elvis.";
+        document.getElementById("noticeModalContent").innerHTML += "Directions for \"TCB App Showing Wrong Info From New Employee\" added to IT > Elvis.<br><br>";
         $("#oneTimeModal").modal('show');
         localStorage.setItem(tcbIssue, true);
+    }
+
+    if (!overMaxDirections) {
+        document.getElementById("noticeModalContent").innerHTML += "New Over Max Guidelines provided by Mike Gregory can now be found in the \"Over Max Orders\" entry.";
+        $("#oneTimeModal").modal('show');
+        localStorage.setItem(overMax, true);
     }
     
     if (hadModal) {
