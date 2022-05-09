@@ -488,66 +488,20 @@ function modalDisplay() {
 
     document.getElementById("noticeModalContent").innerHTML = "";
 
+    var printer = 'noIconPrinters',
+    noIconPrinters = localStorage.getItem(printer);
+
     
-    var key = 'hadModal',
-    hadModal = localStorage.getItem(key);
 
-    var poKey = 'poMessage',
-    poMessage = localStorage.getItem(poKey);
-
-    var PTO = 'PTOWeek',
-    PTOWeek = localStorage.getItem(PTO);
-
-    var tcbIssue = 'newTCBEmployee',
-    newTCBEmployee = localStorage.getItem(tcbIssue);
-
-    var overMax = 'overMaxDirections',
-    overMaxDirections = localStorage.getItem(overMax);
-
-    var bell = 'notificationBell',
-    notificationBell = localStorage.getItem(bell)
-
-
-    if (!notificationBell) {
-        document.getElementById("noticeModalContent").innerHTML += "You can now show all updates by clicking the bell at the top of the screen!<br><br>";
-        $("#oneTimeModal").modal('show');
-        localStorage.setItem(bell, true);
+    if (!noIconPrinters) {
+        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing No Aubuchon Logo On Receipts has been added to IT > Registers > Register Software.";
+        localStorage.setItem(printer, true);
+        $("#oneTimeModal").modal("show");
     }
 
     
-    if (!poMessage) {
-        document.getElementById("noticeModalContent").innerHTML += "Directions for \"An Error Has Occured {0}\" when receiving POs has been added to Accounting and IT > Office-PC.<br><br>";
-        $("#oneTimeModal").modal('show');
-        localStorage.setItem(poKey, true);
-    }
-
-
     
-    if (!PTOWeek) {
-        document.getElementById("noticeModalContent").innerHTML += "Jared Brown is on PTO the week of. 5/2 to 5/6. Please use the backup responsible person for his tickets.<br><br>";  
-        $("#oneTimeModal").modal('show');
-        localStorage.setItem(PTO, true);
-    }
-
-
     
-    if (!newTCBEmployee) {
-        document.getElementById("noticeModalContent").innerHTML += "Directions for \"TCB App Showing Wrong Info From New Employee\" added to IT > Elvis.<br><br>";
-        $("#oneTimeModal").modal('show');
-        localStorage.setItem(tcbIssue, true);
-    }
-
-
-    
-    if (!overMaxDirections) {
-        document.getElementById("noticeModalContent").innerHTML += "New Over Max Guidelines provided by Mike Gregory can now be found in the \"Over Max Orders\" entry.";
-        $("#oneTimeModal").modal('show');
-        localStorage.setItem(overMax, true);
-    }
-    
-    if (hadModal) {
-        localStorage.removeItem(key)
-    }
     
 }
 
