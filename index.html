@@ -35,11 +35,13 @@ HW 1, Part 2, Author: Wenjin Zhou
             <div class="col-4 my-auto">
                 <div class="bg-dark">
                     <label id="switch" class="switch">
-                        <input type="checkbox" onchange="changeColor()" id="slider">
-                        <span class="slider round"></span>
+                        <select class="form-select form-select-sm mb-3" id="colorsSelect" style="display:block" onchange="storeScheme(this.value)" >
+                            <option value="default">Default</option>
+                            <option value="light">Light</option>
+                        </select>
                         
                     </label>
-                    <button type="button" class="btn btn-info text-light bi bi-bell" style="margin-left:3%" onclick="localStorage.clear();modalDisplay();"></button>
+                    <button type="button" class="btn btn-info text-light bi bi-bell" style="margin-left:3%" onclick="clearModal();modalDisplay();"></button>
                 </div>
             </div>
             
@@ -79,7 +81,7 @@ HW 1, Part 2, Author: Wenjin Zhou
                     <div class="container-fluid text-center pb-3">
                         <div id="taskInfo" class="text-center"></div>
                         <br>
-                        <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Ticket Number, Caller's Name, or Over Max PO #" style="width: 100%; text-align: center" class="InitialButtons bg-dark form-select-lg text-light"></div>
+                        <div class="pb-3"><input id="ticketinfo" type="text" name="tikcal" placeholder="Ticket Number, Caller's Name, or Over Max PO #" style="width: 100%; text-align: center" class="InitialButtons bg-dark form-select-lg fixTextLight"></div>
                     </div>
                   
                     <!-- removing max length until I can get it so you can only type 5 number or full name -->
@@ -139,30 +141,30 @@ HW 1, Part 2, Author: Wenjin Zhou
                     <div id="blankQuestionnaire">
                         <h3 id="prompt"></h3>
                         <h6 id="optionalNote" style="font-style:italic; color:white; text-align:center;"></h6>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline fixTextLight">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="display:inline-flex">
                             <label class="form-check-label" for="inlineRadio1" id="radioOne"></label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline fixTextLight">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="display:inline-flex">
                             <label class="form-check-label" for="inlineRadio2" id="radioTwo"></label>
                         </div>
-                        <div class="form-check form-check-inline" id="optionalRadio1">
+                        <div class="form-check form-check-inline fixTextLight" id="optionalRadio1">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" style="display:inline-flex">
                             <label class="form-check-label" for="inlineRadio3" id="radioThree"></label>
                         </div>
-                        <div class="form-check form-check-inline" id="optionalRadio2">
+                        <div class="form-check form-check-inline fixTextLight" id="optionalRadio2">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" style="display:inline-flex">
                             <label class="form-check-label" for="inlineRadio4" id="radioFour"></label>
                         </div>
-                        <div class="form-check form-check-inline" id="optionalRadio3">
+                        <div class="form-check form-check-inline fixTextLight" id="optionalRadio3">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" style="display:inline-flex">
                             <label class="form-check-label" for="inlineRadio5" id="radioFive"></label>
                         </div>
                     </div>
                 
                     <!-- HIDDEN IFRAME FOR DISPLAYING INFO FROM DIFFERENT DOCUMENTS-->
-                    <div id="resolutionFrame">
+                    <div id="resolutionFrame" class="fixTextLight">
 
                     </div>
                 </div>
@@ -264,12 +266,12 @@ HW 1, Part 2, Author: Wenjin Zhou
 
     <!-- FOOTER -->
     <div class="container-fluid bg-dark">
-        <footer class="footer text-center bg-dark text-light fixed-bottom font-size">
+        <footer class="footer text-center bg-dark text-light fixed-bottom font-size" style="padding-top:0.5%">
             <button type="button" class="btn btn-dark"><a href="https://www.instagram.com/aubuchonhardware/?hl=en" target="_blank"><i class="bi bi-instagram p-3" style="font-size: 25px;"></i></a></button>
             <button type="button" class="btn btn-dark"><a href="https://www.facebook.com/aubuchonhardware/" target="_blank"><i class="bi bi-facebook p-3" style="font-size: 25px;"></i></a></button>
             <button type="button" class="btn btn-dark"><a href="https://twitter.com/aubuchonhrdware?lang=en" target="_blank"><i class="bi bi-twitter p-3" style="font-size: 25px;"></i></a></button>
             <button type="button" class="btn btn-dark"><a href="https://www.youtube.com/user/aubuchonhardware" target="_blank"><i class="bi bi-youtube p-3" style="font-size: 25px;"></i></a></button>
-            <p>&copy Copyright 2022 <a class="btn-dark" target="_blank" href="https://www.hardwarestore.com/">Aubuchon Hardware</a> | <a class="btn-dark" target="_blank" href="changelog.html">Changelog</a> | <a href="results.html" class="btn-dark">Results</a> | <a class="btn-dark" href="formbuilder.html">Formbuilder</a></p>
+            <div id="footerButtons"><p>&copy Copyright 2022 <a class="btn-dark" target="_blank" href="https://www.hardwarestore.com/">Aubuchon Hardware</a> | <a class="btn-dark" target="_blank" href="changelog.html">Changelog</a> | <a href="results.html" class="btn-dark">Results</a> | <a class="btn-dark" href="formbuilder.html">Formbuilder</a></p></div>
         </footer>
     </div>
 
@@ -279,6 +281,7 @@ HW 1, Part 2, Author: Wenjin Zhou
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="scripts/colorschemes.js"></script>
     <script src="scripts/it_scripts/itMaintenance.js"></script>
     <script src="scripts/stores.js"></script>
     <script src="scripts/script.js"></script>
