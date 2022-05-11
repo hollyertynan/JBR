@@ -250,64 +250,17 @@ a.text-hyperlink-color:active {
 
 
 
-
-/* 
-
-COLOR SCHEMES
-
-*/
-
-
-/* default */ 
-
-
-.fixTextDark {
-  color: black;
-}
-
-.fixTextDark ::placeholder {
-color: black;
-}
-
-
-
-/* light */
-
-.fixTextLight {
-  color: white;
-}
-
-.fixTextDark h3 {
-  color: black;
-}
-
-.fixTextLight ::placeholder {
-color: white;
-}
-
-.testLighterGray {
-  background-color: #d7dbdd;
-}
-
-.testNeutralBg {
-  background-color: #cbe8db;
-}
-
-.testBgSecondary {
-  background-color: #fbfefc;
-}
-
 ::placeholder {
-    color: white;
-    opacity: 1; /* Firefox */
+  color: white;
+  opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: white;
+  color: white;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color: white;
+  color: white;
 }
 
 textarea::placeholder {
@@ -323,3 +276,82 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
  color: black;
 }
 
+
+
+
+/* 
+
+COLOR SCHEMES
+
+*/
+
+
+:root {
+  --default-btn-info: #5bc0de;
+
+  /* switchable variables for styles (default light) */
+  --main-bg-color-switch: #d7dbdd;
+  --secondary-bg-color-switch: #fbfefc;
+
+
+}
+
+
+
+
+/* default */ 
+
+
+
+
+
+.fixTextLight ::placeholder {
+  color: white;
+}
+
+.fixTextLight {
+  color: white;
+}
+
+
+/* switching secondary (default light) */
+
+
+
+.fixTextDark h3 {
+  color: black;
+}
+
+.fixTextDark ::placeholder {
+  color: black;
+}
+
+.fixTextDark {
+  color: black;
+}
+  
+
+.mainbgswitch {
+  background-color: var(--main-bg-color-switch);
+}
+
+
+.testBgSecondary {
+  background-color: var(--secondary-bg-color-switch);
+}
+
+/* setting button info to default for theme changes */
+.btn-info {
+  background-color: var(--default-btn-info);
+  border-color: var(--default-btn-info);
+}
+
+.bg-info {
+  background-color: var(--default-btn-info);
+  border-color: var(--default-btn-info);
+}
+
+.btn-info:hover {
+  background-color: var(--default-btn-info);
+  border-color: var(--default-btn-info);
+}
