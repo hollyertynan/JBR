@@ -52,9 +52,9 @@ function changeColor(scheme) {
             $(".bg-dark").removeClass("bg-dark").addClass("testBgSecondary");
             $(".fixTextDark").removeClass("fixTextDark").addClass("fixTextLight");
 
-            propertySwitch.style.setProperty('--main-bg-color-switch', '#638f19');
-            propertySwitch.style.setProperty("--secondary-bg-color-switch", "#235024")
-            propertySwitch.style.setProperty("--default-btn-info", "#2a4732")
+            propertySwitch.style.setProperty('--main-bg-color-switch', '#236537');
+            propertySwitch.style.setProperty("--secondary-bg-color-switch", "#2a4732")
+            propertySwitch.style.setProperty("--default-btn-info", "#448475")
 
 
             // change text to white
