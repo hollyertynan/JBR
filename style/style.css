@@ -105,42 +105,10 @@ i {
 }
 
 .orangeBackground {
-    background-color: #f78220;
+  background-color: #f78220;
 }
 
-.testLighterGray {
-    background-color: #8a8a8a;
-}
 
-.testNeutralBg {
-    background-color: #60412B;
-}
-
-::placeholder {
-    color: white;
-    opacity: 1; /* Firefox */
-}
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: white;
-}
-  
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: white;
-}
-
-textarea::placeholder {
-  color: black;
-  opacity: 1; /* Firefox */
-}
-
-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: black;
-}
-
-textarea::-ms-input-placeholder { /* Microsoft Edge */
- color: black;
-}
 
 .video-fluid {
     width: 100%;
@@ -203,8 +171,6 @@ a.text-hyperlink-color:active {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
   }
   
   /* Hide default HTML checkbox */
@@ -273,13 +239,6 @@ a.text-hyperlink-color:active {
 
   /* */
 
-  .fixTextDark {
-      color: black;
-  }
-
-  .fixTextLight {
-      color: white;
-  }
 
   .testiframe {
     background-color: black;
@@ -288,3 +247,79 @@ a.text-hyperlink-color:active {
   .form-check-label {
     color: white;
   }
+
+
+
+
+/* 
+
+COLOR SCHEMES
+
+*/
+
+
+/* default */ 
+
+
+.fixTextDark {
+  color: black;
+}
+
+.fixTextDark ::placeholder {
+color: black;
+}
+
+
+
+/* light */
+
+.fixTextLight {
+  color: white;
+}
+
+.fixTextDark h3 {
+  color: black;
+}
+
+.fixTextLight ::placeholder {
+color: white;
+}
+
+.testLighterGray {
+  background-color: #d7dbdd;
+}
+
+.testNeutralBg {
+  background-color: #cbe8db;
+}
+
+.testBgSecondary {
+  background-color: #fbfefc;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}
+
+textarea::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+}
+

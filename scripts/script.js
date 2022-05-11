@@ -96,19 +96,7 @@ function fiveButtonQuestionnaire() {
 
 var firstTask = secondTask = thirdTask = fourthTask = fifthTask = comments = "-----";
 
-function changeColor() {
-    if ($("body").hasClass("bg-dark")) {
-        $(".bg-secondary").removeClass("bg-secondary").addClass("testLighterGray");
-        $(".bg-dark").removeClass("bg-dark").addClass("bg-secondary");
-        $(".fixTextLight").removeClass("fixTextLight").addClass("fixTextDark");
-        $(".btn-dark").removeClass("btn-dark").addClass("btn-secondary");
-    } else if ($("body").hasClass("bg-secondary")) {
-        $(".bg-secondary").removeClass("bg-secondary").addClass("bg-dark");
-        $(".testLighterGray").removeClass("bg-testLighterGray").addClass("bg-secondary");
-        $(".fixTextDark").removeClass("fixTextDark").addClass("fixTextLight");
-        $(".btn-secondary").removeClass("btn-secondary").addClass("btn-dark");
-    }
-}
+
 
 function clearAllForms() {
     $("#firstForm").html("");
@@ -481,21 +469,47 @@ function copyToClipboard(link) {
     alert("Copied to clipboard.")
 }
 
+function clearModal() {
+    let savedScheme = localStorage.getItem("Scheme");
 
+    localStorage.clear();
+
+    if(savedScheme != undefined) {
+        localStorage.setItem("Scheme", savedScheme);
+    }
+    
+}
 
 function modalDisplay() {
     var Modal = document.getElementById('oneTimeModal'); 
+    
 
     document.getElementById("noticeModalContent").innerHTML = "";
 
     var printer = 'noIconPrinters',
     noIconPrinters = localStorage.getItem(printer);
 
-    
+    var colors = 'colorSchemes',
+    colorSchemes = localStorage.getItem(colors);
+
+    var timeIssues = 'changeDateTime',
+    changeDateTime = localStorage.getItem(timeIssues);
+
+    if (!changeDateTime) {
+        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing Incorrect Date/Time and Registers Displaying Non Ongoing Issuess (Charity, Etc.) added to IT > Registers > Register Software.<br><br>";
+        localStorage.setItem(timeIssues, true);
+        $("#oneTimeModal").modal("show");
+    }
 
     if (!noIconPrinters) {
-        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing No Aubuchon Logo On Receipts has been added to IT > Registers > Register Software.";
+        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing No Aubuchon Logo On Receipts has been added to IT > Registers > Register Software.<br><br>";
         localStorage.setItem(printer, true);
+        $("#oneTimeModal").modal("show");
+    }
+
+    if (!colorSchemes) {
+        document.getElementById("noticeModalContent").innerHTML += "New Color Scheme dropdown on top left of the screen. Only two available currently are dark and light, more will be added in the future.";
+        localStorage.setItem(colors, true);
         $("#oneTimeModal").modal("show");
     }
 
@@ -506,7 +520,9 @@ function modalDisplay() {
 }
 
 
-$(document).ready(function() {    
+$(document).ready(function() { 
+    let scheme = localStorage.getItem("Scheme");
+    changeColor(scheme);
     modalDisplay();
 });  
 

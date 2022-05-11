@@ -25,6 +25,8 @@ const registerSoftwareIssues = [
     "BlueTarp Transaction On Special Orders",
     "'Associate Record Not Found'",
     "No Aubuchon Logo Printing on Receipts",
+    "Changing Date/Time on a Register",
+    "Registers Displaying Non-Ongoing Events (Charity, Etc.)",
     "Other"
 ]
 
@@ -79,6 +81,10 @@ const registerSoftwareMap = new Map([
     ["'Associate Record Not Found'", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A192:B192\"></iframe>"],
 
     ["No Aubuchon Logo Printing on Receipts", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A200:B200\"></iframe>"],
+
+    ["Changing Date/Time on a Register", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A198:B198\"></iframe>"],
+
+    ["Registers Displaying Non-Ongoing Events (Charity, Etc.)", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A198:B198\"></iframe>"],
 
     ["Other"]
 ])
