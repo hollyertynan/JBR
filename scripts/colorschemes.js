@@ -1,9 +1,79 @@
+function textWhiteTheme() {
+    // change text to white
+    document.getElementById("footerButtons").style.color = "white";
+    document.getElementById("ticketinfo").style.color = "white";
+    document.getElementById("typeStore").style.color = "white";
+    document.getElementById("footerButtons").style.color = "white";
+    document.getElementById("ticketinfo").style.color = "white";
+    document.getElementById("typeStore").style.color = "white";
+    document.getElementById("prompt").style.color = "white";
+    document.getElementById("radioOne").style.color = "white";
+    document.getElementById("radioTwo").style.color = "white";
+    document.getElementById("radioThree").style.color = "white";
+    document.getElementById("radioFour").style.color = "white";
+    document.getElementById("radioFive").style.color = "white";
+    document.getElementById("optionalNote").style.color = "white";
+    $("#thirdForm").removeClass("fixTextDark").addClass("fixTextLight");
+    $("#fourthForm").removeClass("fixTextDark").addClass("fixTextLight");
+    $("#fifthForm").removeClass("fixTextDark").addClass("fixTextLight");
+    $("h3").removeClass("fixTextDark").addClass("fixTextLight");
+}
+
+function textBlackTheme() {
+    // change text to black
+    document.getElementById("footerButtons").style.color = "black";
+    document.getElementById("ticketinfo").style.color = "black";
+    document.getElementById("typeStore").style.color = "black";
+    document.getElementById("footerButtons").style.color = "black";
+    document.getElementById("ticketinfo").style.color = "black";
+    document.getElementById("typeStore").style.color = "black";
+    document.getElementById("prompt").style.color = "black";
+    document.getElementById("radioOne").style.color = "black";
+    document.getElementById("radioTwo").style.color = "black";
+    document.getElementById("radioThree").style.color = "black";
+    document.getElementById("radioFour").style.color = "black";
+    document.getElementById("radioFive").style.color = "black";
+    document.getElementById("optionalNote").style.color = "black";
+    $("#thirdForm").removeClass("fixTextLight").addClass("fixTextDark");
+    $("#fourthForm").removeClass("fixTextLight").addClass("fixTextDark");
+    $("#fifthForm").removeClass("fixTextLight").addClass("fixTextDark");
+    $("h3").removeClass("fixTextLight").addClass("fixTextDark");
+}
+
+var propertySwitch = document.querySelector(':root');
+
 function changeColor(scheme) {
     scheme = localStorage.getItem("Scheme");
 
-    var propertySwitch = document.querySelector(':root');
+    
+
+    
 
     switch(scheme) {
+
+        // RUSTIC STYLE
+        case "rustic":
+            textBlackTheme();
+            $(".bg-secondary").removeClass("bg-secondary").addClass("mainbgswitch");
+            $(".bg-dark").removeClass("bg-dark").addClass("testBgSecondary");
+            $(".fixTextLight").removeClass("fixTextLight").addClass("fixTextDark");
+            
+
+            propertySwitch.style.setProperty('--main-bg-color-switch', '#F2F2EC');
+            propertySwitch.style.setProperty("--secondary-bg-color-switch", "#AC927E");
+            propertySwitch.style.setProperty("--default-btn-info", "#9C8A84");
+        
+
+            
+
+
+            
+
+            break;
+
+
+
+
 
         // SOFT BROWNS STYLE
         case "brown":
@@ -15,31 +85,12 @@ function changeColor(scheme) {
             propertySwitch.style.setProperty("--secondary-bg-color-switch", "#49310c")
             propertySwitch.style.setProperty("--default-btn-info", "#efb963")
 
+            textWhiteTheme();
 
-            // change text to white
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("prompt").style.color = "white";
-            document.getElementById("radioOne").style.color = "white";
-            document.getElementById("radioTwo").style.color = "white";
-            document.getElementById("radioThree").style.color = "white";
-            document.getElementById("radioFour").style.color = "white";
-            document.getElementById("radioFive").style.color = "white";
-            $("#thirdForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fourthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fifthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("h3").removeClass("fixTextDark").addClass("fixTextLight");
+
+            
 
             break;
-
-
-
-
-
 
 
 
@@ -57,30 +108,9 @@ function changeColor(scheme) {
             propertySwitch.style.setProperty("--default-btn-info", "#448475")
 
 
-            // change text to white
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("prompt").style.color = "white";
-            document.getElementById("radioOne").style.color = "white";
-            document.getElementById("radioTwo").style.color = "white";
-            document.getElementById("radioThree").style.color = "white";
-            document.getElementById("radioFour").style.color = "white";
-            document.getElementById("radioFive").style.color = "white";
-            $("#thirdForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fourthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fifthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("h3").removeClass("fixTextDark").addClass("fixTextLight");
+            textWhiteTheme();
 
             break;
-
-
-
-
-
 
 
 
@@ -98,27 +128,9 @@ function changeColor(scheme) {
 
 
             // change text to white
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("prompt").style.color = "white";
-            document.getElementById("radioOne").style.color = "white";
-            document.getElementById("radioTwo").style.color = "white";
-            document.getElementById("radioThree").style.color = "white";
-            document.getElementById("radioFour").style.color = "white";
-            document.getElementById("radioFive").style.color = "white";
-            $("#thirdForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fourthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fifthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("h3").removeClass("fixTextDark").addClass("fixTextLight");
+            textWhiteTheme();
 
             break;
-
-
-
 
 
 
@@ -138,25 +150,8 @@ function changeColor(scheme) {
             
             
 
-            // change text to black
-            document.getElementById("footerButtons").style.color = "black";
-            document.getElementById("ticketinfo").style.color = "black";
-            document.getElementById("typeStore").style.color = "black";
-            document.getElementById("prompt").style.color = "black";
-            document.getElementById("radioOne").style.color = "black";
-            document.getElementById("radioTwo").style.color = "black";
-            document.getElementById("radioThree").style.color = "black";
-            document.getElementById("radioFour").style.color = "black";
-            document.getElementById("radioFive").style.color = "black";
-            $("#thirdForm").removeClass("fixTextLight").addClass("fixTextDark");
-            $("#fourthForm").removeClass("fixTextLight").addClass("fixTextDark");
-            $("#fifthForm").removeClass("fixTextLight").addClass("fixTextDark");
-            $("h3").removeClass("fixTextLight").addClass("fixTextDark");
+            textBlackTheme();
             break;
-
-
-
-
 
 
 
@@ -170,23 +165,7 @@ function changeColor(scheme) {
             $(".btn-light").removeClass("btn-light").addClass("btn-dark");
             propertySwitch.style.setProperty("--default-btn-info", "#5bc0de")
 
-            // change text to white
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("footerButtons").style.color = "white";
-            document.getElementById("ticketinfo").style.color = "white";
-            document.getElementById("typeStore").style.color = "white";
-            document.getElementById("prompt").style.color = "white";
-            document.getElementById("radioOne").style.color = "white";
-            document.getElementById("radioTwo").style.color = "white";
-            document.getElementById("radioThree").style.color = "white";
-            document.getElementById("radioFour").style.color = "white";
-            document.getElementById("radioFive").style.color = "white";
-            $("#thirdForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fourthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("#fifthForm").removeClass("fixTextDark").addClass("fixTextLight");
-            $("h3").removeClass("fixTextDark").addClass("fixTextLight");
+            textWhiteTheme();
             break;
 
     }

@@ -128,6 +128,8 @@ function makeRegisterSoftwareForm() {
     var input = "";
     input += "<div style=\"\"class=\"container-fluid  text-center pb-5\"><div class=\"row\"><div class=\"col-2\"></div><div class=\"col-8\"><div class=\" text-center\"><select name=\"registerSoftwareDropdown\" id=\"registerSoftwareDropdown\" onchange=\"onEventITRegisterSoftware(event);\" class=\"form-select form-select-lg InitialButtons bg-info text-light text-center border-info\" style=\"width: 100%\"><option selected value=\"Selected\">Select One:</option>"
 
+    
+
     for (var i = 0; i < registerSoftwareIssues.length; i++) {
         input += "<option value=\"" + registerSoftwareIssues[i] + "\">" + registerSoftwareIssues[i] + "</option>";
     }

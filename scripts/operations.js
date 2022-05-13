@@ -108,6 +108,8 @@ function onOperationsDefault(taskName) {
 
     // leaving for backwards compatability w/ safari and internet explorer
     document.getElementById("resolutionFrame").scrollIntoView({behavior: "smooth"});
+
+    
     secondTask = taskName;
 }
 
