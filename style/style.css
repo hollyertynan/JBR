@@ -151,7 +151,7 @@ a.text-hyperlink-color:active {
     display: flex;
     width: 100%;
     height: 100%;
-    background: var(--color-secondary);
+    background: var(--default-btn-info);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -161,7 +161,7 @@ a.text-hyperlink-color:active {
   }
   .container button {
     color: var(--font-color);
-    background: var(--color-primary);
+    background: var(--default-btn-info);
     padding: 10px 20px;
     border: 0;
     border-radius: 5px;
@@ -212,11 +212,11 @@ a.text-hyperlink-color:active {
   }
   
   input:checked + .slider {
-    background-color: black;
+    background-color: var(--default-btn-info);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px var(--default-btn-info);
   }
   
   input:checked + .slider:before {
@@ -288,6 +288,7 @@ COLOR SCHEMES
 
 :root {
   --default-btn-info: #5bc0de;
+  --default-bg-info: white;
 
   /* switchable variables for styles (default light) */
   --main-bg-color-switch: #d7dbdd;
@@ -346,10 +347,16 @@ COLOR SCHEMES
   border-color: var(--default-btn-info);
 }
 
-.bg-info {
+option {
   background-color: var(--default-btn-info);
   border-color: var(--default-btn-info);
 }
+
+.form-select {
+  background-color: var(--default-btn-info) !important;
+  border-color: var(--default-btn-info) !important;
+} 
+
 
 .btn-info:hover {
   background-color: var(--default-btn-info);
