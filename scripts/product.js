@@ -48,11 +48,9 @@ let productMap = new Map([
 
     ["UPC Not On File", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B12:D12\"></iframe>"],
 
-    ["Need a Vendor Website Password Reset",
-    "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Need a Vendor Website Password Reset"],
 
-    ["Retail Price Issues (Not Markdown)",
-    "<h3>UNDER CONSTRUCTION</h3>"],
+    ["Retail Price Issues (Not Markdown)"],
 
     ["Cost Issues", "<iframe src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTX24xVOEWwucJGjbvsV4kNsSJ7TlUgTOShNrvZAC9C2ectQ7BzsrYhGjWpENfZ89jXssg9sTS0XL1m/pubhtml?single=true&amp;gid=907924166&amp;widget=true&amp;range=B2:D2\"></iframe>"],
 
