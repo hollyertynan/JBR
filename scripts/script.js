@@ -431,12 +431,12 @@ function SubForm() {
         data:$("#submitMyForm").serializeArray(),
         
         success: async function() {
-            await delay(1500);
+            await delay(1000);
             location.reload();
             
         },
         error: async function() {
-            await delay(1500);
+            await delay(1000);
             location.reload();
         }
     });

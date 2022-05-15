@@ -56,14 +56,14 @@ function changeColor(scheme) {
             textBlackTheme();
             $(".bg-secondary").removeClass("bg-secondary").addClass("mainbgswitch");
             $(".bg-dark").removeClass("bg-dark").addClass("testBgSecondary");
-            $(".fixTextLight").removeClass("fixTextLight").addClass("fixTextDark");
+            $(".fixTextLight").removeClass("fixTextDark").addClass("fixTextLight");
             
 
-            propertySwitch.style.setProperty('--main-bg-color-switch', '#F2F2EC');
-            propertySwitch.style.setProperty("--secondary-bg-color-switch", "#AC927E");
+            propertySwitch.style.setProperty('--main-bg-color-switch', '#CEB793');
+            propertySwitch.style.setProperty("--secondary-bg-color-switch", "#8A584C");
             propertySwitch.style.setProperty("--default-btn-info", "#9C8A84");
         
-
+            textWhiteTheme();
             
 
 
