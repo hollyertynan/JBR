@@ -489,6 +489,9 @@ function modalDisplay() {
     var printer = 'noIconPrinters',
     noIconPrinters = localStorage.getItem(printer);
 
+    var mini = 'miniSplit',
+    miniSplit = localStorage.getItem(mini);
+
     var colors = 'colorSchemes',
     colorSchemes = localStorage.getItem(colors);
 
@@ -497,6 +500,12 @@ function modalDisplay() {
 
     if (!changeDateTime) {
         document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing Incorrect Date/Time and Registers Displaying Non Ongoing Issuess (Charity, Etc.) added to IT > Registers > Register Software.<br><br>";
+        localStorage.setItem(timeIssues, true);
+        $("#oneTimeModal").modal("show");
+    }
+
+    if (!miniSplit) {
+        document.getElementById("noticeModalContent").innerHTML += "Barry Johndro is on PTO the week of May 23rd. If you get any tickets or phone calls regarding Mini-Split Repairs, pelase send them to Charlie Aubuchon.<br><br>";
         localStorage.setItem(timeIssues, true);
         $("#oneTimeModal").modal("show");
     }
