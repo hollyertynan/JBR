@@ -506,7 +506,7 @@ function modalDisplay() {
 
     if (!miniSplit) {
         document.getElementById("noticeModalContent").innerHTML += "Barry Johndro is on PTO the week of May 23rd. If you get any tickets or phone calls regarding Mini-Split Repairs, please send them to Charlie Aubuchon.<br><br>";
-        localStorage.setItem(miniSplit, true);
+        localStorage.setItem(mini, true);
         $("#oneTimeModal").modal("show");
     }
 

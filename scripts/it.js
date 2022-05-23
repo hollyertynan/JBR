@@ -522,7 +522,7 @@ onTheatro() pipeline
 */
 
 function onTheatro() {
-    document.getElementById("thirdForm").innerHTML = "<h3 style=\"text-align:center;padding-left:2%;padding-right:2%;\">All issues with Theatro at store level should be sent to the Theatro Tech Support first. If their devices are working, all they need to do is hold the talk button and say 'Message Tech Support'. If none of their devices are working they can either call Theatro at 1-844-843-2876, or they can email them at support@theatro.com.</h3>";
+    document.getElementById("thirdForm").innerHTML = "<h3 style=\"text-align:center;padding-left:2%;padding-right:2%;\">Requests for Theatro Earpieces go to Mike Gregory. All other issues with Theatro at store level should be sent to the Theatro Tech Support first. If their devices are working, all they need to do is hold the talk button and say 'Message Tech Support'. If none of their devices are working they can either call Theatro at 1-844-843-2876, or they can email them at support@theatro.com.</h3>";
     document.getElementById("fourthForm").innerHTML = "";
     
 
