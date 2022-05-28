@@ -357,6 +357,11 @@ option {
   border-color: var(--default-btn-info) !important;
 } 
 
+.bg-success {
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
+
 
 .btn-info:hover {
   background-color: var(--default-btn-info);
