@@ -26,7 +26,7 @@ let paymentTerminalMap = new Map([
 
     ["Stuck On System Information", "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets/itAssets/payment_terminal/cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6\"><video class=\"video-fluid\" controls><source src=\"assets/itAssets/payment_terminal/cardreader_startup.mp4\" type=\"video/mp4\"/></video></div></div></div><br/><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A14:B14\"></iframe>"],
 
-    ["Stuck on Synchronizing With XPI App", "<div class=\"container-fluid\"><div class=\"row\"><div class=\"col-6\"><img src=\"assets/itAssets/payment_terminal/cardReaderPlug.jpeg\" class=\"img-fluid\" alt=\"card reader plug\"></div><div class=\"col-6\"><video class=\"video-fluid\" controls><source src=\"assets/itAssets/payment_terminal/cardreader_startup.mp4\" type=\"video/mp4\"/></video></div></div></div><br/><iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A4:B6\"></iframe>"],
+    ["Stuck on Synchronizing With XPI App", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A202:B202\"></iframe>"],
 
     ["Declining All Cards"],
 
