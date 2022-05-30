@@ -495,6 +495,9 @@ function modalDisplay() {
     var timeIssues = 'changeDateTime',
     changeDateTime = localStorage.getItem(timeIssues);
 
+    var xpi = 'xpiApp',
+    xpiApp = localStorage.getItem(xpi);
+
     if (!changeDateTime) {
         document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing Incorrect Date/Time and Registers Displaying Non Ongoing Issuess (Charity, Etc.) added to IT > Registers > Register Software.<br><br>";
         localStorage.setItem(timeIssues, true);
@@ -508,8 +511,14 @@ function modalDisplay() {
     }
 
     if (!colorSchemes) {
-        document.getElementById("noticeModalContent").innerHTML += "New Color Scheme dropdown on top left of the screen. Only two available currently are dark and light, more will be added in the future.";
+        document.getElementById("noticeModalContent").innerHTML += "New Color Scheme dropdown on top left of the screen. Only two available currently are dark and light, more will be added in the future.<br><br>";
         localStorage.setItem(colors, true);
+        $("#oneTimeModal").modal("show");
+    }
+
+    if (!xpiApp) {
+        document.getElementById("noticeModalContent").innerHTML += "New instructions for Synchronizing with XPI App have been added under IT > Payment Terminals. The new method is much faster. Please make sure you are putting in any tickets that come through for XPI App.";
+        localStorage.setItem(xpi, true);
         $("#oneTimeModal").modal("show");
     }
 
