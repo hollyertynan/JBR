@@ -486,42 +486,22 @@ function modalDisplay() {
 
     document.getElementById("noticeModalContent").innerHTML = "";
 
-    var printer = 'noIconPrinters',
-    noIconPrinters = localStorage.getItem(printer);
+    var org = 'orgill',
+    orgill = localStorage.getItem(org);
 
-    var colors = 'colorSchemes',
-    colorSchemes = localStorage.getItem(colors);
-
-    var timeIssues = 'changeDateTime',
-    changeDateTime = localStorage.getItem(timeIssues);
-
-    var xpi = 'xpiApp',
-    xpiApp = localStorage.getItem(xpi);
-
-    if (!changeDateTime) {
-        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing Incorrect Date/Time and Registers Displaying Non Ongoing Issuess (Charity, Etc.) added to IT > Registers > Register Software.<br><br>";
-        localStorage.setItem(timeIssues, true);
+    if (!orgill) {
+        document.getElementById("noticeModalContent").innerHTML += "Instructions for Orgill Products Missing Components has been added to Product.<br><br>";
+        localStorage.setItem(org, true);
         $("#oneTimeModal").modal("show");
     }
 
-    if (!noIconPrinters) {
-        document.getElementById("noticeModalContent").innerHTML += "Instructions for fixing No Aubuchon Logo On Receipts has been added to IT > Registers > Register Software.<br><br>";
-        localStorage.setItem(printer, true);
-        $("#oneTimeModal").modal("show");
-    }
+    
 
-    if (!colorSchemes) {
-        document.getElementById("noticeModalContent").innerHTML += "New Color Scheme dropdown on top left of the screen. Only two available currently are dark and light, more will be added in the future.<br><br>";
-        localStorage.setItem(colors, true);
-        $("#oneTimeModal").modal("show");
-    }
 
-    if (!xpiApp) {
-        document.getElementById("noticeModalContent").innerHTML += "New instructions for Synchronizing with XPI App have been added under IT > Payment Terminals. The new method is much faster. Please make sure you are putting in any tickets that come through for XPI App.";
-        localStorage.setItem(xpi, true);
-        $("#oneTimeModal").modal("show");
-    }
-
+    localStorage.removeItem(colors);
+    localStorage.removeItem(printer);
+    localStorage.removeItem(xpi);
+    localStorage.removeItem(timeIssues);
     
     
     
