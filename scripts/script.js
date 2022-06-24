@@ -489,19 +489,20 @@ function modalDisplay() {
     var org = 'orgill',
     orgill = localStorage.getItem(org);
 
-    if (!orgill) {
-        document.getElementById("noticeModalContent").innerHTML += "Instructions for Orgill Products Missing Components has been added to Product.<br><br>";
-        localStorage.setItem(org, true);
+    var real = 'realestate',
+    realestate = localStorage.getItem(real)
+
+    if (!realestate) {
+        document.getElementById("noticeModalContent").innerHTML += "Instructions for Real Estate has been added to Accounting.<br><br>";
+        localStorage.setItem(real, true);
         $("#oneTimeModal").modal("show");
     }
 
     
 
 
-    localStorage.removeItem(colors);
-    localStorage.removeItem(printer);
-    localStorage.removeItem(xpi);
-    localStorage.removeItem(timeIssues);
+    localStorage.removeItem(orgill);
+    
     
     
     
