@@ -16,6 +16,7 @@ const onAccountingIssues = [
     "Store Asking for Gift Cards",
     "Fishing Licenses",
     "'An Error Has Occurred' When Trying to Receive In a PO",
+    "Real Estate Appraisals",
     "Other"
  ]
 
@@ -57,6 +58,8 @@ let accountingMap = new Map([
     ["Fishing Licenses", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A31:C31\"></iframe>"],
 
     ["'An Error Has Occurred' When Trying to Receive In a PO", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A194:B194\"></iframe>"],
+
+    ["Real Estate", "<iframe class=\"vh-30\" src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A32:D32\"></iframe>"],
 
     ["Other"]
 
