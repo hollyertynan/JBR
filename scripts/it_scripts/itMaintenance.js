@@ -6,6 +6,7 @@ const itMaintenanceTasks = [
     "Running EOD For a Store",
     "Attaching a File to a Ticket",
     "Paint Over Max Order",
+    "Lab Testing",
     "Other"
 ]
 
@@ -23,6 +24,8 @@ const itMaintenanceMap = new Map([
     ["Attaching a File to a Ticket", "<iframe class=\"vh-50\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A152:B152\"></iframe>"],
 
     ["Paint Over Max Order", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1JqAxLJFS2J_Poag57C5VJPuif1xbDRCXmm5VH6aBeuo/edit\"></iframe>"],
+
+    ["Lab Testing", "<iframe class=\"vh-100\" src=\"https://docs.google.com/forms/d/e/1FAIpQLSeh6aHzdZbYCm3cK0um-bZ83iIgiLwedy37-moEAMiyyhAX-Q/viewform?vc=0&c=0&w=1&flr=0\"></iframe>"],
     
     ["Other"]
 ])
