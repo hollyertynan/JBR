@@ -12,6 +12,7 @@ const onCustomerIssues = [
     "Ordering More Member Sign-Up Sheets",
     "Customer Lost Year End Rewards",
     "Customer Quote Issues",
+    "Customers Not Receiving Correct Paint Tier Pricing",
     "Other"
  ]
 
@@ -47,6 +48,8 @@ let customerMap = new Map([
     ["Customer Lost Year End Rewards", "<iframe src=\"https://docs.google.com/spreadsheets/d/1_azII5U0-qWlpkAOptv5oMM8kUAZBBGMrs_xcf2kBJY/htmlembed?gid=790165298&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A16:D16\"</iframe>"],
 
     ["Customer Quote Issues (Not Pricing Quotes)", "<h3 style=\"text-align:center;\">Send these up to Jay Ferrera.</h3>"],
+
+    ["Customers Not Receiving Correct Paint Tier Pricing", "<h3>Have Misty verify tier pricing is set up correctly, and ask her to send the ticket back to you afterwards. Attempt to test to see if the account is doing it in the lab (Do a transaction, use customer number with issues, use Sku 500800. Do not complete sale). Check the store's back office to make sure the Customer type is 'V' for Paint Tier. If all seems correct, escalate to the POS Team.</h3>"],
 
     ["Other", "<h3 class=\"p-3 text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>"]
 ]);
@@ -107,7 +110,8 @@ const mergeCriteria = [
     "Military Account + Military Account",
     "Military Account + Employee Account",
     "Pro Account + Pro Account",
-    "Pro Account + Employee Account"
+    "Pro Account + Employee Account",
+    
 ]
 
 const mergeMap = new Map([
@@ -128,6 +132,8 @@ const mergeMap = new Map([
     ["Pro Account + Pro Account", "<h3 style=\"text-align:center;\">Pro accounts can have different tiers. Please check with Misty Snyder on which accoutn should be kept BEFORE completing the instructions below. If Misty is unavailable, check with Jared Brown.</h3><iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.ou0zzujvdpu4\"></iframe>"],
 
     ["Pro Account + Employee Account", "<iframe class=\"vh-100\" src=\"https://docs.google.com/document/d/1uBxBlALyEP8_D8rgB7-mPfGbiM4Ao2m1GydvxqyfaR8/edit#bookmark=id.ou0zzujvdpu4\"></iframe>"]
+
+    
 ])
 
 
