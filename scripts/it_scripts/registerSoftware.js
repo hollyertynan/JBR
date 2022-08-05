@@ -86,6 +86,8 @@ const registerSoftwareMap = new Map([
 
     ["Registers Displaying Non-Ongoing Events (Charity, Etc.)", "<iframe class=\"vh-70\" src=\"https://docs.google.com/spreadsheets/d/1tmjYk9mlYNBW_s5s7TGndBt67Kb3I8l7tAaaHQUCApQ/htmlembed?gid=1612994648&amp;widget=false&amp;chrome=true&amp;single=true&amp;range=A198:B198\"></iframe>"],
 
+    ["'Cannot request QuickChip Functionality' Message on Register", "<h3>Please escalate this issue to the POS Team and hit submit.</h3>"],
+
     ["Other"]
 ])
 
