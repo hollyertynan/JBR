@@ -89,7 +89,7 @@ let productMap = new Map([
 
     ["Charging Customer for Sodastream Cartidge Without Exchange", "<h3>When a customer is purchasing a new carbonator bottle and DOES NOT have one to exchange, the store must use the deposit fee Sku 139946. The total between the bottle and the deposit fee should be $29.99.</h3>"],
 
-    ["Ice Cream Cooler POs", "<h3 style=\"text-align:center\">Please assign the ticket to Neal Delowery.</h3>"],
+    ["Ice Cream Cooler POs", "<h3 style=\"text-align:center\">Please assign the ticket to Megan Langelier (vacation 8/8/22 - 8/12/22).</h3>"],
 
     ["Other", "<h3 class=\"p-3 text-center\">Please escalate to L2 and provide as much detail in the ticket / from the call as possible. Thank you!</h3>"]
 ]);
